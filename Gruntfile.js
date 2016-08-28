@@ -146,5 +146,6 @@ module.exports = function(grunt) {
 
     // Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat', 'uglify', 'less', 'postcss', 'imagemin', 'pug']);
-	grunt.registerTask('html', ['clean', 'pug']);
+	grunt.registerTask('html', ['pug']);
+	grunt.registerTask('css', ['concat', 'uglify', 'less', 'postcss']);
 };
