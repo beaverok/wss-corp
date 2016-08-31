@@ -1,9 +1,15 @@
+- var title_html = {text: 'Главная'}
+- var title_php = {text: '<?$APPLICATION->ShowTitle()?>'}
+
 head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
 
     block title
-        title Главная страница
+    if (title_html.text)
+        title= title_html.text
+    else
+        title= title_php.text
 
     meta(name='viewport', content='width=device-width, initial-scale=1')
 

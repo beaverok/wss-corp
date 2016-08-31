@@ -93,10 +93,19 @@
 }
 
 /* разное */
-.container() {
+.container(@width: @container) {
   width: @container;
   margin: 0 auto;
   clear: both;
+  @media (min-width: @container-lg) and (max-width: 1239px) {
+    width: @container-lg;
+  }
+  @media (min-width: @container-md) and (max-width: 1023px) {
+    width: @container-md;
+  }
+  @media (min-width: @container-sm) and (max-width: 767px) {
+    width: @container-sm;
+  }
 }
 
 .size(@width: auto; @height: auto){

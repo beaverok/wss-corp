@@ -100,6 +100,17 @@ module.exports = function(grunt) {
 				}
 			  }
 		},
+		cssmin: {
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'build/css',
+					src: ['*.css', '!*.min.css'],
+					dest: 'build/css',
+					ext: '.min.css'
+				}]
+			}
+		},
         sprite:{
             all: {
                 src: 'img/sprite/*.png',
@@ -143,6 +154,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-spritesmith');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat', 'uglify', 'less', 'postcss', 'imagemin', 'pug']);
