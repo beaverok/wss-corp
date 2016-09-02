@@ -1,17 +1,11 @@
-- var title_html = {text: 'Главная'}
-- var title_php = {text: '<?$APPLICATION->ShowTitle()?>'}
-
 head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
 
     block title
-    if (title_html.text)
-        title= title_html.text
-    else
-        title= title_php.text
+        title Главная
 
-    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='width=device-width')
 
     link(rel='shortcut icon', href='favicon.ico')
 

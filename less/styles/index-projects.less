@@ -78,6 +78,14 @@
   &__list {
     .ul-reset();
   }
+  &__item {
+    @media @screen-lg {
+      text-align: center;
+    }
+    @media @screen-md {
+      text-align: center;
+    }
+  }
   &__inner .bx-controls {
     margin-top: 18px;
     .align-center();
@@ -116,6 +124,10 @@
   margin: 0 13px 22px 0;
   .border-radius(14px, 14px, 14px, 14px);
 
+  @media @screen-lg {
+    width: 23%;
+  }
+
   &__pic {
     display: table-cell;
     width: 230px;
@@ -124,6 +136,10 @@
     .pos(20px, 33px);
     .align-center();
     vertical-align: middle;
+
+    @media @screen-lg {
+      left: 0;
+    }
   }
   &__name {
     .absolute();

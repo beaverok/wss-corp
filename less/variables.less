@@ -48,4 +48,12 @@
 @container: 1240px;
 @container-lg: 1024px;
 @container-md: 768px;
-@container-sm: 320px;
+@container-xs: 320px;
+
+@max-lg: 1239px;
+@max-md: 1023px;
+@max-xs: 767px;
+
+@screen-lg: ~'(min-width: @{container-lg}) and (max-width: @{max-lg})';
+@screen-md: ~'(min-width: @{container-md}) and (max-width: @{max-md})';
+@screen-xs: ~'(min-width: @{container-xs}) and (max-width: @{max-xs})';

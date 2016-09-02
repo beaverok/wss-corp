@@ -97,14 +97,20 @@
   width: @container;
   margin: 0 auto;
   clear: both;
-  @media (min-width: @container-lg) and (max-width: 1239px) {
+  @media (min-width: @container-lg) and (max-width: @max-lg) {
     width: @container-lg;
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  @media (min-width: @container-md) and (max-width: 1023px) {
+  @media (min-width: @container-md) and (max-width: @max-md) {
     width: @container-md;
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  @media (min-width: @container-sm) and (max-width: 767px) {
-    width: @container-sm;
+  @media (min-width: @container-xs) and (max-width: @max-xs) {
+    width: @container-xs;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 

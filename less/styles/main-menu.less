@@ -1,5 +1,10 @@
 .main-menu {
   float: left;
+  @media @screen-md {
+    float: none;
+    margin: 0 auto;
+    clear: both;
+  }
 
   &__list {
     .ul-reset();
@@ -8,10 +13,16 @@
     align-items: center;
     align-content: center;
     justify-content: space-around;
+    @media @screen-md {
+      max-width: 100%;
+    }
   }
     &__item {
       display: inline-block;
       margin-right: 10px;
+      @media @screen-lg {
+        margin-right: 0;
+      }
     }
     &__item:last-child {
       margin-right: 0;
@@ -24,6 +35,9 @@
         color: @color-33;
         .no-decor();
         text-transform: uppercase;
+        @media @screen-lg {
+          padding: 0 7px;
+        }
       }
       &__link:hover {
         .bg(0 0, repeat-x);

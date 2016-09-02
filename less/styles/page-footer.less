@@ -18,6 +18,11 @@
     width: 50%;
     padding-top: 52px;
     float: left;
+
+    @media @screen-md {
+      width: 42%;
+      padding-top: 20px;
+    }
   }
   &__phone {
     display: inline-block;
@@ -30,6 +35,14 @@
     .font-size(1.6rem, 24px);
     color: @color-33;
     vertical-align: middle;
+
+    @media @screen-lg {
+      margin-right: 10px;
+      padding-left: 65px;
+    }
+    @media @screen-md {
+      margin-bottom: 15px;
+    }
   }
   &__phone:before {
     display: inline-block;
@@ -54,6 +67,11 @@
     color: @color-33;
     vertical-align: middle;
     .transition();
+
+    @media @screen-lg {
+      margin-right: 0;
+      padding-left: 65px;
+    }
   }
   &__mail:before {
     display: inline-block;
