@@ -1,0 +1,47 @@
+.index-services {
+  margin-left: 440px;
+  @media @screen-md {
+    margin-left: 370px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    .font-family(@font-bold);
+    .font-size(3rem, 28px);
+    color: @color-1e;
+    text-transform: uppercase;
+  }
+  &__descr {
+    margin-bottom: 35px;
+    .font-family(@font-reg);
+    .font-size(1.6rem, 24px);
+    color: @color-33;
+    .opacity();
+  }
+  &__list {
+    .ul-reset();
+  }
+  &__item {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 6px;
+    vertical-align: top;
+  }
+  &__item::before {
+    .relative();
+    top: 3px;
+    .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
+    background-position: -260px -208px;
+  }
+  &__link {
+    .font-family(@font-reg);
+    .font-size(1.3rem, 20px);
+    color: @color-33;
+    .uppercase();
+    .no-decor();
+    .transition();
+  }
+  &__link:hover {
+    .color-lighten(@color-33);
+  }
+}
