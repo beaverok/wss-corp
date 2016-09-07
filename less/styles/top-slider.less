@@ -7,10 +7,14 @@
     .relative();
     margin: 0 auto 52px;
     overflow: hidden;
+
     @media @screen-lg {
       width: 100%;
     }
     @media @screen-md {
+      width: 100%;
+    }
+    @media @screen-xs {
       width: 100%;
     }
   }
@@ -30,6 +34,9 @@
       }
       @media @screen-md {
         width: 42%;
+      }
+      @media @screen-xs {
+        width: 100%;
       }
     }
     &__pager .bx-pager-item {
@@ -80,6 +87,14 @@
         .absolute();
         .pos(89px, 286px);
         z-index: 102;
+
+        @media @screen-md {
+          left: 25%;
+        }
+        @media @screen-xs {
+          left: 50%;
+          margin-left: -85px;
+        }
       }
       &__descr {
         width: 780px;
@@ -94,9 +109,14 @@
           padding-left: 10px;
         }
         @media @screen-md {
-          width: 55%;
+          width: 80%;
           padding-top: 20px;
           padding-left: 10px;
+        }
+        @media @screen-xs {
+          width: 100%;
+          padding: 10px;
+          text-align: center;
         }
       }
       &__descr p {
@@ -117,6 +137,10 @@
           margin-top: 12px;
           line-height: 22px;
         }
+        @media @screen-xs {
+          margin-top: 12px;
+          .font-size(1.4rem, 20px);
+        }
       }
       &__logo {
         display: inline-block;
@@ -127,6 +151,9 @@
 
         @media @screen-lg {
           margin-right: 10px;
+        }
+        @media @screen-xs {
+          margin-right: 0;
         }
       }
 
@@ -144,9 +171,13 @@
         width: 60%;
       }
       @media @screen-md {
-        width: 60%;
+        width: 460px;
         padding-left: 160px;
         padding-right: 20px;
+      }
+      @media @screen-xs {
+        width: 100%;
+        .relative();
       }
     }
       &__title {
@@ -160,8 +191,8 @@
           .font-size(3.5rem, 53px);
         }
         @media @screen-md {
-          margin-left: 110px;
-          .font-size(3rem, 53px);
+          margin-left: 102px;
+          .font-size(2.5rem, 53px);
         }
       }
       &__title span {

@@ -1,7 +1,11 @@
 .index-services {
   margin-left: 440px;
+
   @media @screen-md {
     margin-left: 370px;
+  }
+  @media @screen-xs {
+    margin: 20px 0 10px;
   }
 
   &__title {
@@ -26,6 +30,10 @@
     display: inline-block;
     margin-bottom: 6px;
     vertical-align: top;
+
+    @media @screen-xs {
+      width: 100%;
+    }
   }
   &__item::before {
     .relative();

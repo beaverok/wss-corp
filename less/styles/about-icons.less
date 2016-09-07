@@ -1,0 +1,59 @@
+.about-icons {
+  padding-left: 75px;
+
+  @media @screen-lg {
+    padding-left: 0;
+  }
+  @media @screen-md {
+    padding-left: 0;
+  }
+  @media @screen-xs {
+    padding-left: 0;
+  }
+
+  &__icon {
+    width: 275px;
+    display: inline-block;
+    margin-right: 150px;
+    vertical-align: top;
+
+    @media @screen-lg {
+      margin: 0 3%;
+    }
+    @media @screen-md {
+      width: 31%;
+      margin: 0 1%;
+    }
+    @media @screen-xs {
+      width: 100%;
+      margin: 0 0 10px;
+    }
+  }
+  &__icon:last-child {
+    margin-right: 0;
+  }
+  &__pic {
+    display: inline-block;
+    .align-center();
+    vertical-align: middle;
+    .size(88px, 88px);
+    margin-right: 20px;
+    .bg-image("../img/bg_about-icon.png");
+    line-height: 88px;
+    float: left;
+  }
+  &__pic img {
+    vertical-align: middle;
+  }
+  &__title {
+    margin: 12px 0 4px;
+    .font-family(@font-bold);
+    .font-size(2rem, 20px);
+    color: @color-33;
+  }
+  &__text {
+    .font-family(@font-reg);
+    .font-size(1.7rem, 23px);
+    color: @color-33;
+  }
+}

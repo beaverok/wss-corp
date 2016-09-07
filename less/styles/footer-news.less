@@ -6,6 +6,11 @@
   @media @screen-md {
     width: 58%;
   }
+  @media @screen-xs {
+    width: 100%;
+    margin-top: 40px;
+    float: none;
+  }
 
   &__title {
     margin-bottom: 32px;
@@ -21,6 +26,12 @@
     display: inline-block;
     width: 49%;
     vertical-align: top;
+
+    @media @screen-xs {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
   &__date {
     margin-bottom: 4px;

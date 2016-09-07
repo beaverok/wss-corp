@@ -32,4 +32,8 @@ $(document).ready(function () {
     });
 
     $('.index-projects__select').selectbox();
+
+    $('.page-header__menu-btn').click(function () {
+        $('.main-menu').slideToggle();
+    })
 });

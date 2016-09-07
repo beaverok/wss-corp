@@ -4,6 +4,9 @@
   @media @screen-md {
     height: auto;
   }
+  @media @screen-xs {
+    height: auto;
+  }
 
   &__inner {
     .container();
@@ -22,7 +25,7 @@
       float: left;
 
       @media @screen-lg {
-        margin-right: 15px;
+        margin-right: 8px;
       }
     }
 
@@ -36,6 +39,13 @@
         .absolute();
         top: 0;
         right: 0;
+      }
+      @media @screen-xs {
+        float: none;
+        .clear();
+        .relative();
+        top: 22px;
+        margin: 0 auto 44px;
       }
     }
       &__phone {
@@ -73,4 +83,18 @@
       &__feedback-link:hover {
         .color-lighten(@color-33);
       }
+
+    &__menu-btn {
+      display: none;
+      .size(50px, 40px);
+      content: '';
+      .absolute();
+      top: 26px;
+      right: 10px;
+      background-image: linear-gradient(red 20%, white 20%, white 40%, red 40%, red 60%, red 60%, white 60%, white 80%, red 80%, red 100%);
+
+      @media @screen-xs {
+        display: block;
+      }
+    }
 }

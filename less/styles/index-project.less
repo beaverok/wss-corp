@@ -9,6 +9,13 @@
   @media @screen-lg {
     width: 23%;
   }
+  @media @screen-md {
+    margin: 0 6px 22px;
+  }
+  @media @screen-xs {
+    display: block;
+    margin: 0 auto 15px;
+  }
 
   &__pic {
     display: table-cell;
@@ -64,4 +71,11 @@
 }
 .index-project:nth-of-type(4n) {
   margin-right: 0;
+
+  @media @screen-md {
+    margin: 0 6px 22px;
+  }
+  @media @screen-xs {
+    margin: 0 auto 15px;
+  }
 }

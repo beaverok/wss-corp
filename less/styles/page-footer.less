@@ -23,6 +23,11 @@
       width: 42%;
       padding-top: 20px;
     }
+    @media @screen-xs {
+      width: 100%;
+      padding: 0;
+      float: none;
+    }
   }
   &__phone {
     display: inline-block;
@@ -41,6 +46,10 @@
       padding-left: 65px;
     }
     @media @screen-md {
+      margin-bottom: 15px;
+    }
+    @media @screen-xs {
+      width: 100%;
       margin-bottom: 15px;
     }
   }
@@ -72,6 +81,9 @@
       margin-right: 0;
       padding-left: 65px;
     }
+    @media @screen-xs {
+      margin-right: 0;
+    }
   }
   &__mail:before {
     display: inline-block;
@@ -101,6 +113,10 @@
     .container();
     padding-top: 54px;
     .align-center();
+
+    @media @screen-xs {
+      padding-top: 40px;
+    }
   }
   &__copyright {
     .font-family(@font-light);

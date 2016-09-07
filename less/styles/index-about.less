@@ -7,6 +7,11 @@
   &__cert {
     display: block;
     float: left;
+
+    @media @screen-xs {
+      float: none;
+      max-width: 100%;
+    }
   }
 
   &__bot {
@@ -17,103 +22,4 @@
     .container();
     padding: 43px 0 39px;
   }
-}
-
-.index-services {
-  margin-left: 440px;
-  @media @screen-md {
-    margin-left: 370px;
-  }
-
-  &__title {
-    margin-bottom: 32px;
-    .font-family(@font-bold);
-    .font-size(3rem, 28px);
-    color: @color-1e;
-    text-transform: uppercase;
-  }
-  &__descr {
-    margin-bottom: 35px;
-    .font-family(@font-reg);
-    .font-size(1.6rem, 24px);
-    color: @color-33;
-    .opacity();
-  }
-  &__list {
-    .ul-reset();
-  }
-  &__item {
-    width: 49%;
-    display: inline-block;
-    margin-bottom: 6px;
-    vertical-align: top;
-  }
-  &__item::before {
-    .relative();
-    top: 3px;
-    .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
-    background-position: -260px -208px;
-  }
-  &__link {
-    .font-family(@font-reg);
-    .font-size(1.3rem, 20px);
-    color: @color-33;
-    .uppercase();
-    .no-decor();
-    .transition();
-  }
-  &__link:hover {
-    .color-lighten(@color-33);
-  }
-}
-
-.about-icons {
-  padding-left: 75px;
-  @media @screen-lg {
-    padding-left: 0;
-  }
-  @media @screen-md {
-    padding-left: 0;
-  }
-
-  &__icon {
-    width: 275px;
-    display: inline-block;
-    margin-right: 150px;
-    vertical-align: top;
-    @media @screen-lg {
-      margin: 0 3%;
-    }
-    @media @screen-md {
-      width: 31%;
-      margin: 0 1%;
-    }
-  }
-  &__icon:last-child {
-    margin-right: 0;
-  }
-    &__pic {
-      display: inline-block;
-      .align-center();
-      vertical-align: middle;
-      .size(88px, 88px);
-      margin-right: 20px;
-      .bg-image("../img/bg_about-icon.png");
-      line-height: 88px;
-      float: left;
-    }
-      &__pic img {
-        vertical-align: middle;
-      }
-    &__title {
-      margin: 12px 0 4px;
-      .font-family(@font-bold);
-      .font-size(2rem, 20px);
-      color: @color-33;
-    }
-    &__text {
-      .font-family(@font-reg);
-      .font-size(1.7rem, 23px);
-      color: @color-33;
-    }
 }
