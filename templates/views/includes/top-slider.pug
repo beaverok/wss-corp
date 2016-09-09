@@ -1,20 +1,19 @@
 .top-slider
     .top-slider__inner
-        .top-slider__left
-            ul.top-slider__slides
-                li.top-slider__slide
+        ul.top-slider__slides
+            li.top-slider__slide
+                div(class="top-slider__slide-bg", style="background-image: url(img/bg_top-slider.jpg)")
+                .top-slider__descr
                     img(class="top-slider__pic", src="img/slider-foto.jpg", alt="test")
-                    .top-slider__slide-bg
-                    a.top-slider__play-btn(href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1")
-                    .top-slider__descr
-                        img(class="top-slider__logo", src="img/pepsico.png", alt="")
-                        p Разработка и внедрение корпоративного портала на платформе SharePoint
-                li.top-slider__slide
-                    a.top-slider__play-btn(href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1")
-                    img(class="top-slider__pic", src="img/slider-foto2.jpg", alt="test")
-        .top-slider__pager
 
-        .top-slider__right
-            .top-slider__title It consulting <span>& System</span> integration
-            .top-slider__text Выполняем проекты по внедрению SharePoint. Разработали два комплесных продукта PSS Portal и WSSDocs
-            a.top-slider__more-link(href="#") Services
+                    .top-slider__text
+                        .top-slider__title корпоративный порта <span>wss portal</span><br> на платформе <span>microsoft share point</span>
+                        .top-slider__price от <span>28 000</span> $
+                        .top-slider__buttons
+                            a(class="top-slider__buttons-link", href="#form-present") заявка на презентацию <span></span>
+                            a(class="top-slider__buttons-link", href="#form-demo") демо-доступ <span></span>
+
+    .top-slider__bottom
+        .top-clients
+            .top-clients__title our clients
+                .list('top-clients__list', 'top-clients__item', 'top-clients__link', '<img src="img/hh_logo--small.png">', '<img src="img/pepsico_logo--small.png">', '<img src="img/socar_logo--small.png">', '<img src="img/mexchange_logo--small.png">', '<img src="img/vimpelcom_logo--small.png">')
