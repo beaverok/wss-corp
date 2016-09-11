@@ -1,0 +1,67 @@
+.scopes-tab {
+  display: none;
+  .container();
+  margin-bottom: 87px;
+  float: left;
+
+  &--active {
+    display: block;
+  }
+
+  &__list {
+    width: 545px;
+    float: left;
+  }
+
+    &__item {
+      min-height: 58px;
+      .relative();
+      margin-bottom: 25px;
+      padding: 0 67px 0 83px;
+      .transition();
+      background-position: right top;
+      cursor: default;
+    }
+    &__item::before {
+      display: block;
+      width: 53px;
+      height: 54px;
+      border: 1px dotted #9a9a9a;
+      .rounded(5px);
+      .bg();
+      .bg-image("../img/icon_list-bullet.png");
+      background-position: center center;
+      .absolute();
+      .pos();
+      content: '';
+    }
+    &__item:hover, &__item--active {
+      .bg-image("../img/icon_capability--active.png");
+      background-position: right center;
+      background-repeat: no-repeat;
+    }
+      &__title {
+        margin-bottom: 11px;
+        .font-family(@font-reg);
+        .font-size(1.8rem, 18px);
+        color: @color-1e;
+        .uppercase();
+      }
+      &__descr {
+        .font-family(@font-reg);
+        .font-size(1.4rem, 18px);
+        color: @color-33;
+        .opacity();
+      }
+      &__item:hover &__descr, &__item--active &__descr {
+        .opacity(1);
+      }
+
+    &__pic {
+      max-width: 695px;
+      height: 378px;
+      box-shadow: 0 0 65px 18px #ccc;
+      float: right;
+      overflow: hidden;
+    }
+}

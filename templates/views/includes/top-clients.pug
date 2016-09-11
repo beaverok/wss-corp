@@ -1,0 +1,9 @@
+- var x = 5;
+.top-clients
+    .top-clients__title our clients
+    ul.top-clients__list
+        - for (i=1; i<x; i++) {
+        li.top-clients__item
+            a.top-clients__link
+                img(src="img/pepsico_logo--small.png", alt="", title="")
+        - }

@@ -1,0 +1,51 @@
+.personal-tab {
+  display: none;
+  float: left;
+  position: relative;
+  .pos();
+
+  &__pic {
+    max-width: 723px;
+    float: left;
+  }
+    &__pic img {
+      width: 100%;
+      height: auto;
+    }
+
+  &__right {
+    max-width: 515px;
+    float: right;
+  }
+
+  &__descr {
+    margin-bottom: 48px;
+    .font-family(@font-reg);
+    .font-size(1.8rem, 31px);
+    color: @color-1e;
+    .uppercase();
+  }
+
+  &__list {
+    .ul-reset();
+    margin-left: 42px;
+  }
+    &__item {
+      display: inline-block;
+      margin-bottom: 14px;
+      .font-family(@font-reg);
+      .font-size(1.4rem, 14px);
+      color: @color-1e;
+    }
+    &__item::before {
+      display: inline-block;
+      background-image: url(../img/spritesheet.png);
+      background-position: -21px -58px;
+      width: 22px;
+      height: 17px;
+      margin-right: 22px;
+      .relative();
+      top: 3px;
+      content: '';
+    }
+}

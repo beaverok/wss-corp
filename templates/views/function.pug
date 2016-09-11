@@ -14,3 +14,18 @@ mixin multi-list(data)
                 +list(item)
 
 //- var data = {"title": "Title text", "items": [{"title": "Item 1"}, {"title": "Item 2", "sublevel": true, "items": [{"title": "Item 2.1"}, {"title": "Item 2.2"}]}, {"title": "Item 3"}] }
+
+mixin input-text(cls, placeholder)
+    input(class=cls, type="text", placeholder=placeholder)
+
+mixin input-pass(cls, placeholder)
+    input(class=cls, type="password", placeholder=placeholder)
+
+mixin input-check(cls)
+    input(class=cls, type="checkbox")
+
+mixin input-radio(cls)
+    input(class=cls, type="radio")
+
+mixin textarea(cls, placeholder)
+    textarea(class=cls, placeholder=placeholder)

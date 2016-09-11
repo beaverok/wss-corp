@@ -1,0 +1,44 @@
+.advantages {
+  &__top-inner {
+    .container();
+  }
+
+    &__title {
+      max-width: 960px;
+      margin: 0 auto 48px;
+      .font-family(@font-light);
+      .font-size(3rem, 37px);
+      color: @color-1e;
+      .align-center();
+    }
+      &__title span {
+        .font-family(@font-bold);
+        .uppercase();
+      }
+
+    &__sub-title {
+      max-width: 670px;
+      margin: 0 auto 72px;
+      .font-family(@font-light);
+      .font-size(1.8rem, 24px);
+      color: @grey-a4;
+      .align-center();
+      .uppercase();
+    }
+
+    &__bot {
+      border-top: 4px solid @red;
+      margin-bottom: 79px;
+      padding-top: 71px;
+    }
+    &__bot::after {
+      display: block;
+      width: 100%;
+      content: '';
+      clear: both;
+    }
+
+      &__bot-inner {
+        .container();
+      }
+}

@@ -1,0 +1,53 @@
+.btn-link {
+  display: inline-block;
+  .relative();
+  margin-right: 28px;
+  padding: 0 71px 0 27px;
+  background-color: transparent;
+  border: 2px solid @white;
+  .rounded(5px);
+  .font-family(@font-bold);
+  .font-size(1.3rem, 53px);
+  color: @white;
+  vertical-align: middle;
+  .no-decor();
+  .uppercase();
+  .transition();
+
+    & span {
+      display: block;
+      .size(55px, 53px);
+      .absolute();
+      top: 0;
+      right: 0;
+      .bg();
+      background-position: center center;
+      .bg-image("../img/bg_open-btn--empty.png");
+    }
+
+  &:hover {
+    background: linear-gradient(to right, @white 20%, @white 20%, @white 75%, transparent 70%);
+    color: @color;
+  }
+    &:hover span {
+      .bg-image("../img/bg_open-btn.png");
+    }
+
+  &--present {
+    //.bg-color(@white);
+    background: linear-gradient(to right, @white 20%, @white 20%, @white 80%, transparent 80%);
+    background-position: 0 0;
+    color: @color;
+  }
+    &--present span {
+      .bg-image("../img/bg_open-btn.png");
+    }
+  &--present:hover {
+    background-position: 0 -102%;
+    background: transparent;
+    color: @white;
+  }
+  &--present:hover span {
+    .bg-image("../img/bg_open-btn--empty.png");
+  }
+}

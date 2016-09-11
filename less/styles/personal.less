@@ -1,0 +1,45 @@
+.personal {
+  border-bottom: 4px solid @grey-e2;
+  margin-bottom: 74px;
+  padding-bottom: 60px;
+
+  &__inner {
+    .container();
+    .relative();
+  }
+
+    &__title {
+      max-width: 580px;
+      margin: 0 auto 60px;
+      .font-family(@font-bold);
+      .font-size(3rem, 37px);
+      color: @color-1e;
+      .align-center();
+      .uppercase();
+    }
+      &__title span {
+        .font-family(@font-light);
+      }
+
+  & .bx-controls {
+    width: 100%;
+    .absolute();
+    top: 55%;
+  }
+  & .bx-prev {
+    display: block;
+    width: 35px;
+    height: 58px;
+    .bg-image("../img/icon_arrow-grey-left.png");
+    .absolute();
+    left: -85px;
+  }
+  & .bx-next {
+    display: block;
+    width: 35px;
+    height: 58px;
+    .bg-image("../img/icon_arrow-grey-right.png");
+    .absolute();
+    right: -85px;
+  }
+}

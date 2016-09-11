@@ -1,0 +1,31 @@
+.personal-tabs {
+  display: block;
+  .ul-reset();
+  margin: 0 auto 37px;
+  .align-center();
+
+  &__item {
+    display: inline-block;
+    margin-right: 43px;
+    margin-bottom: 21px;
+    vertical-align: top;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    border-bottom: 1px dotted @color-1e;
+    .font-family(@font-reg);
+    .font-size(1.5rem, 15px);
+    color: @color-1e;
+    .no-decor();
+    .uppercase();
+    vertical-align: top;
+  }
+  &__link:hover, &__link.active {
+    color: @red;
+    border: none;
+  }
+}

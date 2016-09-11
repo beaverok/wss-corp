@@ -1,0 +1,29 @@
+.team-block {
+  margin-bottom: 62px;
+
+  &__inner {
+    .container();
+    .align-center();
+  }
+    &__title {
+      max-width: 420px;
+      margin: 0 auto 54px;
+      .font-family(@font-bold);
+      .font-size(3rem, 37px);
+      color: @color-1e;
+      .align-center();
+      .uppercase();
+    }
+      &__title span {
+        .font-family(@font-light);
+      }
+
+    &__link {
+      .font-family(@font-reg);
+      .font-size(1.5rem, 15px);
+      color: @color;
+      .uppercase();
+      .no-decor();
+      border-bottom: 1px dotted @color;
+    }
+}

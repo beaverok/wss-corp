@@ -1,0 +1,31 @@
+.top-clients {
+  .container();
+  padding: 0 68px;
+  line-height: 90px;
+
+  &__title {
+    display: inline-block;
+    margin-right: 72px;
+    .font-family(@font-light);
+    .font-size(2.3rem, 100px);
+    color: @white;
+    .uppercase();
+    vertical-align: middle;
+  }
+
+    &__list {
+      display: inline-block;
+      .ul-reset();
+      vertical-align: top;
+    }
+      &__item {
+        display: inline-block;
+        height: 100px;
+        margin-right: 34px;
+        line-height: 100px;
+      }
+      &__link img {
+        max-height: 44px;
+        vertical-align: middle;
+      }
+}

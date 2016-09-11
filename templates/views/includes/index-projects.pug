@@ -1,6 +1,6 @@
 section.index-projects
     .index-projects__inner
-        h2.index-projects__title проекты по категориям
+        h2.index-projects__title <span>проекты</span> по отраслям
         select.index-projects__select
             option(selected=selected) Все проекты
             option Топливно-энергетические компании
@@ -13,10 +13,10 @@ section.index-projects
                 - for (var i=1; i<=x; i++) {
                 .index-project
                     .index-project__pic
-                        img(src="img/rus-neft.jpg", alt="")
+                        img(src="img/hh_logo.jpg", alt="")
                     .index-project__name Внедрение WSS Portal
                     .index-project__descr
-                        .index-project__text Текст текст текст текст
+                        .index-project__text Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.
                         a.index-project__link Подробнее
                 - }
 
@@ -24,9 +24,9 @@ section.index-projects
                 - for (var i=1; i<=y; i++) {
                 .index-project
                     .index-project__pic
-                        img(src="img/rus-neft.jpg", alt="")
+                        img(src="img/socar_logo.jpg", alt="")
                     .index-project__name Внедрение WSS Portal
                     .index-project__descr
-                        .index-project__text Текст текст текст текст
+                        .index-project__text Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.
                         a.index-project__link Подробнее
                 -}

@@ -1,0 +1,34 @@
+.contacts-form {
+  &__item {
+    .size(262px, 44px);
+    margin-bottom: 17px;
+  }
+    &__input {
+      .size(100%, 100%);
+      border: 1px solid @grey-a4;
+      padding: 0 10px;
+      .font-family(@font-reg);
+      .font-size(1.3rem, 44px);
+      color: @color-1e;
+    }
+
+  &__submit {
+    display: block;
+    width: 132px;
+    height: 35px;
+    .bg-color(@red);
+    margin: 19px auto 0;
+    border: none;
+    .rounded(3px);
+    .font-family(@font-reg);
+    .font-size(1.5rem, 34px);
+    color: @white;
+    .align-center();
+    .uppercase();
+    cursor: pointer;
+    .transition();
+  }
+  &__submit:hover {
+    background-color: lighten(@red, 5%);
+  }
+}

@@ -3,51 +3,450 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная страница</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <!--[if lt IE 9]>
-      <script src="js/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="page-header">
       <div class="page-header__inner"><a class="page-header__logo" href="/"><img src="img/logo.jpg" alt="" title="wss"></a>
         <nav class="main-menu">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">О компании</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Услуги</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Продукты</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Проекты</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Отрасли</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">ТЕХНОЛОГИИ</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+            <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#capabilities">возможности</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#advantages">преимущества</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#services">услуги</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#projects">Проекты</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#price">стоимость</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#about">о нас</a></li>
           </ul>
         </nav>
+        <div class="page-header__menu-btn"></div>
         <div class="page-header__contacts">
           <div class="page-header__phone">+ 1 (310)<span>888 67 86</span><a class="page-header__feedback-link" href="#">Обратная связь</a></div>
         </div>
       </div>
     </div>
     <div class="top-slider">
-      <div class="top-slider__left">
-        <ul class="top-slider__slides">
-          <li class="top-slider__slide"><img class="top-slider__pic" src="img/slider-foto.jpg" alt="test">
-            <div class="top-slider__slide-bg"></div><a class="top-slider__play-btn" href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1"></a>
-            <div class="top-slider__descr"><img class="top-slider__logo" src="img/pepsico.png" alt="">
-              <p>Разработка и внедрение корпоративного портала на платформе SharePoint</p>
-            </div>
-          </li>
-          <li class="top-slider__slide"><a class="top-slider__play-btn" href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1"></a><img class="top-slider__pic" src="img/slider-foto2.jpg" alt="test"></li>
-        </ul>
+      <div class="top-slider__slides slider">
+        <div class="fs_loader"></div>
+        <div class="top-slider__slide slide">
+          <div class="top-slider__slide-bg" data-fixed data-pic="img/bg_top-slider.jpg"></div>
+          <!--.top-slider__descr--><img class="top-slider__pic" src="img/top-slider-foto.jpg" alt="test" data-position="46,0" data-in="fade" data-step="1">
+          <!--.top-slider__text-->
+          <div class="top-slider__title" data-position="77,422" data-in="top" data-step="1" data-out="top" data-ease-in="easeOutBounce">корпоративный портал <span>wss portal</span><br> на платформе <span>microsoft share point</span></div>
+          <div class="top-slider__price" data-position="211,422" data-in="left" data-step="2">от <span>28 000</span> $</div>
+          <div class="top-slider__buttons" data-position="310,422" data-in="bottom" data-step="3"><a class="btn-link btn-link--present" href="#form-present">заявка на презентацию <span></span></a><a class="btn-link btn-link--demo" href="#form-demo">демо-доступ <span></span></a></div>
+        </div>
+        <div class="top-slider__slide slide">
+          <div class="top-slider__slide-bg" data-fixed data-pic="img/bg_top-slider.jpg"></div>
+          <!--.top-slider__descr--><img class="top-slider__pic" src="img/top-slider-foto.jpg" alt="test" data-position="46,0" data-in="fade" data-step="1">
+          <!--.top-slider__text-->
+          <div class="top-slider__title" data-position="77,422" data-in="top" data-step="1" data-out="top" data-ease-in="easeOutBounce">корпоративный портал <span>wss portal</span><br> на платформе <span>microsoft share point</span></div>
+          <div class="top-slider__price" data-position="211,422" data-in="left" data-step="2">от <span>28 000</span> $</div>
+          <div class="top-slider__buttons" data-position="310,422" data-in="bottom" data-step="3"><a class="btn-link btn-link--present" href="#form-present">заявка на презентацию <span></span></a><a class="btn-link btn-link--demo" href="#form-demo">демо-доступ <span></span></a></div>
+        </div>
       </div>
-      <div class="top-slider__pager"></div>
-      <div class="top-slider__right">
-        <div class="top-slider__title">It consulting <span>& System</span> integration</div>
-        <div class="top-slider__text">Выполняем проекты по внедрению SharePoint. Разработали два комплесных продукта PSS Portal и WSSDocs</div><a class="top-slider__more-link" href="#">Services</a>
+      <div class="top-slider__bottom">
+        <div class="top-clients">
+          <div class="top-clients__title">our clients</div>
+          <ul class="top-clients__list">
+            <li class="top-clients__item"><a class="top-clients__link"><img src="img/pepsico_logo--small.png" alt="" title=""></a></li>
+            <li class="top-clients__item"><a class="top-clients__link"><img src="img/pepsico_logo--small.png" alt="" title=""></a></li>
+            <li class="top-clients__item"><a class="top-clients__link"><img src="img/pepsico_logo--small.png" alt="" title=""></a></li>
+            <li class="top-clients__item"><a class="top-clients__link"><img src="img/pepsico_logo--small.png" alt="" title=""></a></li>
+          </ul>
+        </div>
       </div>
     </div>
+    <section class="advantages">
+      <div class="advantages__top">
+        <div class="advantages__top-inner">
+          <div class="advantages__title"> <span>wss portal</span> - 10 лет  опыта разработки и внедрения корпоративных порталов, охватывающих от 50 до 25.000 пользователей</div>
+          <div class="advantages__sub-title">Сочетание широких функциональных возможностей и высокой производительности</div>
+          <ul class="advantages-tabs">
+            <li class="advantages-tabs__item"><a class="advantages-tabs__title advantages-tabs__title--active" href="#adv-tab1"><img class="advantages-tabs__icon" src="img/icon_plus-1.png"><span>Информационный ресурс</span></a></li>
+            <li class="advantages-tabs__item"><a class="advantages-tabs__title" href="#adv-tab2"><img class="advantages-tabs__icon" src="img/icon_plus-2.png"><span>Совместная<br> работа</span></a></li>
+            <li class="advantages-tabs__item"><a class="advantages-tabs__title" href="#adv-tab3"><img class="advantages-tabs__icon" src="img/icon_plus-3.png"><span>Сервисы иинтеграция</span></a></li>
+            <li class="advantages-tabs__item"><a class="advantages-tabs__title" href="#adv-tab4"><img class="advantages-tabs__icon" src="img/icon_plus-4.png"><span>Социальная<br> сеть</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="advantages__bot">
+        <div class="advantages__bot-inner">
+          <div class="advantages-tab" id="adv-tab1">
+            <div class="advantages-tab__item"><img class="advantages-tab__icon" src="img/icon_wallet.png" alt=""><img class="advantages-tab__icon--hover" src="img/icon_wallet--hover.png" alt="">
+              <div class="advantages-tab__descr">
+                <div class="advantages-tab__title">Единое информационное и коммуникационное пространство</div>
+                <div class="advantages-tab__text">Вся информационная инфраструктура компании в едином интранет портале корпоративных систем.</div>
+              </div>
+            </div>
+            <div class="advantages-tab__item"><img class="advantages-tab__icon" src="img/icon_wallet.png" alt=""><img class="advantages-tab__icon--hover" src="img/icon_wallet--hover.png" alt="">
+              <div class="advantages-tab__descr">
+                <div class="advantages-tab__title">Снижение затрат компании</div>
+                <div class="advantages-tab__text">Благодаря централизации и унификации доступа сотрудников к информационным службам предприятия, легкости сопровождения и модернизации</div>
+              </div>
+            </div>
+            <div class="advantages-tab__item advantages-tab__item--last-left"><img class="advantages-tab__icon" src="img/icon_wallet.png" alt=""><img class="advantages-tab__icon--hover" src="img/icon_wallet--hover.png" alt="">
+              <div class="advantages-tab__descr">
+                <div class="advantages-tab__title">Единая база знаний</div>
+                <div class="advantages-tab__text">Сокращение времени на поиск информации. Формирование в сети единой базы знаний компании, создание электронного архива документовпше</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scopes">
+      <div class="scopes__inner">
+        <div class="scopes__title">бОГАТАЯ ФУНКЦИОНАЛЬНОСТЬ, <span>ГОТОВАЯ К ИСОЛЬЗОВАНИЮ</span> СРАЗУ ПОСЛЕ УСТАНОВКИ</div>
+            <ul class="scopes-tabs">
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">о КОМПАНИИ</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">сИСТЕМА ЗАЯВОК</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">пРОЕКТНЫЙ ОФИС</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">УЗЛЫ ОТДЕЛОВ</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">МЕДИА</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">СИСТЕМА ПОИСКА</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">АДМИНИСТРИРОВАНИЕ</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">SharePoint Server 2010</a></li>
+              <li class="scopes-tabs__item"><a class="scopes-tabs__link" href="#">СПЕЦИАЛЬНЫЕ МОДУЛИ</a></li>
+            </ul>
+        <div class="scopes-tab scopes-tab--active" id="scopes-tab1">
+          <div class="scopes-tab__list">
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Адресная книга</div>
+              <div class="scopes-tab__descr">составление списка всех сотрудников компании с контактами, фотографиями и прочей полезной информацией о них</div>
+            </div>
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Поэтажный план</div>
+              <div class="scopes-tab__descr">план офисов компании с автоматическим отображением размещения сотрудников по комнатам</div>
+            </div>
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Дни рождения</div>
+              <div class="scopes-tab__descr">отображение дней рождений сотрудников и система напоминаний о приближающихся днях рождениях</div>
+            </div>
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Календарь событий</div>
+              <div class="scopes-tab__descr">отслеживание и управление корпоративными событиями</div>
+            </div>
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Раздел для новых сотрудников</div>
+              <div class="scopes-tab__descr">помогающий им быстрее адаптироваться в</div>
+            </div>
+          </div>
+          <div class="scopes-tab__pic"><img src="img/scopes-foto.jpg" alt=""></div>
+        </div>
+        <div class="scopes-tab" id="scopes-tab2">
+          <div class="scopes-tab__list">
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Адресная книга</div>
+              <div class="scopes-tab__descr">составление списка всех сотрудников компании с контактами, фотографиями и прочей полезной информацией о них</div>
+            </div>
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Поэтажный план</div>
+              <div class="scopes-tab__descr">план офисов компании с автоматическим отображением размещения сотрудников по комнатам</div>
+            </div>
+            <div class="scopes-tab__item" data-pic="img/scopes-foto.jpg">
+              <div class="scopes-tab__title">Дни рождения</div>
+              <div class="scopes-tab__descr">отображение дней рождений сотрудников и система напоминаний о приближающихся днях рождениях</div>
+            </div>
+          </div>
+          <div class="scopes-tab__pic"><img src="img/scopes-foto.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="scopes-call">
+        <div class="scopes-call__inner">
+          <div class="scopes-call__title">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ И <span>ИНДИВИДУАЛЬНЫЙ</span> ДЕМО-ДОСТУП</div>
+          <div class="scopes-call__note">сейчас более 100 компаний<br> успешно эксплуатируют решения WSS Portal</div>
+          <div class="scopes-call__buttons"><a class="btn-link btn-link--present" href="#form-present">заявка на презентацию <span></span></a><a class="btn-link btn-link--demo" href="#form-demo">демо-доступ <span></span></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="personal">
+      <div class="personal__inner">
+        <div class="personal__title">индивидуальное <span>РЕШЕНИЕ ЗАДАЧ</span> ЛЮБОЙ СЛОЖНОСТИ</div>
+        <ul class="personal-tabs">
+          <li class="personal-tabs__item"><a class="personal-tabs__link" data-slide-index="0" href="">ПОРТАЛ НА ЗАКАЗ</a></li>
+          <li class="personal-tabs__item"><a class="personal-tabs__link" data-slide-index="1" href="">КРЕАТИВНЫЙ ДИЗАЙН</a></li>
+          <li class="personal-tabs__item"><a class="personal-tabs__link" data-slide-index="2" href="">ИНДИВИДУАЛЬНЫЕ МОДУЛИ</a></li>
+          <li class="personal-tabs__item"><a class="personal-tabs__link" data-slide-index="3" href="">СОПРОВОЖДЕНИЕ И ПОДДЕРЖКА</a></li>
+        </ul>
+        <div class="personal__slider">
+          <div class="personal-tab">
+            <div class="personal-tab__pic"><img src="img/personal-foto.jpg" alt=""></div>
+            <div class="personal-tab__right">
+              <div class="personal-tab__descr">Если ваши возмонжости превосходят
+                возможности коробочніх порталов,
+                мы готові разработать “под ключ” уникальное
+                решение, отвечающее всем
+                Вашим требованиям.
+              </div>
+              <ul class="personal-tab__list">
+                <li class="personal-tab__item">Сильная экспертиза по платформе SharePoint</li>
+                <li class="personal-tab__item">Большая команда программистов, аналитиков и инженеров</li>
+                <li class="personal-tab__item">Конкурентная стоимость продуктови услуг</li>
+                <li class="personal-tab__item">Экспертиза в предметной области: корпоративные порталы</li>
+              </ul>
+            </div>
+          </div>
+          <div class="personal-tab">
+            <div class="personal-tab__pic"><img src="img/personal-foto.jpg" alt=""></div>
+            <div class="personal-tab__right">
+              <div class="personal-tab__descr">Если ваши возмонжости превосходят
+                возможности коробочніх порталов,
+                мы готові разработать “под ключ” уникальное
+                решение, отвечающее всем
+                Вашим требованиям.
+              </div>
+              <ul class="personal-tab__list">
+                <li class="personal-tab__item">Сильная экспертиза по платформе SharePoint</li>
+                <li class="personal-tab__item">Большая команда программистов, аналитиков и инженеров</li>
+                <li class="personal-tab__item">Конкурентная стоимость продуктови услуг</li>
+                <li class="personal-tab__item">Экспертиза в предметной области: корпоративные порталы</li>
+              </ul>
+            </div>
+          </div>
+          <div class="personal-tab">
+            <div class="personal-tab__pic"><img src="img/personal-foto.jpg" alt=""></div>
+            <div class="personal-tab__right">
+              <div class="personal-tab__descr">Если ваши возмонжости превосходят
+                возможности коробочніх порталов,
+                мы готові разработать “под ключ” уникальное
+                решение, отвечающее всем
+                Вашим требованиям.
+              </div>
+              <ul class="personal-tab__list">
+                <li class="personal-tab__item">Сильная экспертиза по платформе SharePoint</li>
+                <li class="personal-tab__item">Большая команда программистов, аналитиков и инженеров</li>
+                <li class="personal-tab__item">Конкурентная стоимость продуктови услуг</li>
+                <li class="personal-tab__item">Экспертиза в предметной области: корпоративные порталы</li>
+              </ul>
+            </div>
+          </div>
+          <div class="personal-tab">
+            <div class="personal-tab__pic"><img src="img/personal-foto.jpg" alt=""></div>
+            <div class="personal-tab__right">
+              <div class="personal-tab__descr">Если ваши возмонжости превосходят
+                возможности коробочніх порталов,
+                мы готові разработать “под ключ” уникальное
+                решение, отвечающее всем
+                Вашим требованиям.
+              </div>
+              <ul class="personal-tab__list">
+                <li class="personal-tab__item">Сильная экспертиза по платформе SharePoint</li>
+                <li class="personal-tab__item">Большая команда программистов, аналитиков и инженеров</li>
+                <li class="personal-tab__item">Конкурентная стоимость продуктови услуг</li>
+                <li class="personal-tab__item">Экспертиза в предметной области: корпоративные порталы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-projects">
+      <div class="index-projects__inner">
+        <h2 class="index-projects__title"><span>проекты</span> по отраслям</h2>
+        <select class="index-projects__select">
+          <option>Все проекты</option>
+          <option>Топливно-энергетические компании</option>
+          <option>Банки и финансовы организации</option>
+        </select>
+        <ul class="index-projects__list">
+          <li class="index-projects__item">
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/hh_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+          </li>
+          <li class="index-projects__item">
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+            <div class="index-project">
+              <div class="index-project__pic"><img src="img/socar_logo.jpg" alt=""></div>
+              <div class="index-project__name">Внедрение WSS Portal</div>
+              <div class="index-project__descr">
+                <div class="index-project__text">Внедрение WSS Portal для автоматизации организационно-распорядительного документооборота.</div><a class="index-project__link">Подробнее</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="price-block">
+      <div class="price-block__inner">
+        <div class="price-block__title"><span>Стоимость и</span> процесс внедрения</div>
+        <ul class="price-block__tabs">
+          <li class="price-block__tabs-item"><a class="price-block__tabs-link price-block__tabs-link--active" href="">стандартное внедрение</a></li>
+          <li class="price-block__tabs-item"><a class="price-block__tabs-link" href="">Базовое внедрение</a></li>
+          <li class="price-block__tabs-item"><a class="price-block__tabs-link" href="">индивидуальное внедрение</a></li>
+        </ul>
+        <div class="price-tab" id="price-tab1">
+          <div class="price-tab__icons-list">
+            <div class="price-tab__icons-item"><a class="price-tab__link price-tab__link--active" href="#price-inner1">
+                <div class="price-tab__icon-wrap">
+                  <div class="price-tab__icon-inner"><img class="price-tab__icon-pic" src="img/icon_wallet.png" alt=""><img class="price-tab__icon-pic--active" src="img/icon_wallet--hover.png" alt=""></div>
+                </div>
+                <div class="price-tab__title">поставка и инсталляция wss portal</div></a></div>
+            <div class="price-tab__icons-item"><a class="price-tab__link" href="#price-inner2">
+                <div class="price-tab__icon-wrap">
+                  <div class="price-tab__icon-inner"><img class="price-tab__icon-pic" src="img/icon_wallet.png" alt=""><img class="price-tab__icon-pic--active" src="img/icon_wallet--hover.png" alt=""></div>
+                </div>
+                <div class="price-tab__title">Адаптация цветовой схемы</div></a></div>
+            <div class="price-tab__icons-item"><a class="price-tab__link" href="#price-inner3">
+                <div class="price-tab__icon-wrap">
+                  <div class="price-tab__icon-inner"><img class="price-tab__icon-pic" src="img/icon_wallet.png" alt=""><img class="price-tab__icon-pic--active" src="img/icon_wallet--hover.png" alt=""></div>
+                </div>
+                <div class="price-tab__title">НАСТРОЙКА ПОРТАЛАИ ИМПОРТА</div></a></div>
+            <div class="price-tab__icons-item"><a class="price-tab__link" href="#price-inner4">
+                <div class="price-tab__icon-wrap">
+                  <div class="price-tab__icon-inner"><img class="price-tab__icon-pic" src="img/icon_wallet.png" alt=""><img class="price-tab__icon-pic--active" src="img/icon_wallet--hover.png" alt=""></div>
+                </div>
+                <div class="price-tab__title">Установка порталаи пуско-наладка</div></a></div>
+            <div class="price-tab__icons-item"><a class="price-tab__link" href="#price-inner5">
+                <div class="price-tab__icon-wrap">
+                  <div class="price-tab__icon-inner"><img class="price-tab__icon-pic" src="img/icon_wallet.png" alt=""><img class="price-tab__icon-pic--active" src="img/icon_wallet--hover.png" alt=""></div>
+                </div>
+                <div class="price-tab__title"> Проведение обучающего тренинга</div></a></div>
+            <div class="price-tab__icons-item"><a class="price-tab__link" href="#price-inner6">
+                <div class="price-tab__icon-wrap">
+                  <div class="price-tab__icon-inner"><img class="price-tab__icon-pic" src="img/icon_wallet.png" alt=""><img class="price-tab__icon-pic--active" src="img/icon_wallet--hover.png" alt=""></div>
+                </div>
+                <div class="price-tab__title">Сопровождение опытной эксплуатации</div></a></div>
+          </div>
+        </div>
+        <div class="price-inner" id="price-inner1">
+          <div class="price-inner__title">Поставка и инсталяция wss portal всключает в себя следующие работы:</div>
+          <div class="price-inner__descr">
+            <ul class="price-inner__list">
+              <li class="price-inner__list-item">Поставка лицензии WSS Portal</li>
+              <li class="price-inner__list-item">Анализ требований Заказчика (3 встречи, создание протоколов встреч)</li>
+              <li class="price-inner__list-item">Создание Технического Задание и его согласование (одна итерация по доработке)</li>
+            </ul>
+            <div class="price-inner__download">Скачать материалы</div>
+          </div>
+          <div class="price-inner__total">
+            <div class="price-inner__sum">Стоимость: <span>38 000$</span></div>
+            <div class="price-inner__time">Срок: <span>38 раб. дней</span></div>
+            <div class="price-inner__buttons"><a class="btn-link btn-link--present" href="#form-present">заявка на презентацию <span></span></a><a class="btn-link btn-link--demo" href="#form-demo">демо-доступ <span></span></a></div>
+          </div>
+        </div>
+        <div class="price-inner" id="price-inner2">
+          <div class="price-inner__title">Поставка и инсталяция wss portal всключает в себя следующие работы:</div>
+          <div class="price-inner__descr">
+            <ul class="price-inner__list">
+              <li class="price-inner__list-item">Поставка лицензии WSS Portal</li>
+              <li class="price-inner__list-item">Анализ требований Заказчика (3 встречи, создание протоколов встреч)</li>
+              <li class="price-inner__list-item">Создание Технического Задание и его согласование (одна итерация по доработке)</li>
+            </ul>
+            <div class="price-inner__download">Скачать материалы</div>
+          </div>
+          <div class="price-inner__total">
+            <div class="price-inner__sum">Стоимость: <span>38 000$</span></div>
+            <div class="price-inner__time">Срок: <span>38 раб. дней</span></div>
+            <div class="price-inner__buttons"><a class="btn-link btn-link--present" href="#form-present">заявка на презентацию <span></span></a><a class="btn-link btn-link--demo" href="#form-demo">демо-доступ <span></span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="index-about">
       <div class="index-about__top">
         <div class="index-about__top-inner"><img class="index-about__cert" src="img/about-cert.jpg" alt="" title="">
@@ -71,7 +470,7 @@
           <div class="about-icons">
             <div class="about-icons__icon">
               <div class="about-icons__pic"><img src="img/icon_about-1.png" alt=""></div>
-              <div class="about-icons__title">200</div>
+              <div class="about-icons__title">300</div>
               <div class="about-icons__text">Успешных проектов</div>
             </div>
             <div class="about-icons__icon">
@@ -81,204 +480,87 @@
             </div>
             <div class="about-icons__icon">
               <div class="about-icons__pic"><img src="img/icon_about-3.png" alt=""></div>
-              <div class="about-icons__title">45</div>
-              <div class="about-icons__text">специалистов в штате</div>
+              <div class="about-icons__title">1 200 000</div>
+              <div class="about-icons__text">пользователей</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <section class="index-products">
-      <div class="index-products__inner">
-        <h2 class="index-products__title">Продукты</h2>
-        <div class="index-products__descr">WSS-Consulting предлагает готовые, коробочные решения на платформе Microsoft SharePoint для Вашего бизнеса! Максимальное использование возможностей SharePoint.</div>
-        <div class="index-products__wrapper">
-          <div class="index-product">
-            <div class="index-product__pic"><img src="img/wss-docs.png" alt="" title=""></div>
-            <div class="index-product__pic--reflect" style="background-image: url(img/wss-docs.png)"></div>
-            <div class="index-product__right">
-              <div class="index-product__name">wSS Docs</div>
-              <div class="index-product__text">Коробочная система документооборота на платформе SharePoint Foundation 2013 и SharePoint Server 2010/2013</div>
-              <div class="index-product__links"><a class="index-product__link--video" href="#">Видео презентация</a><a class="index-product__link--file" href="#">Скачать материалы</a></div>
-              <div class="index-product__price">От <span>1 096 000</span> р.</div>
+    <section class="team-block">
+      <div class="team-block__inner">
+        <div class="team-block__title"><span>команда</span> wss-consulting</div>
+        <div class="team-list">
+          <div class="team-item">
+            <div class="team-item__pic"><img src="img/staff_foto-1.jpg" alt=""></div>
+            <div class="team-item__descr">
+              <div class="team-item__name">Виктор</div>
+              <div class="team-item__post">менеджер ПРОЕКТОВ</div>
             </div>
           </div>
-          <div class="index-product">
-            <div class="index-product__pic"><img src="img/wss-portal.png" alt="" title=""></div>
-            <div class="index-product__pic--reflect" style="background-image: url(img/wss-portal.png)"></div>
-            <div class="index-product__right">
-              <div class="index-product__name">wws Portal</div>
-              <div class="index-product__text">Коробочная система документооборота на платформе SharePoint Foundation 2013 и SharePoint Server 2010/2013</div>
-              <div class="index-product__links"><a class="index-product__link--video" href="#">Видео презентация</a><a class="index-product__link--file" href="#">Скачать материалы</a></div>
-              <div class="index-product__price">От <span>589 000</span> р.</div>
+          <div class="team-item">
+            <div class="team-item__pic"><img src="img/staff_foto-2.jpg" alt=""></div>
+            <div class="team-item__descr">
+              <div class="team-item__name">Алина</div>
+              <div class="team-item__post">менеджер ПРОЕКТОВ</div>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item__pic"><img src="img/staff_foto-3.jpg" alt=""></div>
+            <div class="team-item__descr">
+              <div class="team-item__name">Мартин</div>
+              <div class="team-item__post">менеджер ПРОЕКТОВ</div>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item__pic"><img src="img/staff_foto-4.jpg" alt=""></div>
+            <div class="team-item__descr">
+              <div class="team-item__name">Ирина</div>
+              <div class="team-item__post">менеджер ПРОЕКТОВ</div>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item__pic"><img src="img/staff_foto-5.jpg" alt=""></div>
+            <div class="team-item__descr">
+              <div class="team-item__name">Ирина</div>
+              <div class="team-item__post">менеджер ПРОЕКТОВ</div>
+            </div>
+          </div>
+        </div><a class="team-block__link" href="#form-team">РАБОТАТЬ У НАС!</a>
+      </div>
+    </section>
+    <div class="contacts">
+      <div class="contacts__map" id="contacts-map"></div>
+      <div class="contacts__inner">
+        <div class="contacts__wrap">
+          <div class="contacts__left">
+            <div class="contacts__title">Контакты</div>
+            <div class="contacts__list">
+              <div class="contacts__list-item"><label>Телефон:</label> <span>+ 1 (800) 888 88 88</span></div>
+              <div class="contacts__list-item"><label>E-mail:</label> <a href="mailto:info@wss-consulting.com">info@wss-consulting.com</a></div>
+              <div class="contacts__list-item"><label>Наш адрес:</label> <span>1 Hacker way. Melano park 8 <br> ca 980828  USA</span></div>
+            </div>
+          </div>
+          <div class="contacts__right">
+            <div class="contacts__title">Обратная связь</div>
+            <div class="contacts-form">
+              <form>
+                <div class="contacts-form__item">
+                      <input class="contacts-form__input" type="text" placeholder="Имя*">
+                </div>
+                <div class="contacts-form__item">
+                      <input class="contacts-form__input input--phone" type="text" placeholder="Телефон*">
+                </div>
+                <input class="contacts-form__submit" type="submit" value="Отправить">
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="index-projects">
-      <div class="index-projects__inner">
-        <h2 class="index-projects__title">проекты по категориям</h2>
-        <select class="index-projects__select">
-          <option>Все проекты</option>
-          <option>Топливно-энергетические компании</option>
-          <option>Банки и финансовы организации</option>
-        </select>
-        <ul class="index-projects__list">
-          <li class="index-projects__item">
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-          </li>
-          <li class="index-projects__item">
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-            <div class="index-project">
-              <div class="index-project__pic"><img src="img/rus-neft.jpg" alt=""></div>
-              <div class="index-project__name">Внедрение WSS Portal</div>
-              <div class="index-project__descr">
-                <div class="index-project__text">Текст текст текст текст</div><a class="index-project__link">Подробнее</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+    </div>
     <footer class="page-footer">
-      <div class="page-footer__top">
-        <div class="page-footer__top-inner">
-          <div class="page-footer__contacts">
-            <div class="page-footer__phone">Позвонить нам: <br> + 1 8 (800) 399 40 08</div>
-            <div class="page-footer__mail">Написать  нам:<a href="mailto:info@wss-consulting.com">info@wss-consulting.com</a></div>
-          </div>
-          <section class="footer-news">
-            <h3 class="footer-news__title">новости</h3>
-            <div class="footer-news__list">
-              <div class="footer-news__item">
-                <div class="footer-news__date">02.08.2015</div><a class="footer-news__link" href="#">Возможный заголовок большой заголовок текущей новости 2015 года</a>
-              </div>
-              <div class="footer-news__item">
-                <div class="footer-news__date">02.08.2015</div><a class="footer-news__link" href="#">Возможный заголовок большой заголовок текущей новости 2015 года</a>
-              </div>
-            </div><a class="footer-news__more-link">Все новости</a>
-          </section>
-        </div>
-      </div>
-      <div class="page-footer__bottom">
-        <div class="page-footer__bottom-inner">
-          <nav class="footer-menu">
-                <ul class="footer-menu__list">
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукты</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Проекты</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Отрасли</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">ТЕХНОЛОГИИ</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
-                </ul>
-          </nav>
-          <div class="page-footer__copyright">&copy; 2016 All rights reserved</div>
-        </div>
+      <div class="page-footer__inner">
+        <div class="page-footer__copyright">&copy; 2016 All rights reserved</div>
       </div>
     </footer>
     <script src="js/jquery-1.10.1.min.js"></script>

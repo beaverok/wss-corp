@@ -1,0 +1,22 @@
+.scopes {
+  .bg-color(@grey-f0);
+  margin-bottom: 66px;
+  padding-top: 61px;
+
+  &__inner {
+    .container();
+  }
+
+    &__title {
+      max-width: 920px;
+      margin: 0 auto 49px;
+      .font-family(@font-bold);
+      .font-size(3rem, 37px);
+      color: @color-1e;
+      .align-center();
+      .uppercase();
+    }
+      &__title span {
+        .font-family(@font-light);
+      }
+}
