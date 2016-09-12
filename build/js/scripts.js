@@ -3779,16 +3779,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.top-slider__play-btn').fancybox({
-        'width'				: '90%',
-        'height'			: '100%',
-        'autoScale'     	: true,
-        'transitionIn'		: 'none',
-        'transitionOut'		: 'none',
-        'type'				: 'iframe',
-        'scrolling'		: 'no'
-    });
-
     $('.index-product__link--video').fancybox({
         'width'				: '90%',
         'height'			: '100%',
@@ -3908,20 +3898,6 @@ $(document).ready(function () {
 
     $(document).on("scroll", onScroll);
 
-});
-
-$(document).ready(function () {
-    $('.sbOptions li a').click(function () {
-        alert('!!!');
-        var num = $(this).attr("rel");
-
-        var d = $('.index-projects__list').find('.index-project').attr("data-type");
-            if (d == num) {
-                $('.index-project').addClass("index-project--hidden");
-            }
-        })
-
-    });
 });
 
 $('.main-menu__link').click(function(){

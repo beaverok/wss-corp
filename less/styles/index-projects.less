@@ -89,17 +89,18 @@
   &__select + .sbHolder .sbOptions a:hover {
     .color-lighten(@color-1e);
   }
-  &__list {
-    .ul-reset();
-  }
-  &__item {
-    @media @screen-lg {
-      text-align: center;
+
+    &__list {
+      .ul-reset();
+
+      @media @screen-lg {
+        text-align: center;
+      }
+      @media @screen-md {
+        text-align: center;
+      }
     }
-    @media @screen-md {
-      text-align: center;
-    }
-  }
+
   &__inner .bx-controls {
     margin-top: 18px;
     .align-center();

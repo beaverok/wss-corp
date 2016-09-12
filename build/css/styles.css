@@ -1951,10 +1951,6 @@ a img {
     max-width: 100%;
   }
 }
-.index-about__bot {
-  background-image: url("../img/bg_index-about.gif");
-  background-repeat: repeat-x;
-}
 .index-about__bot::before {
   display: block;
   width: 100%;
@@ -2275,12 +2271,12 @@ a img {
   list-style: none;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
-  .index-projects__item {
+  .index-projects__list {
     text-align: center;
   }
 }
 @media (min-width: 751px) and (max-width: 1023px) {
-  .index-projects__item {
+  .index-projects__list {
     text-align: center;
   }
 }
@@ -2322,6 +2318,9 @@ a img {
   border-top-left-radius: 14px;
   background-clip: padding-box;
   cursor: pointer;
+}
+.index-project--hidden {
+  display: none;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .index-project {
@@ -2373,7 +2372,7 @@ a img {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 7px;
   margin: 7px;
-  padding: 40px 35px;
+  padding: 35px 20px;
   opacity: 0;
   transition: all 0.2s ease-out;
   box-shadow: inset 0 0 25px 25px rgba(247, 247, 247, 0.45);
@@ -2746,4 +2745,5 @@ a img {
   position: fixed;
   bottom: 95px;
   right: 95px;
+  z-index: 1000;
 }
