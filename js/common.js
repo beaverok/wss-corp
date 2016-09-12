@@ -49,5 +49,18 @@ $(document).ready(function () {
 
     $('.page-header__menu-btn').click(function () {
         $('.main-menu').slideToggle();
+    });
+
+    $('.scopes-tab__item').click(function () {
+        var pic = $(this).attr("data-pic");
+
+        $('.scopes-tab__item').removeClass('scopes-tab__item--active');
+        $(this).addClass('scopes-tab__item--active');
+
+        $('.scopes-tab__pic img').attr("src", pic);
     })
+
+    $('.button-up a').click(function () {
+        $('.main-menu__link').removeClass('main-menu__link--active');
+    });
 });

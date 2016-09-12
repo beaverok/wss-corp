@@ -1,4 +1,4 @@
-.price-tab#price-tab1
+.price-tab.price-tab--active#price-tab1
     .price-tab__icons-list
         .price-tab__icons-item
             a.price-tab__link.price-tab__link--active(href="#price-inner1")
@@ -47,3 +47,25 @@
                         img.price-tab__icon-pic(src="img/icon_wallet.png", alt="")
                         img.price-tab__icon-pic--active(src="img/icon_wallet--hover.png", alt="")
                 .price-tab__title Сопровождение опытной эксплуатации
+
+    include price-inner
+
+.price-tab#price-tab2
+    .price-tab__icons-list
+        .price-tab__icons-item
+            a.price-tab__link.price-tab__link--active(href="#price-inner1")
+                .price-tab__icon-wrap
+                    .price-tab__icon-inner
+                        img.price-tab__icon-pic(src="img/icon_wallet.png", alt="")
+                        img.price-tab__icon-pic--active(src="img/icon_wallet--hover.png", alt="")
+                .price-tab__title поставка и инсталляция wss portal
+
+        .price-tab__icons-item
+            a.price-tab__link(href="#price-inner2")
+                .price-tab__icon-wrap
+                    .price-tab__icon-inner
+                        img.price-tab__icon-pic(src="img/icon_wallet.png", alt="")
+                        img.price-tab__icon-pic--active(src="img/icon_wallet--hover.png", alt="")
+                .price-tab__title Адаптация цветовой схемы
+
+    include price-inner

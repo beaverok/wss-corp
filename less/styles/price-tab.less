@@ -1,8 +1,12 @@
 .price-tab {
-  display: block;
+  display: none;
   .ul-reset();
   margin: 0 auto 36px;
   .align-center();
+
+  &--active {
+    display: block;
+  }
 
   &__icons-item {
     display: inline-block;
@@ -14,6 +18,8 @@
 
     &__link {
       display: block;
+      .relative();
+      margin-bottom: 31px;
       .font-family(@font-reg);
       .font-size(1.3rem, 21px);
       color: @color-1e;
@@ -32,6 +38,17 @@
     }
     &__link:hover &__icon-pic--active, &__link--active &__icon-pic--active {
       opacity: 1;
+    }
+    &__link--active::after {
+      display: block;
+      .size(21px, 14px);
+      background-image: url(../img/spritesheet.png);
+      background-position: -43px -58px;
+      .absolute();
+      bottom: -31px;
+      left: 50%;
+      margin-left: -10px;
+      content: '';
     }
 
       &__icon-wrap {

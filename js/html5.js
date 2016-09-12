@@ -186,7 +186,7 @@
     ownerDocument.createDocumentFragment = Function('h,f', 'return function(){' +
       'var n=f.cloneNode(),c=n.createElement;' +
       'h.shivMethods&&(' +
-        // unroll the `createElement` calls
+        // unroll the `createElement` includes
         getElements().join().replace(/[\w\-:]+/g, function(nodeName) {
           data.createElem(nodeName);
           data.frag.createElement(nodeName);

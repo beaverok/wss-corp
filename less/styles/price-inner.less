@@ -1,0 +1,121 @@
+.price-inner {
+  display: none;
+  border: 1px dashed #848586;
+  .rounded(8px);
+  margin-top: 31px;
+  text-align: left;
+
+  &--active {
+    display: block;
+  }
+
+    &__title {
+      .size(509px, 234px);
+      .bg-color(@white);
+      .relative();
+      .pos();
+      float: left;
+      margin-right: 105px;
+      padding: 69px 0 0 40px;
+      border-top-left-radius: 8px;
+      .font-family(@font-reg);
+      .font-size(3rem, 37px);
+      color: @color-1e;
+      .uppercase();
+    }
+    &__title::after {
+      display: inline-block;
+      .size(84px, 234px);
+      .absolute();
+      top: 0;
+      right: -84px;
+      border-style: solid;
+      border-width: 117px 0 117px 84px;
+      border-color: transparent transparent transparent @white;
+      content: '';
+    }
+
+    &__descr {
+      margin-top: 53px;
+      float: left;
+    }
+      &__list {
+        .ul-reset();
+      }
+        &__list-item {
+          margin-bottom: 14px;
+          .font-family(@font-reg);
+          .font-size(1.4rem, 14px);
+          color: @color-1e;
+        }
+        &__list-item::before {
+          display: inline-block;
+          .size(22px, 17px);
+          .relative();
+          top: 3px;
+          margin-right: 18px;
+          background-image: url(../img/spritesheet.png);
+          background-position: -21px -58px;
+          content: '';
+        }
+
+      &__download {
+        display: block;
+        margin-top: 20px;
+        .font-family(@font-reg);
+        .font-size(1.4rem, 32px);
+        color: @color-1e;
+        .transition();
+      }
+      &__download::before {
+        display: inline-block;
+        .size(22px, 26px);
+        .relative();
+        top: 4px;
+        margin-right: 17px;
+        background-image: url(../img/spritesheet.png);
+        background-position: 0 -58px;
+        content: '';
+        vertical-align: top;
+      }
+      &__download:hover {
+        .color-lighten(@color-1e);
+      }
+
+    &__total {
+      .size(100%, 105px);
+      .clear();
+      background: url(../img/bg_price-block.jpg), url(../img/bg_pattern.png);
+      padding: 0 20px 0 48px;
+    }
+      &__sum {
+        display: inline-block;
+        margin: 0 66px 0 0;
+        .font-family(@font-light);
+        .font-size(1.8rem, 105px);
+        color: @white;
+        .uppercase();
+        vertical-align: top;
+      }
+        &__sum span {
+          .font-family(@font-bold);
+          font-size: 3rem;
+        }
+      &__time {
+        display: inline-block;
+        margin: 0;
+        .font-family(@font-light);
+        .font-size(1.8rem, 105px);
+        color: @white;
+        .uppercase();
+        vertical-align: top;
+      }
+        &__time span {
+          .font-family(@font-bold);
+          font-size: 3rem;
+        }
+      &__buttons {
+        margin-top: 26px;
+        float: right;
+      }
+}

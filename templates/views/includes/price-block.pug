@@ -1,14 +1,13 @@
-section.price-block
+section.price-block#price-block
     .price-block__inner
         .price-block__title <span>Стоимость и</span> процесс внедрения
 
         ul.price-block__tabs
             li.price-block__tabs-item
-                a.price-block__tabs-link.price-block__tabs-link--active(href="") стандартное внедрение
+                a.price-block__tabs-link.price-block__tabs-link--active(href="#price-tab1") стандартное внедрение
             li.price-block__tabs-item
-                a.price-block__tabs-link(href="") Базовое внедрение
+                a.price-block__tabs-link(href="#price-tab2") Базовое внедрение
             li.price-block__tabs-item
-                a.price-block__tabs-link(href="") индивидуальное внедрение
+                a.price-block__tabs-link(href="#price-tab3") индивидуальное внедрение
 
         include price-tab
-        include price-inner

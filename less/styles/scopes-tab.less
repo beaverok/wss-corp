@@ -58,10 +58,19 @@
       }
 
     &__pic {
-      max-width: 695px;
+      width: 630px;
       height: 378px;
       box-shadow: 0 0 65px 18px #ccc;
+      .relative();
       float: right;
-      overflow: hidden;
     }
+      &__pic-inner {
+        .size(100%, 100%);
+        .absolute();
+        .pos();
+        overflow: hidden;
+      }
+        &__pic--inner img {
+          max-width: 630px;
+        }
 }

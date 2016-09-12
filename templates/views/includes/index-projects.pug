@@ -1,17 +1,18 @@
-section.index-projects
+section.index-projects#projects-block
     .index-projects__inner
         h2.index-projects__title <span>проекты</span> по отраслям
+
         select.index-projects__select
-            option(selected=selected) Все проекты
-            option Топливно-энергетические компании
-            option Банки и финансовы организации
+            option(value="0", selected=selected) Все отрасли
+            option(value="1") Топливно-энергетические компании
+            option(value="2") Банки и финансовы организации
 
         - var x = 8;
         - var y = 8;
         ul.index-projects__list
             li.index-projects__item
                 - for (var i=1; i<=x; i++) {
-                .index-project
+                .index-project(data-type="1")
                     .index-project__pic
                         img(src="img/hh_logo.jpg", alt="")
                     .index-project__name Внедрение WSS Portal
@@ -22,7 +23,7 @@ section.index-projects
 
             li.index-projects__item
                 - for (var i=1; i<=y; i++) {
-                .index-project
+                .index-project(data-type="2")
                     .index-project__pic
                         img(src="img/socar_logo.jpg", alt="")
                     .index-project__name Внедрение WSS Portal
