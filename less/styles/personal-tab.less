@@ -7,6 +7,11 @@
   &__pic {
     max-width: 723px;
     float: left;
+
+    @media @screen-lg {
+      width: 45%;
+      margin-left: 30px;
+    }
   }
     &__pic img {
       width: 100%;
@@ -16,6 +21,10 @@
   &__right {
     max-width: 515px;
     float: right;
+
+    @media @screen-lg {
+      max-width: 45%;
+    }
   }
 
   &__descr {
@@ -29,6 +38,10 @@
   &__list {
     .ul-reset();
     margin-left: 42px;
+
+    @media @screen-lg {
+      margin-left: 0;
+    }
   }
     &__item {
       display: inline-block;

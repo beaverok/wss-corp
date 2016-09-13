@@ -14,8 +14,27 @@
     &.is-stuck &__logo {
       margin-top: 7px;
     }
+    &.is-stuck .main-menu {
+      @media @screen-md {
+        clear: none;
+      }
+    }
+    &.is-stuck .main-menu__item {
+      @media @screen-md {
+        margin-right: 0;
+      }
+    }
+    &.is-stuck .main-menu__list {
+      @media @screen-md {
+        top: 0;
+      }
+    }
     &.is-stuck &__contacts {
       margin-top: 5px;
+
+      @media @screen-md {
+        display: none;
+      }
     }
       &.is-stuck &__feedback-link {
         margin-top: 0;
@@ -46,6 +65,9 @@
 
       @media @screen-lg {
         margin-right: 8px;
+      }
+      @media @screen-md {
+        margin-right: 15px;
       }
     }
 

@@ -2,6 +2,11 @@
   .ul-reset();
   padding: 0 56px;
 
+  @media @screen-lg {
+    padding: 0;
+    .align-center();
+  }
+
     &__item {
       display: inline-block;
       width: 195px;
@@ -9,9 +14,18 @@
       padding-bottom: 102px;
       .relative();
       vertical-align: top;
+
+      @media @screen-lg {
+        width: 22%;
+        margin: 0 1%;
+      }
     }
     &__item:last-child {
       margin-right: 0;
+
+      @media @screen-lg {
+        margin: 0 1%;
+      }
     }
 
       &__title {

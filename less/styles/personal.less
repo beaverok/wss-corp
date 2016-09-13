@@ -25,6 +25,10 @@
     width: 100%;
     .absolute();
     top: 55%;
+
+    @media @screen-lg {
+      top: 50%;
+    }
   }
   & .bx-prev {
     display: block;
@@ -33,6 +37,10 @@
     .bg-image("../img/icon_arrow-grey-left.png");
     .absolute();
     left: -85px;
+
+    @media @screen-lg {
+      left: 20px;
+    }
   }
   & .bx-next {
     display: block;
@@ -41,5 +49,9 @@
     .bg-image("../img/icon_arrow-grey-right.png");
     .absolute();
     right: -85px;
+
+    @media @screen-lg {
+      right: 20px;
+    }
   }
 }

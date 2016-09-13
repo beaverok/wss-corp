@@ -11,6 +11,10 @@
     color: @white;
     .uppercase();
     vertical-align: middle;
+
+    @media @screen-md {
+      margin-right: 20px;
+    }
   }
 
     &__list {
@@ -23,9 +27,17 @@
         height: 100px;
         margin-right: 34px;
         line-height: 100px;
+
+        @media @screen-md {
+          margin-right: 15px;
+        }
       }
       &__link img {
         max-height: 44px;
         vertical-align: middle;
+
+        @media @screen-md {
+          max-width: 110px;
+        }
       }
 }

@@ -11,6 +11,10 @@
   &__list {
     width: 545px;
     float: left;
+
+    @media @screen-lg {
+      width: 400px;
+    }
   }
 
     &__item {
@@ -63,6 +67,11 @@
       box-shadow: 0 0 65px 18px #ccc;
       .relative();
       float: right;
+
+      @media @screen-lg {
+        width: 580px;
+        right: 10px;
+      }
     }
       &__pic-inner {
         .size(100%, 100%);

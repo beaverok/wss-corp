@@ -22,6 +22,11 @@
       .font-size(3rem, 37px);
       color: @color-1e;
       .uppercase();
+
+      @media @screen-lg {
+        width: 450px;
+        padding-top: 40px;
+      }
     }
     &__title::after {
       display: inline-block;
@@ -38,6 +43,11 @@
     &__descr {
       margin-top: 53px;
       float: left;
+
+      @media @screen-lg {
+        max-width: 40%;
+        margin-top: 32px;
+      }
     }
       &__list {
         .ul-reset();
@@ -47,6 +57,10 @@
           .font-family(@font-reg);
           .font-size(1.4rem, 14px);
           color: @color-1e;
+
+          @media @screen-lg {
+            padding-left: 37px;
+          }
         }
         &__list-item::before {
           display: inline-block;
@@ -57,6 +71,11 @@
           background-image: url(../img/spritesheet.png);
           background-position: -21px -58px;
           content: '';
+
+          @media @screen-lg {
+            left: -37px;
+            margin-right: -22px;
+          }
         }
 
       &__download {
@@ -87,6 +106,10 @@
       .clear();
       background: url(../img/bg_price-block.jpg), url(../img/bg_pattern.png);
       padding: 0 20px 0 48px;
+
+      @media @screen-lg {
+        padding: 0 20px;
+      }
     }
       &__sum {
         display: inline-block;
@@ -96,10 +119,18 @@
         color: @white;
         .uppercase();
         vertical-align: top;
+
+        @media @screen-lg {
+          margin-right: 35px;
+        }
       }
         &__sum span {
           .font-family(@font-bold);
           font-size: 3rem;
+
+          @media @screen-lg {
+            font-size: 2rem;
+          }
         }
       &__time {
         display: inline-block;
@@ -113,9 +144,18 @@
         &__time span {
           .font-family(@font-bold);
           font-size: 3rem;
+
+          @media @screen-lg {
+            font-size: 2rem;
+          }
         }
       &__buttons {
         margin-top: 26px;
         float: right;
       }
+        &__buttons .btn-link--demo {
+          @media @screen-lg {
+            margin-right: 0;
+          }
+        }
 }
