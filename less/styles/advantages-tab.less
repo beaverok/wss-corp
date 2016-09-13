@@ -19,6 +19,10 @@
       float: left;
       .transition();
       cursor: default;
+
+      @media @screen-md {
+        padding: 15px 15px 0;
+      }
     }
     &__item:nth-of-type(2n) {
       border-right: 0;
@@ -45,11 +49,19 @@
       &__icon {
         .absolute();
         .pos(42px, 37px);
+
+        @media @screen-md {
+          .pos(20px, 15px);
+        }
       }
       &__icon--hover {
         display: none;
         .absolute();
         .pos(42px, 37px);
+
+        @media @screen-md {
+          .pos(20px, 15px);
+        }
       }
 
       &__item:hover &__icon {
@@ -61,6 +73,10 @@
 
       &__descr {
         margin-left: 66px;
+
+        @media @screen-md {
+          margin-left: 45px;
+        }
       }
         &__title {
           height: 44px;

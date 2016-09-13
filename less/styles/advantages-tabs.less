@@ -6,6 +6,14 @@
     padding: 0;
     .align-center();
   }
+  @media @screen-md {
+    padding: 0;
+    .align-center();
+  }
+  @media @screen-xs {
+    padding: 0;
+    .align-center();
+  }
 
     &__item {
       display: inline-block;
@@ -19,11 +27,19 @@
         width: 22%;
         margin: 0 1%;
       }
+      @media @screen-md {
+        width: 22%;
+        margin: 0 1%;
+        padding-bottom: 65px;
+      }
     }
     &__item:last-child {
       margin-right: 0;
 
       @media @screen-lg {
+        margin: 0 1%;
+      }
+      @media @screen-md {
         margin: 0 1%;
       }
     }
@@ -37,6 +53,10 @@
         .uppercase();
         .align-center();
         .transition();
+
+        @media @screen-md {
+          font-size: 1.5rem;
+        }
       }
       &__title--active, &__title:hover {
         color: @red;

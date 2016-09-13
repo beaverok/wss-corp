@@ -1062,7 +1062,7 @@ a img {
   background-image: url("../img/bg_open-btn.png");
 }
 .btn-link--present {
-  background: linear-gradient(to right, #fff 20%, #fff 20%, #fff 80%, transparent 80%);
+  background: linear-gradient(to right, #fff 20%, #fff 20%, #fff 81%, transparent 81%);
   background-position: 0 0;
   color: #000;
 }
@@ -1175,6 +1175,18 @@ a img {
     text-align: center;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tabs {
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .advantages-tabs {
+    padding: 0;
+    text-align: center;
+  }
+}
 .advantages-tabs__item {
   display: inline-block;
   width: 195px;
@@ -1189,10 +1201,22 @@ a img {
     margin: 0 1%;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tabs__item {
+    width: 22%;
+    margin: 0 1%;
+    padding-bottom: 65px;
+  }
+}
 .advantages-tabs__item:last-child {
   margin-right: 0;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
+  .advantages-tabs__item:last-child {
+    margin: 0 1%;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
   .advantages-tabs__item:last-child {
     margin: 0 1%;
   }
@@ -1207,6 +1231,11 @@ a img {
   text-transform: uppercase;
   text-align: center;
   transition: all 0.2s ease-out;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tabs__title {
+    font-size: 1.5rem;
+  }
 }
 .advantages-tabs__title--active,
 .advantages-tabs__title:hover {
@@ -1260,6 +1289,11 @@ a img {
   transition: all 0.2s ease-out;
   cursor: default;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tab__item {
+    padding: 15px 15px 0;
+  }
+}
 .advantages-tab__item:nth-of-type(2n) {
   border-right: 0;
 }
@@ -1286,11 +1320,23 @@ a img {
   top: 42px;
   left: 37px;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tab__icon {
+    top: 20px;
+    left: 15px;
+  }
+}
 .advantages-tab__icon--hover {
   display: none;
   position: absolute;
   top: 42px;
   left: 37px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tab__icon--hover {
+    top: 20px;
+    left: 15px;
+  }
 }
 .advantages-tab__item:hover .advantages-tab__icon {
   display: none;
@@ -1300,6 +1346,11 @@ a img {
 }
 .advantages-tab__descr {
   margin-left: 66px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .advantages-tab__descr {
+    margin-left: 45px;
+  }
 }
 .advantages-tab__title {
   height: 44px;
@@ -1448,6 +1499,12 @@ a img {
     width: 400px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .scopes-tab__list {
+    float: none;
+    margin: 0 auto 45px;
+  }
+}
 .scopes-tab__item {
   min-height: 58px;
   position: relative;
@@ -1514,6 +1571,12 @@ a img {
     right: 10px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .scopes-tab__pic {
+    float: none;
+    margin: 0 auto;
+  }
+}
 .scopes-tab__pic-inner {
   width: 100%;
   height: 100%;
@@ -1576,6 +1639,14 @@ a img {
     font-size: 2.5rem;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .scopes-call__title {
+    max-width: 300px;
+    top: 32px;
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
 .scopes-call__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
 }
@@ -1592,9 +1663,16 @@ a img {
   color: #fff;
   text-transform: uppercase;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .scopes-call__note {
+    padding: 16px 22px;
+    font-size: 1.6rem;
+  }
+}
 .scopes-call__buttons {
   position: absolute;
   top: 73px;
+  right: 0;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .scopes-call__buttons {
@@ -1664,6 +1742,11 @@ a img {
     top: 50%;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .personal .bx-controls {
+    top: 65%;
+  }
+}
 .personal .bx-prev {
   display: block;
   width: 35px;
@@ -1677,6 +1760,11 @@ a img {
     left: 20px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .personal .bx-prev {
+    left: 10px;
+  }
+}
 .personal .bx-next {
   display: block;
   width: 35px;
@@ -1688,6 +1776,11 @@ a img {
 @media (min-width: 1007px) and (max-width: 1239px) {
   .personal .bx-next {
     right: 20px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .personal .bx-next {
+    right: 10px;
   }
 }
 .personal-tabs {
@@ -1740,6 +1833,12 @@ a img {
     margin-left: 30px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .personal-tab__pic {
+    float: none;
+    margin: 0 auto 20px;
+  }
+}
 .personal-tab__pic img {
   width: 100%;
   height: auto;
@@ -1751,6 +1850,12 @@ a img {
 @media (min-width: 1007px) and (max-width: 1239px) {
   .personal-tab__right {
     max-width: 45%;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .personal-tab__right {
+    float: none;
+    margin: 0 auto;
   }
 }
 .personal-tab__descr {
@@ -1768,6 +1873,11 @@ a img {
   margin-left: 42px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
+  .personal-tab__list {
+    margin-left: 0;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
   .personal-tab__list {
     margin-left: 0;
   }
@@ -1902,6 +2012,11 @@ a img {
     padding-top: 40px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__title {
+    float: none;
+  }
+}
 .price-inner__title::after {
   display: inline-block;
   width: 84px;
@@ -1922,6 +2037,13 @@ a img {
   .price-inner__descr {
     max-width: 40%;
     margin-top: 32px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__descr {
+    float: none;
+    margin: 32px 0 25px 10px;
+    clear: both;
   }
 }
 .price-inner__list {
@@ -1994,6 +2116,12 @@ a img {
     padding: 0 20px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__total {
+    padding: 0 10px;
+    border-bottom-right-radius: 8px;
+  }
+}
 .price-inner__sum {
   display: inline-block;
   margin: 0 66px 0 0;
@@ -2009,11 +2137,22 @@ a img {
     margin-right: 35px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__sum {
+    margin: 0 15%;
+    line-height: 35px;
+  }
+}
 .price-inner__sum span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 3rem;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
+  .price-inner__sum span {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
   .price-inner__sum span {
     font-size: 2rem;
   }
@@ -2028,6 +2167,11 @@ a img {
   text-transform: uppercase;
   vertical-align: top;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__time {
+    line-height: 35px;
+  }
+}
 .price-inner__time span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 3rem;
@@ -2037,9 +2181,21 @@ a img {
     font-size: 2rem;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__time span {
+    font-size: 2rem;
+  }
+}
 .price-inner__buttons {
   margin-top: 26px;
   float: right;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__buttons {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .price-inner__buttons .btn-link--demo {
@@ -2109,6 +2265,11 @@ a img {
   left: 50%;
   margin-left: -10px;
   content: '';
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-tab__link--active::after {
+    display: none;
+  }
 }
 .price-tab__icon-wrap {
   width: 131px;
@@ -2824,9 +2985,29 @@ a img {
   border-radius: 8px;
   float: left;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts__wrap {
+    float: none;
+    width: 50%;
+    top: 10px;
+    margin: 0;
+    padding: 35px 68px 35px 46px;
+  }
+}
+.contacts__wrap::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
 .contacts__left {
   width: 285px;
   float: left;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts__left {
+    margin-bottom: 20px;
+  }
 }
 .contacts__title {
   margin-bottom: 33px;
@@ -2836,6 +3017,11 @@ a img {
   color: #000;
   text-transform: uppercase;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts__title {
+    margin-bottom: 25px;
+  }
+}
 .contacts__list-item,
 .contacts__list-item a {
   margin-bottom: 26px;
@@ -2844,6 +3030,12 @@ a img {
   line-height: 14px;
   color: #000;
   text-decoration: none;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts__list-item,
+  .contacts__list-item a {
+    margin-bottom: 18px;
+  }
 }
 .contacts__list-item label {
   display: inline-block;
@@ -3002,6 +3194,12 @@ a img {
   z-index: 1000;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
+  .button-up a {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
   .button-up a {
     right: 20px;
     bottom: 20px;

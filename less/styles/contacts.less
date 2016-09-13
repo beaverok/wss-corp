@@ -23,10 +23,29 @@
       .bg-color(rgba(255,255,255,0.7));
       .rounded(8px);
       float: left;
+
+      @media @screen-md {
+        float: none;
+        width: 50%;
+        top: 10px;
+        margin: 0;
+        padding: 35px 68px 35px 46px;
+      }
+
+      &::after {
+        display: block;
+        width: 100%;
+        .clear();
+        content: '';
+      }
     }
       &__left {
         width: 285px;
         float: left;
+
+        @media @screen-md {
+          margin-bottom: 20px;
+        }
       }
         &__title {
           margin-bottom: 33px;
@@ -34,6 +53,10 @@
           .font-size(1.5rem, 15px);
           color: @color;
           .uppercase();
+
+          @media @screen-md {
+            margin-bottom: 25px;
+          }
         }
         &__list-item, &__list-item a {
           margin-bottom: 26px;
@@ -41,6 +64,10 @@
           .font-size(1.4rem, 14px);
           color: @color;
           .no-decor();
+
+          @media @screen-md {
+            margin-bottom: 18px;
+          }
         }
           &__list-item label {
             display: inline-block;

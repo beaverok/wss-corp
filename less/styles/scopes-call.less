@@ -23,6 +23,11 @@
         max-width: 450px;
         font-size: 2.5rem;
       }
+      @media @screen-md {
+        max-width: 300px;
+        top: 32px;
+        .font-size(2rem, 30px);
+      }
     }
       &__title span {
         .font-family(@font-light);
@@ -38,10 +43,16 @@
       .font-size(1.8rem, 24px);
       color: @white;
       .uppercase();
+
+      @media @screen-md {
+        padding: 16px 22px;
+        font-size: 1.6rem;
+      }
     }
     &__buttons {
       .absolute();
       top: 73px;
+      right: 0;
 
       @media @screen-lg {
         right: 5px;
