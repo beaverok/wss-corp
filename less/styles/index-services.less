@@ -32,7 +32,7 @@
   &__item {
     width: 49%;
     display: inline-block;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
     vertical-align: top;
 
     @media @screen-xs {
@@ -41,17 +41,20 @@
   }
   &__item::before {
     .relative();
-    top: 3px;
+    top: 1px;
     .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
     background-position: -78px -58px;
   }
   &__link {
+    display: inline-block;
     .font-family(@font-reg);
-    .font-size(1.3rem, 20px);
+    .font-size(1.3rem, 13px);
     color: @color-33;
     .uppercase();
     .no-decor();
     .transition();
+    border-bottom: 1px dotted @color-33;
+    vertical-align: top;
   }
   &__link:hover {
     .color-lighten(@color-33);

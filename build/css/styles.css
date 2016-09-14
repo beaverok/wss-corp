@@ -550,11 +550,12 @@ a img {
     margin: 0 auto 44px;
   }
 }
-.page-header__phone {
+.page-header__phone a {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
   font-size: 2.9rem;
   line-height: 24px;
   color: #afafaf;
+  text-decoration: none;
 }
 .page-header__phone span {
   display: inline-block;
@@ -3007,7 +3008,7 @@ a img {
 .index-services__item {
   width: 49%;
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
   vertical-align: top;
 }
 @media (min-width: 320px) and (max-width: 766px) {
@@ -3017,7 +3018,7 @@ a img {
 }
 .index-services__item::before {
   position: relative;
-  top: 3px;
+  top: 1px;
   display: inline-block;
   width: 8px;
   height: 12px;
@@ -3029,13 +3030,16 @@ a img {
   background-position: -78px -58px;
 }
 .index-services__link {
+  display: inline-block;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
-  line-height: 20px;
+  line-height: 13px;
   color: #333;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s ease-out;
+  border-bottom: 1px dotted #333;
+  vertical-align: top;
 }
 .index-services__link:hover {
   color: #666666;
@@ -3090,6 +3094,9 @@ a img {
   .index-projects__title {
     line-height: 28px;
   }
+}
+.index-projects__title span {
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
 }
 .index-projects__select {
   display: block;

@@ -3808,9 +3808,11 @@ $(document).ready(function () {
         $('.main-menu').slideToggle();
     });
     $(document).click(function(event) {
-        if ($(event.target).closest(".page-header").length) return;
-        $('.main-menu').slideUp();
-        event.stopPropagation();
+        if ($(window).width() < 767 && $('.main-menu:visible')) {
+            if ($(event.target).closest(".page-header").length) return;
+            $('.main-menu').slideUp();
+            event.stopPropagation();
+        }
     });
 
     $('.scopes-tab__item').click(function () {
