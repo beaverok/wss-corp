@@ -19,6 +19,9 @@
       width: 150px;
       margin-left: 10px;
     }
+    @media @screen-xs {
+      margin: 0 auto;
+    }
   }
 
     &__link {
@@ -58,6 +61,9 @@
       @media @screen-md {
         display: none;
       }
+      @media @screen-xs {
+        display: none;
+      }
     }
 
       &__icon-wrap {
@@ -66,6 +72,10 @@
         margin: 0 auto 41px;
         border: 1px dotted @color-1e;
         .rounded(131px);
+
+        @media @screen-xs {
+          margin: 0 auto 20px;
+        }
       }
       &__icon-wrap::after {
         display: block;
@@ -79,9 +89,17 @@
         @media @screen-lg {
           width: 34px;
         }
+        @media @screen-xs {
+          display: none;
+        }
       }
       &__icons-item:last-child &__icon-wrap::after {
         display: none;
+      }
+      &__icons-item:nth-of-type(3) &__icon-wrap::after {
+        @media @screen-md {
+          display: none;
+        }
       }
         &__icon-inner {
           display: inline-block;

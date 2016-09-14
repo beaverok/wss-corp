@@ -3,8 +3,16 @@
   margin-bottom: 66px;
   padding-top: 61px;
 
+  @media @screen-xs {
+    padding-top: 30px;
+  }
+
   &__inner {
     .container();
+
+    @media @screen-xs {
+      padding: 0;
+    }
   }
 
     &__title {
@@ -15,6 +23,10 @@
       color: @color-1e;
       .align-center();
       .uppercase();
+
+      @media @screen-xs {
+        font-size: 2.5rem;
+      }
     }
       &__title span {
         .font-family(@font-light);

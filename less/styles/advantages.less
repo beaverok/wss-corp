@@ -10,6 +10,11 @@
       .font-size(3rem, 37px);
       color: @color-1e;
       .align-center();
+
+      @media @screen-xs {
+        margin-bottom: 30px;
+        .font-size(2.5rem, 32px);
+      }
     }
       &__title span {
         .font-family(@font-bold);
@@ -24,12 +29,21 @@
       color: @grey-a4;
       .align-center();
       .uppercase();
+
+      @media @screen-xs {
+        margin-bottom: 40px;
+      }
     }
 
     &__bot {
       border-top: 4px solid @red;
       margin-bottom: 79px;
       padding-top: 71px;
+
+      @media @screen-xs {
+        margin-bottom: 40px;
+        padding-top: 40px;
+      }
     }
     &__bot::after {
       display: block;

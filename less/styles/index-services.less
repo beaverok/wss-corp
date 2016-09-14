@@ -5,7 +5,7 @@
     margin-left: 370px;
   }
   @media @screen-xs {
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
   }
 
   &__title {
@@ -14,6 +14,10 @@
     .font-size(3rem, 28px);
     color: @color-1e;
     text-transform: uppercase;
+
+    @media @screen-xs {
+      .align-center();
+    }
   }
   &__descr {
     margin-bottom: 35px;

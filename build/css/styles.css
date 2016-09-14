@@ -438,10 +438,25 @@ a img {
     top: 0;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header.is-stuck .main-menu__list {
+    top: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header.is-stuck .main-menu__link {
+    line-height: 16px;
+  }
+}
 .page-header.is-stuck .page-header__contacts {
   margin-top: 5px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
+  .page-header.is-stuck .page-header__contacts {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
   .page-header.is-stuck .page-header__contacts {
     display: none;
   }
@@ -454,7 +469,7 @@ a img {
     height: auto;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .page-header {
     height: auto;
   }
@@ -478,7 +493,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .page-header__inner {
     width: 320px;
     padding-left: 5px;
@@ -507,6 +522,11 @@ a img {
     margin-right: 15px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header__logo {
+    margin-top: 10px;
+  }
+}
 .page-header__contacts {
   width: 258px;
   height: auto;
@@ -521,7 +541,7 @@ a img {
     right: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .page-header__contacts {
     float: none;
     clear: both;
@@ -576,9 +596,10 @@ a img {
   right: 10px;
   background-image: linear-gradient(red 20%, white 20%, white 40%, red 40%, red 60%, red 60%, white 60%, white 80%, red 80%, red 100%);
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .page-header__menu-btn {
     display: block;
+    top: 9px;
   }
 }
 .main-menu {
@@ -591,7 +612,7 @@ a img {
     clear: both;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .main-menu {
     display: none;
   }
@@ -614,7 +635,7 @@ a img {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .main-menu__list {
     display: block;
     width: 100%;
@@ -636,7 +657,7 @@ a img {
     margin-right: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .main-menu__item {
     display: block;
     margin: 0 0 5px;
@@ -665,7 +686,7 @@ a img {
     line-height: 75px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .main-menu__link {
     line-height: 16px;
     color: #fff;
@@ -679,7 +700,7 @@ a img {
   color: #e42116;
   transition: all 0.2s ease-out;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .main-menu__link:hover,
   .main-menu__link--active {
     background: none;
@@ -705,15 +726,21 @@ a img {
     width: 100%;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .top-slider {
     width: 100%;
+    height: 655px;
   }
 }
 .top-slider .bx-controls {
   width: 100%;
   position: absolute;
   top: 36%;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider .bx-controls {
+    top: 20%;
+  }
 }
 .top-slider .bx-prev {
   display: block;
@@ -753,16 +780,28 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .top-slider__slides {
     width: 320px;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__slides {
+    height: 655px;
+    padding: 0;
+  }
+}
 .top-slider__slide {
   display: inline-block;
   height: 554px !important;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__slide {
+    height: 675px !important;
+    text-align: center;
+  }
 }
 .top-slider__slide-bg {
   width: 100%;
@@ -774,6 +813,11 @@ a img {
   background-position: center 0;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
+  .top-slider__slide-bg {
+    z-index: -1;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
   .top-slider__slide-bg {
     z-index: -1;
   }
@@ -815,6 +859,11 @@ a img {
     display: none;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__slides .fs_loader {
+    display: none;
+  }
+}
 .top-slider__descr {
   width: 1240px;
   margin: 0 auto;
@@ -836,7 +885,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .top-slider__descr {
     width: 320px;
     padding-left: 5px;
@@ -856,7 +905,7 @@ a img {
     padding-left: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .top-slider__descr {
     width: 100%;
     padding: 10px;
@@ -873,6 +922,16 @@ a img {
     width: 250px;
     top: 105px;
     left: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__pic {
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: auto;
+    margin-bottom: 15px;
   }
 }
 .top-slider__text {
@@ -901,6 +960,15 @@ a img {
     right: 10px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__title {
+    font-size: 2.2rem;
+    line-height: 30px;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
 .top-slider__title span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   color: #fff;
@@ -926,6 +994,14 @@ a img {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__price {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2.2rem;
+  }
+}
 .top-slider__price span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   color: #fff;
@@ -937,6 +1013,18 @@ a img {
   .top-slider__buttons {
     bottom: 205px;
     left: 292px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__buttons {
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-slider__buttons .btn-link {
+    margin: 0 0 10px;
   }
 }
 .top-slider__bottom {
@@ -970,11 +1058,17 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .top-clients {
     width: 320px;
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-clients {
+    line-height: 30px;
+    text-align: center;
   }
 }
 .top-clients__title {
@@ -990,6 +1084,16 @@ a img {
 @media (min-width: 751px) and (max-width: 1023px) {
   .top-clients__title {
     margin-right: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-clients__title {
+    display: block;
+    width: 100%;
+    margin: 0 auto 4px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    text-align: center;
   }
 }
 .top-clients__list {
@@ -1010,6 +1114,13 @@ a img {
     margin-right: 15px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-clients__item {
+    height: auto;
+    margin-right: 10px;
+    line-height: 30px;
+  }
+}
 .top-clients__link img {
   max-height: 44px;
   vertical-align: middle;
@@ -1017,6 +1128,11 @@ a img {
 @media (min-width: 751px) and (max-width: 1023px) {
   .top-clients__link img {
     max-width: 110px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-clients__link img {
+    max-width: 90px;
   }
 }
 .btn-link {
@@ -1096,7 +1212,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .advantages__top-inner {
     width: 320px;
     padding-left: 5px;
@@ -1112,6 +1228,13 @@ a img {
   color: #1e1e1e;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages__title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 32px;
+  }
+}
 .advantages__title span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -1126,10 +1249,21 @@ a img {
   text-align: center;
   text-transform: uppercase;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages__sub-title {
+    margin-bottom: 40px;
+  }
+}
 .advantages__bot {
   border-top: 4px solid #e42116;
   margin-bottom: 79px;
   padding-top: 71px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages__bot {
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
 }
 .advantages__bot::after {
   display: block;
@@ -1156,7 +1290,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .advantages__bot-inner {
     width: 320px;
     padding-left: 5px;
@@ -1181,7 +1315,7 @@ a img {
     text-align: center;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .advantages-tabs {
     padding: 0;
     text-align: center;
@@ -1208,6 +1342,13 @@ a img {
     padding-bottom: 65px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tabs__item {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0 50px;
+  }
+}
 .advantages-tabs__item:last-child {
   margin-right: 0;
 }
@@ -1219,6 +1360,11 @@ a img {
 @media (min-width: 751px) and (max-width: 1023px) {
   .advantages-tabs__item:last-child {
     margin: 0 1%;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tabs__item:last-child {
+    margin: 0 0 20px;
   }
 }
 .advantages-tabs__title {
@@ -1260,6 +1406,11 @@ a img {
 .advantages-tabs__title--active::after {
   display: block;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tabs__title--active::after {
+    display: none;
+  }
+}
 .advantages-tabs__icon {
   margin-bottom: 24px;
 }
@@ -1294,6 +1445,13 @@ a img {
     padding: 15px 15px 0;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__item {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
+}
 .advantages-tab__item:nth-of-type(2n) {
   border-right: 0;
 }
@@ -1312,8 +1470,25 @@ a img {
 .advantages-tab__item:nth-of-type(1):hover {
   border-top-left-radius: 8px;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__item:nth-of-type(1):hover {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
 .advantages-tab__item:nth-of-type(2):hover {
   border-top-right-radius: 8px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__item:nth-of-type(2):hover {
+    border-radius: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 }
 .advantages-tab__icon {
   position: absolute;
@@ -1324,6 +1499,11 @@ a img {
   .advantages-tab__icon {
     top: 20px;
     left: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__icon {
+    display: none;
   }
 }
 .advantages-tab__icon--hover {
@@ -1344,12 +1524,22 @@ a img {
 .advantages-tab__item:hover .advantages-tab__icon--hover {
   display: block;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__item:hover .advantages-tab__icon--hover {
+    display: none;
+  }
+}
 .advantages-tab__descr {
   margin-left: 66px;
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .advantages-tab__descr {
     margin-left: 45px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__descr {
+    margin-left: 0;
   }
 }
 .advantages-tab__title {
@@ -1362,6 +1552,12 @@ a img {
   text-transform: uppercase;
   overflow: hidden;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__title {
+    height: auto;
+    font-size: 1.6rem;
+  }
+}
 .advantages-tab__text {
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -1370,6 +1566,12 @@ a img {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   filter: alpha(opacity=50);
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .advantages-tab__text {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
 }
 .advantages-tab__item:hover .advantages-tab__title {
   color: #fff;
@@ -1384,6 +1586,11 @@ a img {
   background-color: #f0f0f0;
   margin-bottom: 66px;
   padding-top: 61px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes {
+    padding-top: 30px;
+  }
 }
 .scopes__inner {
   width: 1240px;
@@ -1404,11 +1611,16 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .scopes__inner {
     width: 320px;
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes__inner {
+    padding: 0;
   }
 }
 .scopes__title {
@@ -1420,6 +1632,11 @@ a img {
   color: #1e1e1e;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes__title {
+    font-size: 2.5rem;
+  }
 }
 .scopes__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
@@ -1439,8 +1656,20 @@ a img {
   margin-bottom: 21px;
   vertical-align: top;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tabs__item {
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
 .scopes-tabs__item:last-child {
   margin-right: 0;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tabs__item:last-child {
+    display: block;
+    margin: 0 auto 15px;
+  }
 }
 .scopes-tabs__link {
   display: inline-block;
@@ -1480,11 +1709,16 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .scopes-tab {
     width: 320px;
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tab {
+    margin-bottom: 40px;
   }
 }
 .scopes-tab--active {
@@ -1505,6 +1739,11 @@ a img {
     margin: 0 auto 45px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tab__list {
+    width: 100%;
+  }
+}
 .scopes-tab__item {
   min-height: 58px;
   position: relative;
@@ -1513,6 +1752,11 @@ a img {
   transition: all 0.2s ease-out;
   background-position: right top;
   cursor: default;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tab__item {
+    padding: 0 10px 0 0;
+  }
 }
 .scopes-tab__item::before {
   display: block;
@@ -1528,6 +1772,11 @@ a img {
   top: 0;
   left: 0;
   content: '';
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tab__item::before {
+    display: none;
+  }
 }
 .scopes-tab__item:hover,
 .scopes-tab__item--active {
@@ -1577,6 +1826,13 @@ a img {
     margin: 0 auto;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tab__pic {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+}
 .scopes-tab__pic-inner {
   width: 100%;
   height: 100%;
@@ -1588,6 +1844,11 @@ a img {
 .scopes-tab__pic--inner img {
   max-width: 630px;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-tab__pic--inner img {
+    max-width: 300px;
+  }
+}
 .scopes-call {
   width: 100%;
   height: 157px;
@@ -1596,6 +1857,13 @@ a img {
   background-repeat: no-repeat;
   background-image: url("../img/bg_capability-bottom.jpg");
   background-position: center 0;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-call {
+    height: auto;
+    background: none;
+    background-color: #262e3c;
+  }
 }
 .scopes-call__inner {
   width: 1240px;
@@ -1617,7 +1885,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .scopes-call__inner {
     width: 320px;
     padding-left: 5px;
@@ -1647,6 +1915,16 @@ a img {
     line-height: 30px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-call__title {
+    max-width: 100%;
+    top: 0;
+    margin: 20px 0 20px;
+    font-size: 2rem;
+    line-height: 30px;
+    text-align: center;
+  }
+}
 .scopes-call__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
 }
@@ -1669,6 +1947,17 @@ a img {
     font-size: 1.6rem;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-call__note {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
 .scopes-call__buttons {
   position: absolute;
   top: 73px;
@@ -1677,6 +1966,19 @@ a img {
 @media (min-width: 1007px) and (max-width: 1239px) {
   .scopes-call__buttons {
     right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-call__buttons {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .scopes-call__buttons .btn-link {
+    margin: 0 auto 15px;
   }
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -1691,6 +1993,12 @@ a img {
   border-bottom: 4px solid #e2e2e2;
   margin-bottom: 74px;
   padding-bottom: 60px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
 }
 .personal__inner {
   width: 1240px;
@@ -1712,7 +2020,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .personal__inner {
     width: 320px;
     padding-left: 5px;
@@ -1728,6 +2036,11 @@ a img {
   color: #1e1e1e;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal__title {
+    font-size: 2.5rem;
+  }
 }
 .personal__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
@@ -1745,6 +2058,11 @@ a img {
 @media (min-width: 751px) and (max-width: 1023px) {
   .personal .bx-controls {
     top: 65%;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal .bx-controls {
+    display: none;
   }
 }
 .personal .bx-prev {
@@ -1797,8 +2115,19 @@ a img {
   margin-bottom: 21px;
   vertical-align: top;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal-tabs__item {
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
 .personal-tabs__item:last-child {
   margin-right: 0;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal-tabs__item:last-child {
+    margin: 0 auto;
+  }
 }
 .personal-tabs__link {
   display: inline-block;
@@ -1882,6 +2211,11 @@ a img {
     margin-left: 0;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal-tab__list {
+    margin-left: 0;
+  }
+}
 .personal-tab__item {
   display: inline-block;
   margin-bottom: 14px;
@@ -1889,6 +2223,11 @@ a img {
   font-size: 1.4rem;
   line-height: 14px;
   color: #1e1e1e;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal-tab__item {
+    padding-left: 30px;
+  }
 }
 .personal-tab__item::before {
   display: inline-block;
@@ -1901,10 +2240,22 @@ a img {
   top: 3px;
   content: '';
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .personal-tab__item::before {
+    left: -30px;
+    margin-right: -22px;
+  }
+}
 .price-block {
   background-color: #f0f0f0;
   margin-bottom: 77px;
   padding: 66px 0 75px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-block {
+    margin-bottom: 40px;
+    padding: 30px 0 0;
+  }
 }
 .price-block__inner {
   width: 1240px;
@@ -1926,7 +2277,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .price-block__inner {
     width: 320px;
     padding-left: 5px;
@@ -1942,6 +2293,11 @@ a img {
   color: #1e1e1e;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-block__title {
+    font-size: 2.5rem;
+  }
 }
 .price-block__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
@@ -1959,6 +2315,12 @@ a img {
   margin-right: 45px;
   margin-bottom: 21px;
   vertical-align: top;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-block__tabs-item {
+    display: block;
+    margin: 0 auto 15px;
+  }
 }
 .price-block__tabs-item:last-child {
   margin-right: 0;
@@ -2017,6 +2379,16 @@ a img {
     float: none;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__title {
+    width: 100%;
+    height: auto;
+    margin: 0 0 40px;
+    padding: 20px;
+    font-size: 2rem;
+    line-height: 26px;
+  }
+}
 .price-inner__title::after {
   display: inline-block;
   width: 84px;
@@ -2028,6 +2400,17 @@ a img {
   border-width: 117px 0 117px 84px;
   border-color: transparent transparent transparent #fff;
   content: '';
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__title::after {
+    width: 100%;
+    height: 20px;
+    top: auto;
+    bottom: -19px;
+    right: 0;
+    border-width: 20px 150px 0 150px;
+    border-color: #fff transparent transparent transparent;
+  }
 }
 .price-inner__descr {
   margin-top: 53px;
@@ -2046,10 +2429,22 @@ a img {
     clear: both;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__descr {
+    float: none;
+    margin: 32px 0 25px 10px;
+    clear: both;
+  }
+}
 .price-inner__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__list {
+    padding-right: 10px;
+  }
 }
 .price-inner__list-item {
   margin-bottom: 14px;
@@ -2061,6 +2456,11 @@ a img {
 @media (min-width: 1007px) and (max-width: 1239px) {
   .price-inner__list-item {
     padding-left: 37px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__list-item {
+    padding-left: 30px;
   }
 }
 .price-inner__list-item::before {
@@ -2077,6 +2477,12 @@ a img {
 @media (min-width: 1007px) and (max-width: 1239px) {
   .price-inner__list-item::before {
     left: -37px;
+    margin-right: -22px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__list-item::before {
+    left: -30px;
     margin-right: -22px;
   }
 }
@@ -2122,6 +2528,19 @@ a img {
     border-bottom-right-radius: 8px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__total {
+    float: none;
+    height: auto;
+    margin: 32px 0 0;
+    padding: 0;
+    background: none;
+    background-color: #262e3c;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    clear: both;
+  }
+}
 .price-inner__sum {
   display: inline-block;
   margin: 0 66px 0 0;
@@ -2143,6 +2562,14 @@ a img {
     line-height: 35px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__sum {
+    display: block;
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+  }
+}
 .price-inner__sum span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 3rem;
@@ -2153,6 +2580,11 @@ a img {
   }
 }
 @media (min-width: 751px) and (max-width: 1023px) {
+  .price-inner__sum span {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
   .price-inner__sum span {
     font-size: 2rem;
   }
@@ -2172,6 +2604,13 @@ a img {
     line-height: 35px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__time {
+    display: block;
+    line-height: 35px;
+    text-align: center;
+  }
+}
 .price-inner__time span {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 3rem;
@@ -2186,6 +2625,11 @@ a img {
     font-size: 2rem;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__time span {
+    font-size: 2rem;
+  }
+}
 .price-inner__buttons {
   margin-top: 26px;
   float: right;
@@ -2195,6 +2639,18 @@ a img {
     float: none;
     margin: 0 auto;
     text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__buttons {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-inner__buttons .btn-link {
+    margin: 0 auto 10px;
   }
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -2224,6 +2680,11 @@ a img {
   .price-tab__icons-item {
     width: 150px;
     margin-left: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-tab__icons-item {
+    margin: 0 auto;
   }
 }
 .price-tab__link {
@@ -2271,6 +2732,11 @@ a img {
     display: none;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-tab__link--active::after {
+    display: none;
+  }
+}
 .price-tab__icon-wrap {
   width: 131px;
   height: 131px;
@@ -2278,6 +2744,11 @@ a img {
   margin: 0 auto 41px;
   border: 1px dotted #1e1e1e;
   border-radius: 131px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-tab__icon-wrap {
+    margin: 0 auto 20px;
+  }
 }
 .price-tab__icon-wrap::after {
   display: block;
@@ -2294,8 +2765,18 @@ a img {
     width: 34px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .price-tab__icon-wrap::after {
+    display: none;
+  }
+}
 .price-tab__icons-item:last-child .price-tab__icon-wrap::after {
   display: none;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .price-tab__icons-item:nth-of-type(3) .price-tab__icon-wrap::after {
+    display: none;
+  }
 }
 .price-tab__icon-inner {
   display: inline-block;
@@ -2348,18 +2829,23 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-about__top-inner {
     width: 320px;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .index-about__top-inner {
+    margin-bottom: 20px;
+  }
+}
 .index-about__cert {
   display: block;
   float: left;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-about__cert {
     float: none;
     max-width: 100%;
@@ -2399,7 +2885,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-about__bot-inner {
     width: 320px;
     padding-left: 5px;
@@ -2419,7 +2905,7 @@ a img {
     padding-left: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .about-icons {
     padding-left: 0;
   }
@@ -2441,7 +2927,7 @@ a img {
     margin: 0 1%;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .about-icons__icon {
     width: 100%;
     margin: 0 0 10px;
@@ -2485,9 +2971,9 @@ a img {
     margin-left: 370px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-services {
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
   }
 }
 .index-services__title {
@@ -2497,6 +2983,11 @@ a img {
   line-height: 28px;
   color: #1e1e1e;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .index-services__title {
+    text-align: center;
+  }
 }
 .index-services__descr {
   margin-bottom: 35px;
@@ -2519,7 +3010,7 @@ a img {
   margin-bottom: 6px;
   vertical-align: top;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-services__item {
     width: 100%;
   }
@@ -2552,7 +3043,7 @@ a img {
 .index-projects {
   margin-bottom: 88px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-projects {
     margin-bottom: 50px;
   }
@@ -2576,7 +3067,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-projects__inner {
     width: 320px;
     padding-left: 5px;
@@ -2595,7 +3086,7 @@ a img {
 .index-projects__title__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-projects__title {
     line-height: 28px;
   }
@@ -2625,7 +3116,7 @@ a img {
   background-clip: padding-box;
   box-shadow: 0px 0px 4px 4px rgba(210, 210, 210, 0.7);
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-projects__select + .sbHolder {
     width: 100%;
   }
@@ -2746,7 +3237,7 @@ a img {
     margin: 0 6px 22px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-project {
     display: block;
     margin: 0 auto 15px;
@@ -2820,7 +3311,7 @@ a img {
     margin: 0 6px 22px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .index-project:nth-of-type(4n) {
     margin: 0 auto 15px;
   }
@@ -2848,7 +3339,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .team-block__inner {
     width: 320px;
     padding-left: 5px;
@@ -2864,6 +3355,11 @@ a img {
   color: #1e1e1e;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .team-block__title {
+    font-size: 2.5rem;
+  }
 }
 .team-block__title span {
   font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
@@ -2892,6 +3388,11 @@ a img {
   height: 204px;
   position: relative;
   margin-right: 52px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .team-item {
+    margin: 0 0 10px;
+  }
 }
 .team-item:last-child {
   margin-right: 0;
@@ -2940,6 +3441,11 @@ a img {
   height: 477px;
   background-color: #e2e2e2;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts {
+    height: 800px;
+  }
+}
 .contacts__map {
   width: 100%;
   height: 477px;
@@ -2947,6 +3453,11 @@ a img {
   top: 0;
   left: 0;
   z-index: 1;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts__map {
+    height: 800px;
+  }
 }
 .contacts__inner {
   width: 1240px;
@@ -2969,7 +3480,7 @@ a img {
     padding-right: 5px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 766px) {
   .contacts__inner {
     width: 320px;
     padding-left: 5px;
@@ -2994,6 +3505,15 @@ a img {
     padding: 35px 68px 35px 46px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts__wrap {
+    float: none;
+    width: 90%;
+    top: 10px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
 .contacts__wrap::after {
   display: block;
   width: 100%;
@@ -3006,6 +3526,12 @@ a img {
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .contacts__left {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts__left {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -3037,6 +3563,12 @@ a img {
     margin-bottom: 18px;
   }
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts__list-item,
+  .contacts__list-item a {
+    margin-bottom: 10px;
+  }
+}
 .contacts__list-item label {
   display: inline-block;
   width: 93px;
@@ -3044,6 +3576,12 @@ a img {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
   filter: alpha(opacity=65);
   vertical-align: top;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts__list-item label {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 .contacts__list-item span,
 .contacts__list-item a {
@@ -3056,10 +3594,25 @@ a img {
   width: 264px;
   float: right;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts__right {
+    float: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts-form {
+    width: 240px;
+  }
+}
 .contacts-form__item {
   width: 262px;
   height: 44px;
   margin-bottom: 17px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .contacts-form__item {
+    width: 240px;
+  }
 }
 .contacts-form__input {
   width: 100%;
@@ -3203,5 +3756,14 @@ a img {
   .button-up a {
     right: 20px;
     bottom: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .button-up a {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    background-size: cover;
   }
 }

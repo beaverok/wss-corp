@@ -1,7 +1,15 @@
 .contacts-form {
+  @media @screen-xs {
+    width: 240px;
+  }
+
   &__item {
     .size(262px, 44px);
     margin-bottom: 17px;
+
+    @media @screen-xs {
+      width: 240px;
+    }
   }
     &__input {
       .size(100%, 100%);

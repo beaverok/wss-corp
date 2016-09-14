@@ -6,6 +6,12 @@
   .bg-image("../img/bg_capability-bottom.jpg");
   background-position: center 0;
 
+  @media @screen-xs {
+    height: auto;
+    background: none;
+    .bg-color(#262e3c);
+  }
+
   &__inner {
     .container();
     .relative();
@@ -28,6 +34,13 @@
         top: 32px;
         .font-size(2rem, 30px);
       }
+      @media @screen-xs {
+        max-width: 100%;
+        top: 0;
+        margin: 20px 0 20px;
+        .font-size(2rem, 30px);
+        .align-center();
+      }
     }
       &__title span {
         .font-family(@font-light);
@@ -48,6 +61,14 @@
         padding: 16px 22px;
         font-size: 1.6rem;
       }
+      @media @screen-xs {
+        .relative();
+        .pos(0, 0);
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.6rem;
+        .align-center();
+      }
     }
     &__buttons {
       .absolute();
@@ -57,7 +78,17 @@
       @media @screen-lg {
         right: 5px;
       }
+      @media @screen-xs {
+        .relative();
+        .pos();
+        .align-center();
+      }
     }
+      &__buttons .btn-link {
+        @media @screen-xs {
+          margin: 0 auto 15px;
+        }
+      }
       &__buttons .btn-link--present {
         @media @screen-lg {
           margin-right: 20px;

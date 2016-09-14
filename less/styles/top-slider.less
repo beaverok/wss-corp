@@ -13,12 +13,17 @@
   }
   @media @screen-xs {
     width: 100%;
+    height: 655px;
   }
 
   & .bx-controls {
     width: 100%;
     position: absolute;
     top: 36%;
+
+    @media @screen-xs {
+      top: 20%;
+    }
   }
   & .bx-prev {
     display: block;
@@ -43,10 +48,20 @@
       //.ul-reset();
       .container();
       height: 554px;
+
+      @media @screen-xs {
+        height: 655px;
+        padding: 0;
+      }
     }
     &__slide {
       display: inline-block;
       height: 554px !important;
+
+      @media @screen-xs {
+        height: 675px !important;
+        .align-center();
+      }
     }
     &__slide-bg {
       width: 100%;
@@ -57,6 +72,9 @@
       background-position: center 0;
 
       @media @screen-md {
+        z-index: -1;
+      }
+      @media @screen-xs {
         z-index: -1;
       }
     }
@@ -95,6 +113,9 @@
         @media @screen-md {
           display: none;
         }
+        @media @screen-xs {
+          display: none;
+        }
       }
 
     &__descr {
@@ -128,6 +149,14 @@
         top: 105px;
         left: 10px;
       }
+      @media @screen-xs {
+        width: 200px;
+        height: auto;
+        .relative();
+        top: 10px;
+        left: auto;
+        margin-bottom: 15px;
+      }
     }
 
     &__text {
@@ -150,6 +179,12 @@
           .font-size(2.2rem, 30px);
           top: 125px;
           right: 10px;
+        }
+        @media @screen-xs {
+          .font-size(2.2rem, 30px);
+          .relative();
+          top: 0;
+          right: 0;
         }
       }
         &__title span {
@@ -174,6 +209,12 @@
           left: 292px;
           font-size: 2.2rem;
         }
+        @media @screen-xs {
+          .relative();
+          top: 0;
+          left: 0;
+          font-size: 2.2rem;
+        }
       }
         &__price span {
           .font-family(@font-bold);
@@ -186,6 +227,16 @@
         @media @screen-md {
           bottom: 205px;
           left: 292px;
+        }
+        @media @screen-xs {
+          .relative();
+          padding: 0 20px;
+          .align-center();
+        }
+      }
+      &__buttons .btn-link {
+        @media @screen-xs {
+          margin: 0 0 10px;
         }
       }
 

@@ -53,6 +53,9 @@
     @media @screen-md {
       margin-left: 0;
     }
+    @media @screen-xs {
+      margin-left: 0;
+    }
   }
     &__item {
       display: inline-block;
@@ -60,6 +63,10 @@
       .font-family(@font-reg);
       .font-size(1.4rem, 14px);
       color: @color-1e;
+
+      @media @screen-xs {
+        padding-left: 30px;
+      }
     }
     &__item::before {
       display: inline-block;
@@ -71,5 +78,10 @@
       .relative();
       top: 3px;
       content: '';
+
+      @media @screen-xs {
+        left: -30px;
+        margin-right: -22px;
+      }
     }
 }

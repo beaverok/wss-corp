@@ -3,6 +3,11 @@
   padding: 0 68px;
   line-height: 90px;
 
+  @media @screen-xs {
+    line-height: 30px;
+    .align-center();
+  }
+
   &__title {
     display: inline-block;
     margin-right: 72px;
@@ -14,6 +19,13 @@
 
     @media @screen-md {
       margin-right: 20px;
+    }
+    @media @screen-xs {
+      display: block;
+      width: 100%;
+      margin: 0 auto 4px;
+      .font-size(1.6rem, 22px);
+      .align-center();
     }
   }
 
@@ -31,6 +43,11 @@
         @media @screen-md {
           margin-right: 15px;
         }
+        @media @screen-xs {
+          height: auto;
+          margin-right: 10px;
+          line-height: 30px;
+        }
       }
       &__link img {
         max-height: 44px;
@@ -38,6 +55,9 @@
 
         @media @screen-md {
           max-width: 110px;
+        }
+        @media @screen-xs {
+          max-width: 90px;
         }
       }
 }

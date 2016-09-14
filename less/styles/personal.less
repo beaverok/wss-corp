@@ -3,6 +3,11 @@
   margin-bottom: 74px;
   padding-bottom: 60px;
 
+  @media @screen-xs {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
   &__inner {
     .container();
     .relative();
@@ -16,6 +21,10 @@
       color: @color-1e;
       .align-center();
       .uppercase();
+
+      @media @screen-xs {
+        font-size: 2.5rem;
+      }
     }
       &__title span {
         .font-family(@font-light);
@@ -31,6 +40,9 @@
     }
     @media @screen-md {
       top: 65%;
+    }
+    @media @screen-xs {
+      display: none;
     }
   }
   & .bx-prev {

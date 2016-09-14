@@ -9,9 +9,18 @@
     margin-right: 43px;
     margin-bottom: 21px;
     vertical-align: top;
+
+    @media @screen-xs {
+      display: block;
+      margin: 0 auto 15px;
+    }
   }
   &__item:last-child {
     margin-right: 0;
+
+    @media @screen-xs {
+      margin: 0 auto;
+    }
   }
 
   &__link {
