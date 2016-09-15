@@ -1042,7 +1042,7 @@ a img {
   width: 1240px;
   margin: 0 auto;
   clear: both;
-  padding: 0 68px;
+  padding: 0 0 0 68px;
   line-height: 90px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -3589,6 +3589,9 @@ a img {
     display: block;
     margin-bottom: 10px;
   }
+}
+.contacts__list-item span {
+  max-width: 180px;
 }
 .contacts__list-item span,
 .contacts__list-item a {
