@@ -23,17 +23,21 @@
   }
 
     &__pic {
-      display: table-cell;
+      display: inline-block;
       width: 230px;
       height: 121px;
       .absolute();
       .pos(20px, 33px);
       .align-center();
+      line-height: 121px;
       vertical-align: middle;
 
       @media @screen-lg {
         left: 0;
       }
+    }
+    &__pic img {
+      vertical-align: middle;
     }
     &__name {
       .absolute();

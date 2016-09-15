@@ -3802,7 +3802,7 @@ $(document).ready(function () {
         'scrolling'		: 'no'
     });
 
-    $('.index-projects__select').selectbox();
+    $('.index-projects__select select').selectbox();
 
     $('.page-header__menu-btn').click(function () {
         $('.main-menu').slideToggle();

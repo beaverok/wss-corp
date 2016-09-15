@@ -26,7 +26,7 @@
   &__title span {
     .font-family(@font-light);
   }
-  &__select {
+  & select {
     display: block;
     width: 482px;
     height: 55px;
@@ -37,7 +37,7 @@
     .rounded(14px);
     box-shadow: 0px 0px 4px 4px rgba(210,210,210,0.7);
   }
-  &__select + .sbHolder {
+  &__select .sbHolder {
     width: 482px;
     height: 55px;
     .relative();
@@ -51,7 +51,7 @@
       width: 100%;
     }
   }
-  &__select + .sbHolder .sbToggle {
+  &__select .sbHolder .sbToggle {
     display: block;
     background-image: url(../img/spritesheet.png);
     background-position: -43px -58px;
@@ -62,14 +62,14 @@
     top: 19px;
     right: 23px;
   }
-  &__select + .sbHolder .sbSelector {
+  &__select .sbHolder .sbSelector {
     .font-family(@font-bold);
     .font-size(1.3rem, 53px);
     color: @color-1e;
     .uppercase();
     .no-decor();
   }
-  &__select + .sbHolder .sbOptions {
+  &__select .sbHolder .sbOptions {
     .ul-reset();
     position: relative;
     margin-top: -5px;
@@ -81,7 +81,7 @@
     .bg-color(@white);
     box-shadow: 0px 0px 4px 4px rgba(210,210,210,0.7);
   }
-  &__select + .sbHolder .sbOptions a {
+  &__select .sbHolder .sbOptions a {
     .font-family(@font-bold);
     .font-size(1.3rem, 24px);
     color: @color-1e;
@@ -89,7 +89,7 @@
     .no-decor();
     .transition();
   }
-  &__select + .sbHolder .sbOptions a:hover {
+  &__select .sbHolder .sbOptions a:hover {
     .color-lighten(@color-1e);
   }
 

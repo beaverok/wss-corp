@@ -2,10 +2,11 @@ section.index-projects#projects-block
     .index-projects__inner
         h2.index-projects__title <span>проекты</span> по отраслям
 
-        select.index-projects__select
-            option(value="0", selected=selected) Все отрасли
-            option(value="1") Топливно-энергетические компании
-            option(value="2") Банки и финансовы организации
+        .index-projects__select
+            select
+                option(value="0", selected=selected) Все отрасли
+                option(value="1") Топливно-энергетические компании
+                option(value="2") Банки и финансовы организации
 
         - var x = 8;
         - var y = 8;
