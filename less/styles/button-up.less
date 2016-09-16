@@ -1,0 +1,25 @@
+.button-up {
+  & a {
+    .size(73px, 73px);
+    .bg-image("../img/icon_top-btn.png");
+    position: fixed;
+    bottom: 95px;
+    right: 95px;
+    z-index: 1000;
+
+    @media @screen-lg {
+      right: 20px;
+      bottom: 20px;
+    }
+    @media @screen-md {
+      right: 20px;
+      bottom: 20px;
+    }
+    @media @screen-xs {
+      .size(50px,50px);
+      right: 20px;
+      bottom: 20px;
+      background-size: cover;
+    }
+  }
+}

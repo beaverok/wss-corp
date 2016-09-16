@@ -7,10 +7,6 @@ $(document).ready(function () {
         pause: 8000
     });
 
-    $('.index-projects__list').bxSlider({
-        controls: false
-    });
-
     $('.top-slider__play-btn').fancybox({
         'width'				: '90%',
         'height'			: '100%',
@@ -31,7 +27,7 @@ $(document).ready(function () {
         'scrolling'		: 'no'
     });
 
-    $('.index-projects__select').selectbox();
+    $('.index-projects__select select').selectbox();
 
     $('.page-header__menu-btn').click(function () {
         $('.main-menu').slideToggle();

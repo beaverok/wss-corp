@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная страница</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <!--[if lt IE 9]>
-      <script src="js/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="page-header">
@@ -25,27 +22,30 @@
             <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
           </ul>
         </nav>
+        <div class="page-header__menu-btn"></div>
         <div class="page-header__contacts">
-          <div class="page-header__phone">+ 1 (310)<span>888 67 86</span><a class="page-header__feedback-link" href="#">Обратная связь</a></div>
+          <div class="page-header__phone"><a href="tel: +1 (310) 888 67 86">+ 1 (310)<span>888 67 86</span></a></div><a class="page-header__feedback-link" href="#">Обратная связь</a>
         </div>
       </div>
     </div>
     <div class="top-slider">
-      <div class="top-slider__left">
-        <ul class="top-slider__slides">
-          <li class="top-slider__slide"><img class="top-slider__pic" src="img/slider-foto.jpg" alt="test">
-            <div class="top-slider__slide-bg"></div><a class="top-slider__play-btn" href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1"></a>
-            <div class="top-slider__descr"><img class="top-slider__logo" src="img/pepsico.png" alt="">
-              <p>Разработка и внедрение корпоративного портала на платформе SharePoint</p>
-            </div>
-          </li>
-          <li class="top-slider__slide"><a class="top-slider__play-btn" href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1"></a><img class="top-slider__pic" src="img/slider-foto2.jpg" alt="test"></li>
-        </ul>
-      </div>
-      <div class="top-slider__pager"></div>
-      <div class="top-slider__right">
-        <div class="top-slider__title">It consulting <span>& System</span> integration</div>
-        <div class="top-slider__text">Выполняем проекты по внедрению SharePoint. Разработали два комплесных продукта PSS Portal и WSSDocs</div><a class="top-slider__more-link" href="#">Services</a>
+      <div class="top-slider__inner">
+        <div class="top-slider__left">
+          <ul class="top-slider__slides">
+            <li class="top-slider__slide"><img class="top-slider__pic" src="img/slider-foto.jpg" alt="test">
+              <div class="top-slider__slide-bg"></div><a class="top-slider__play-btn" href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1"></a>
+              <div class="top-slider__descr"><img class="top-slider__logo" src="img/pepsico.png" alt="">
+                <p>Разработка и внедрение корпоративного портала на платформе SharePoint</p>
+              </div>
+            </li>
+            <li class="top-slider__slide"><a class="top-slider__play-btn" href="https://www.youtube.com/embed/SJvnsslDOdg?autoplay=1"></a><img class="top-slider__pic" src="img/slider-foto2.jpg" alt="test"></li>
+          </ul>
+        </div>
+        <div class="top-slider__pager"></div>
+        <div class="top-slider__right">
+          <div class="top-slider__title">It consulting <span>& System</span> integration</div>
+          <div class="top-slider__text">Выполняем проекты по внедрению SharePoint. Разработали два комплесных продукта PSS Portal и WSSDocs</div><a class="top-slider__more-link" href="#">Services</a>
+        </div>
       </div>
     </div>
     <div class="index-about">
@@ -119,11 +119,13 @@
     <section class="index-projects">
       <div class="index-projects__inner">
         <h2 class="index-projects__title">проекты по категориям</h2>
-        <select class="index-projects__select">
-          <option>Все проекты</option>
-          <option>Топливно-энергетические компании</option>
-          <option>Банки и финансовы организации</option>
-        </select>
+        <div class="index-projects__select">
+          <select>
+            <option>Все проекты</option>
+            <option>Топливно-энергетические компании</option>
+            <option>Банки и финансовы организации</option>
+          </select>
+        </div>
         <ul class="index-projects__list">
           <li class="index-projects__item">
             <div class="index-project">
@@ -281,6 +283,7 @@
         </div>
       </div>
     </footer>
+    <div class="button-up"><a></a></div>
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.js"></script>

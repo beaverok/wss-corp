@@ -5,6 +5,11 @@
   .relative();
   margin: 0 13px 22px 0;
   .border-radius(14px, 14px, 14px, 14px);
+  cursor: pointer;
+
+  &--hidden {
+    display: none;
+  }
 
   @media @screen-lg {
     width: 23%;
@@ -18,17 +23,21 @@
   }
 
   &__pic {
-    display: table-cell;
+    display: inline-block;
     width: 230px;
     height: 121px;
     .absolute();
     .pos(20px, 33px);
     .align-center();
+    line-height: 121px;
     vertical-align: middle;
 
     @media @screen-lg {
       left: 0;
     }
+  }
+  &__pic img {
+    vertical-align: middle;
   }
   &__name {
     .absolute();
@@ -39,16 +48,19 @@
     color: @color-33;
   }
   &__descr {
-    width: 100%;
-    height: 100%;
+    width: 95.5%;
+    height: 92%;
     .absolute();
     .pos();
     z-index: 150;
-    .bg-color(rgba(51, 51, 51, 0.7));
-    .border-radius(14px, 14px, 14px, 14px);
-    padding: 20px;
+    .bg-color(rgba(255, 255, 255, 0.9));
+    .rounded(7px);
+    margin: 7px;
+    padding: 35px 20px;
     opacity: 0;
     .transition();
+    box-shadow: inset 0 0 25px 25px rgba(247,247,247,0.45);
+    .align-center();
   }
   &__descr:hover {
     opacity: 1;
@@ -56,17 +68,17 @@
   &__text {
     margin-bottom: 10px;
     .font-family(@font-reg);
-    .font-size(1.6rem, 24px);
-    color: @white;
+    .font-size(1.3rem, 20px);
+    color: @color-33;
   }
   &__link {
     .font-family(@font-reg);
-    .font-size(1.3rem, 12px);
-    color: @white;
+    .font-size(1.3rem, 20px);
+    color: @color-33;
     .text-decoration();
   }
   &__link:hover {
-    .color-darken(@white);
+    .color-lighten(@color-33);
   }
 }
 .index-project:nth-of-type(4n) {

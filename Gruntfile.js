@@ -16,7 +16,8 @@ module.exports = function(grunt) {
             dist: {
 			src: [
 				'js/plugins/**/*.js', // Все JS в папке plugins
-				'js/common.js'  // Конкретный файл
+				'js/common.js',  // Конкретный файл
+				'js/includes/*.js'
 				 ],
 			dest: 'build/js/scripts.js',
 			}
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
 					expand: true,
 					flatten: true,
 					cwd: 'img/',
-					src: ['**/*.{png,jpg,gif}'],
+					src: ['**/demo/*.{png,jpg,gif}', '**/plugins/*.{png,jpg,gif}', '**/*.{png,jpg,gif}'],
 					dest: 'build/img/'
 				}]
 			}
@@ -158,6 +159,7 @@ module.exports = function(grunt) {
 
     // Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat', 'uglify', 'less', 'postcss', 'imagemin', 'pug']);
+	grunt.registerTask('js', ['concat', 'uglify']);
 	grunt.registerTask('html', ['pug']);
 	grunt.registerTask('css', ['concat', 'uglify', 'less', 'postcss']);
 };
