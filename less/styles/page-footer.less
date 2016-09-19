@@ -2,6 +2,19 @@
   height: 403px;
   border-top: 7px solid #f0f0f0;
 
+  &--inner-page {
+    height: 158px;
+    .bg-color(#212832);
+    border: none;
+    .align-center();
+  }
+  &--inner-page &__copyright {
+    .font-family(@font-light);
+    .font-size(1.2rem, 158px);
+    color: @white;
+    opacity: 0.5;
+  }
+
   &__top {
     //height: 245px;
   }

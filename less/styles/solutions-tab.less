@@ -1,0 +1,30 @@
+.solutions-tab {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    padding: 0 68px;
+    .font-family(@font-reg);
+    .font-size(1.6rem,24px);
+    color: #a4a4a4;
+    .align-center();
+  }
+  &__more-link {
+    .align-center();
+  }
+    &__more-link a{
+      .font-family(@font-reg);
+      .font-size(1.5rem,15px);
+      color: @color-1e;
+      .no-decor();
+      .uppercase();
+      .transition();
+    }
+    &__more-link a:hover {
+      .color-lighten(@color-1e);
+    }
+}

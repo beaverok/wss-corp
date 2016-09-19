@@ -1,0 +1,45 @@
+.breadcrumbs {
+    .size(100%,39px);
+    .bg-image("../img/bg_breadcrumbs.png");
+    margin-bottom: 51px;
+
+    &__inner {
+        .container();
+    }
+
+      &__list {
+        .ul-reset();
+      }
+        &__item {
+          display: inline-block;
+          vertical-align: top;
+        }
+          &__link {
+            font-family: Tahoma, serif;
+            .font-size(1.1rem,38px);
+            color: @color-33;
+            .no-decor();
+            .transition();
+          }
+          &__link:hover {
+            .color-lighten(@color-33);
+          }
+          &__link::after {
+            display: inline-block;
+            .size(5px,7px);
+            background-image: url(../img/spritesheet.png);
+            background-position: -288px -149px;
+            .relative();
+            top: -1px;
+            margin: 0 13px;
+            vertical-align: middle;
+            content: '';
+          }
+
+          &__current {
+            font-family: Tahoma, serif;
+            .font-size(1.1rem,38px);
+            color: @color-33;
+            .no-decor();
+          }
+}

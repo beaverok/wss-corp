@@ -1,0 +1,67 @@
+.project-descr {
+  width: 100%;
+  margin-bottom: 113px;
+
+  &::after {
+    display: block;
+    width: 100%;
+    .clear();
+    content: '';
+  }
+
+  &__inner {
+    .container();
+    width: 1020px;
+  }
+
+    &__text {
+      .relative();
+      margin: 0 auto 52px;
+      padding-left: 168px;
+      .font-family(@font-reg);
+      .font-size(1.6rem,24px);
+      color: #626262;
+    }
+    &__text::before {
+      display: inline-block;
+      .size(58px,45px);
+      background-image: url(../img/spritesheet.png);
+      background-position: -170px -208px;
+      .absolute();
+      top: 50%;
+      left: 0;
+      margin: -23px 0 0 48px;
+      content: '';
+    }
+
+    &__video {
+      display: block;
+      max-width: 700px;
+      .relative();
+      float: left;
+    }
+      &__video img {
+        max-width: 100%;
+        height: auto;
+      }
+      &__play-btn {
+        display: block;
+        .size(170px,170px);
+        background-image: url(../img/spritesheet.png);
+        background-position: 0px -149px;
+        .absolute();
+        .pos(50%,50%);
+        margin: -85px 0 0 -85px;
+      }
+
+    &__scan {
+      display: block;
+      width: 265px;
+      box-shadow: 0 0 24px 6px #ededed;
+      float: right;
+    }
+      &__scan img {
+        max-width: 100%;
+        height: auto;
+      }
+}

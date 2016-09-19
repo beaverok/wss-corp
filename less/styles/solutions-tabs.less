@@ -1,0 +1,21 @@
+.solutions-tabs {
+  .ul-reset();
+  margin-bottom: 23px;
+  .align-center();
+
+  &__item {
+    display: inline-block;
+    margin: 0 34px;
+  }
+    &__link {
+      border-bottom: 1px dotted @color-1e;
+      .font-family(@font-reg);
+      .font-size(1.8rem,18px);
+      color: @color-1e;
+      .no-decor();
+      .uppercase();
+    }
+    &__link--active {
+      border: none;
+    }
+}

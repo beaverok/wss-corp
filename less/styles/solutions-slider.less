@@ -1,0 +1,37 @@
+.solutions-slider {
+  width: 622px;
+  height: 625px;
+  .relative();
+  margin: 56px auto 65px;
+  box-shadow: 0 0 24px 6px #ededed;
+
+  &__item {
+    display: inline-block;
+  }
+    &__pic-wrap {
+      .size(588px,622px);
+      margin: 0 auto;
+    }
+
+  & .bx-controls {
+    width: 100%;
+    .absolute();
+    top: 50%;
+    margin-top: -29px;
+  }
+    & .bx-controls a {
+      display: block;
+      .size(35px,58px);
+      .absolute();
+    }
+    & .bx-controls .bx-prev {
+      background-image: url(../img/spritesheet.png);
+      background-position: -205px -253px;
+      left: -100px;
+    }
+    & .bx-controls .bx-next {
+      background-image: url(../img/spritesheet.png);
+      background-position: -170px -253px;
+      right: -100px;
+    }
+}
