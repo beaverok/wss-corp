@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    var bg = 'url('+$('.active-slide .top-slider__slide-bg').attr('data-pic')+')';
-    $('.top-slider').css('background-image', bg);
-
-    if ($(window).width() < 1000) {
-        var src = 'url(' + $('.top-slider__slide-bg').attr('data-pic') + ')';
-        $('.top-slider').css('background-image', src);
-    }
-
     $('.index-product__link--video').fancybox({
         'width'				: '90%',
         'height'			: '100%',
