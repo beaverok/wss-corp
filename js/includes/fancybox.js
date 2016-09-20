@@ -1,6 +1,6 @@
 $('.top-slider__play-btn').fancybox({
-    'width'				: '90%',
-    'height'			: '100%',
+    'width'				: '70%',
+    'height'			: '70%',
     'autoScale'     	: true,
     'transitionIn'		: 'none',
     'transitionOut'		: 'none',
@@ -9,8 +9,8 @@ $('.top-slider__play-btn').fancybox({
 });
 
 $('.index-product__link--video').fancybox({
-    'width'				: '90%',
-    'height'			: '100%',
+    'width'				: '70%',
+    'height'			: '70%',
     'autoScale'     	: true,
     'transitionIn'		: 'none',
     'transitionOut'		: 'none',
@@ -19,11 +19,16 @@ $('.index-product__link--video').fancybox({
 });
 
 $('.project-descr__play-btn').fancybox({
-    'width'				: '90%',
-    'height'			: '100%',
+    'width'				: '70%',
+    'height'			: '70%',
     'autoScale'     	: true,
     'transitionIn'		: 'none',
     'transitionOut'		: 'none',
     'type'				: 'iframe',
     'scrolling'		: 'no'
+});
+
+$('.fancy-pic').fancybox({
+    'autoHeight': true,
+    'closeClick': true
 });

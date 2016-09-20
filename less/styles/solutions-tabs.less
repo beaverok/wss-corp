@@ -6,6 +6,13 @@
   &__item {
     display: inline-block;
     margin: 0 34px;
+
+    @media @screen-md {
+      margin-bottom: 30px;
+    }
+    @media @screen-xs {
+      margin-bottom: 15px;
+    }
   }
     &__link {
       border-bottom: 1px dotted @color-1e;
@@ -14,6 +21,10 @@
       color: @color-1e;
       .no-decor();
       .uppercase();
+
+      @media @screen-xs {
+        font-size: 1.6rem;
+      }
     }
     &__link--active {
       border: none;

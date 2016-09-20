@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.index-projects__select select').selectbox();
 
+    // mobile menu open-close
     $('.page-header__menu-btn').click(function () {
         $('.main-menu').slideToggle();
     });
@@ -12,6 +13,7 @@ $(document).ready(function () {
         }
     });
 
+    // project page
     $('.page-header__projects-active').click(function () {
        $('.page-header__projects-list').slideToggle();
     });
@@ -27,5 +29,10 @@ $(document).ready(function () {
        $(this).hide();
        $('.project-tasks__list--other').slideDown();
     });
+
+    $('.project-tasks__item-name').click(function () {
+        $(this).addClass('project-tasks__item-name--active');
+        $(this).next().slideDown();
+    })
 
 });

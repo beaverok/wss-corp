@@ -1,6 +1,10 @@
 .page-title {
   margin-bottom: 57px;
 
+  @media @screen-xs {
+    margin-bottom: 35px;
+  }
+
   &__inner {
     .container();
     .align-center();
@@ -13,6 +17,10 @@
     .font-family(@font-bold);
     .font-size(4rem,40px);
     .uppercase();
+
+    @media @screen-xs {
+      .font-size(3rem,20px);
+    }
   }
     &__line {
       width: 70%;

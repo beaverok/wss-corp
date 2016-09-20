@@ -5,12 +5,27 @@
   margin: 56px auto 65px;
   box-shadow: 0 0 24px 6px #ededed;
 
+  @media @screen-xs {
+    width: 100%;
+    height: auto;
+  }
+
   &__item {
     display: inline-block;
   }
     &__pic-wrap {
       .size(588px,622px);
       margin: 0 auto;
+
+      @media @screen-xs {
+        .size(100%,auto);
+      }
+    }
+    &__pic-wrap img {
+      @media @screen-xs {
+        width: 100%;
+        height: auto;
+      }
     }
 
   & .bx-controls {
@@ -28,10 +43,24 @@
       background-image: url(../img/spritesheet.png);
       background-position: -205px -253px;
       left: -100px;
+
+      @media @screen-md {
+        left: 10px;
+      }
+      @media @screen-xs {
+        left: 10px;
+      }
     }
     & .bx-controls .bx-next {
       background-image: url(../img/spritesheet.png);
       background-position: -170px -253px;
       right: -100px;
+
+      @media @screen-md {
+        right: 10px;
+      }
+      @media @screen-xs {
+        right: 10px;
+      }
     }
 }

@@ -1,3 +1,33 @@
-.page-header--project {
+.page-header--project .page-header__contacts {
+  @media @screen-md {
+    margin-top: 5px;
+  }
+  @media @screen-xs {
+    width: 190px;
+    top: -32px;
+    left: 60px;
+    margin-bottom: -15px;
+  }
+}
 
+.page-header--project .page-header__phone a {
+  @media @screen-xs {
+    font-size: 1.8rem;
+  }
+}
+
+.page-header--project .page-header__feedback-link {
+  @media @screen-md {
+    margin-top: 4px;
+  }
+  @media @screen-xs {
+    margin-top: 0;
+  }
+}
+
+.page-header--project.is-stuck .page-header__contacts {
+  @media @screen-md {
+    display: block;
+    margin-top: 8px;
+  }
 }

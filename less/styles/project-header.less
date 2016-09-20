@@ -4,6 +4,12 @@
   background-repeat: no-repeat;
   margin-bottom: 81px;
 
+  @media @screen-xs {
+    height: auto;
+    margin-bottom: 40px;
+    padding: 40px 0;
+  }
+
   &__inner {
     .container();
   }
@@ -16,6 +22,16 @@
       color: @white;
       .uppercase();
       float: right;
+
+      @media @screen-md {
+        margin-right: 0;
+      }
+      @media @screen-xs {
+        width: 100%;
+        margin: 0 0 30px;
+        .font-size(2.5rem,30px);
+        float: none;
+      }
     }
       &__title span {
         .font-family(@font-bold);
@@ -29,5 +45,15 @@
       color: @white;
       .uppercase();
       float: right;
+
+      @media @screen-md {
+        margin-right: 0;
+      }
+      @media @screen-xs {
+        width: 100%;
+        margin: 0;
+        .font-size(2rem,25px);
+        float: none;
+      }
     }
 }
