@@ -14,6 +14,18 @@
     &.is-stuck &__logo {
       margin-top: 7px;
     }
+    &.is-stuck &__logo--project {
+      margin-top: 15px;
+
+      @media @screen-xs {
+        margin-top: 32px;
+      }
+    }
+    &.is-stuck &__logo--project img{
+      @media @screen-xs {
+        max-width: 80%;
+      }
+    }
     &.is-stuck .main-menu {
       @media @screen-md {
         clear: none;
@@ -50,6 +62,16 @@
       &.is-stuck &__feedback-link {
         margin-top: 0;
       }
+    &.is-stuck &__return {
+      line-height: 60px;
+
+      @media @screen-xs {
+        line-height: 35px;
+      }
+    }
+    &.is-stuck &__projects {
+      top: 24px;
+    }
 
   @media @screen-md {
     height: auto;
@@ -60,6 +82,7 @@
 
   &__inner {
     .container();
+    .relative();
   }
   &__inner::after {
     display: block;
@@ -83,6 +106,21 @@
       @media @screen-xs {
         margin-top: 10px;
       }
+    }
+    &__logo--project {
+      .size(117px,28px);
+      margin: 32px 0 0 206px;
+
+      @media @screen-md {
+        margin: 14px 0 15px 150px;
+      }
+      @media @screen-xs {
+        margin: 40px 0 0 3px;
+      }
+    }
+    &__logo--project img {
+      max-width: 100%;
+      height: auto;
     }
 
     &__contacts {
@@ -154,5 +192,106 @@
         display: block;
         top: 9px;
       }
+    }
+
+    &__return {
+      display: block;
+      .absolute();
+      .pos();
+      .font-family(@font-bold);
+      .font-size(1.3rem, 99px);
+      color: @color-1e;
+      .uppercase();
+      .transition();
+
+      @media @screen-md {
+        line-height: 60px;
+      }
+      @media @screen-xs {
+        line-height: 40px;
+      }
+    }
+    &__return:hover {
+      .color-lighten(@color-1e);
+    }
+    &__return::before {
+      display: inline-block;
+      .size(14px,21px);
+      background-image: url(../img/spritesheet2.png);
+      background-position: -240px -253px;
+      .relative();
+      top: 6px;
+      margin-right: 22px;
+      content: '';
+
+      @media @screen-xs {
+        left: 10px;
+      }
+    }
+
+    &__projects {
+      .absolute();
+      .pos(43px,48%);
+      .uppercase();
+
+      @media @screen-md {
+        .pos(22px,42%);
+      }
+      @media @screen-xs {
+        top: 13px;
+      }
+    }
+    &__projects-title {
+      display: inline-block;
+      margin-right: 4px;
+      .font-family(@font-light);
+      .font-size(1.3rem, 13px);
+      color: #a1a1a1;
+      vertical-align: top;
+    }
+    &__projects-active {
+      display: inline-block;
+      .relative();
+      padding-right: 38px;
+      .font-family(@font-bold);
+      .font-size(1.3rem, 13px);
+      color: @color-1e;
+      cursor: pointer;
+      vertical-align: top;
+    }
+    &__projects-active::after {
+      display: inline-block;
+      .size(21px,14px);
+      .absolute();
+      top: -1px;
+      right: 0;
+      background-image: url(../img/spritesheet2.png);
+      background-position: -269px -208px;
+      content: '';
+    }
+
+    &__projects-list {
+      width: 140px;
+      .ul-reset();
+      display: none;
+      .absolute();
+      .pos(22px,0);
+      .bg-color(lighten(#a1a1a1, 30%));
+      padding: 20px;
+      z-index: 1000;
+    }
+    &__projects-item {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &__projects-item a{
+      .font-family(@font-reg);
+      .font-size(1.3rem, 13px);
+      color: @color-1e;
+      .no-decor();
+      .transition();
+    }
+    &__projects-item a:hover {
+      color: @grey;
     }
 }

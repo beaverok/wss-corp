@@ -1,0 +1,111 @@
+.project-descr {
+  width: 100%;
+  margin-bottom: 113px;
+
+  @media @screen-xs {
+    margin-bottom: 45px;
+  }
+
+  &::after {
+    display: block;
+    width: 100%;
+    .clear();
+    content: '';
+  }
+
+  &__inner {
+    .container();
+    width: 1020px;
+  }
+
+    &__text {
+      .relative();
+      margin: 0 auto 52px;
+      padding-left: 168px;
+      .font-family(@font-reg);
+      .font-size(1.6rem,24px);
+      color: #626262;
+
+      @media @screen-xs {
+        padding: 0;
+      }
+    }
+    &__text::before {
+      display: inline-block;
+      .size(58px,45px);
+      background-image: url(../img/spritesheet2.png);
+      background-position: -170px -208px;
+      .absolute();
+      top: 50%;
+      left: 0;
+      margin: -23px 0 0 48px;
+      content: '';
+
+      @media @screen-xs {
+        display: none;
+      }
+    }
+
+    &__video {
+      display: block;
+      max-width: 700px;
+      .relative();
+      float: left;
+
+      @media @screen-md {
+        max-width: 500px;
+        height: 320px;
+      }
+      @media @screen-xs {
+        float: none;
+      }
+    }
+      &__video img {
+        max-width: 100%;
+        height: auto;
+
+        @media @screen-md {
+          height: 100%;
+          float: none;
+        }
+      }
+      &__play-btn {
+        display: block;
+        .size(170px,170px);
+        background-image: url(../img/spritesheet2.png);
+        background-position: 0px -149px;
+        .absolute();
+        .pos(50%,50%);
+        margin: -85px 0 0 -85px;
+
+        @media @screen-xs {
+          .size(100px,100px);
+          margin: -50px 0 0 -50px;
+          background-size: 172%;
+          background-position: -171px 97px;
+        }
+      }
+
+    &__scan {
+      display: block;
+      width: 265px;
+      box-shadow: 0 0 24px 6px #ededed;
+      float: right;
+
+      @media @screen-md {
+        .size(200px,320px);
+      }
+      @media @screen-xs {
+        float: none;
+        margin: 20px auto 0;
+      }
+    }
+      &__scan img {
+        max-width: 100%;
+        height: auto;
+
+        @media @screen-md {
+          height: 100%;
+        }
+      }
+}

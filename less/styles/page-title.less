@@ -1,0 +1,33 @@
+.page-title {
+  margin-bottom: 57px;
+
+  @media @screen-xs {
+    margin-bottom: 35px;
+  }
+
+  &__inner {
+    .container();
+    .align-center();
+  }
+
+  &__h1 {
+    display: inline-block;
+    .relative();
+    padding-top: 24px;
+    .font-family(@font-bold);
+    .font-size(4rem,40px);
+    .uppercase();
+
+    @media @screen-xs {
+      .font-size(3rem,20px);
+    }
+  }
+    &__line {
+      width: 70%;
+      height: 2px;
+      .bg-color(@red);
+      .absolute();
+      .pos(0,50%);
+      margin-left: -35%;
+    }
+}

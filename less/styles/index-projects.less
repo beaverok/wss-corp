@@ -49,6 +49,7 @@
 
     @media @screen-xs {
       width: 100%;
+      padding-left: 10px;
     }
   }
   &__select .sbHolder .sbToggle {
@@ -61,6 +62,10 @@
     .absolute();
     top: 19px;
     right: 23px;
+
+    @media @screen-xs {
+      right: 10px;
+    }
   }
   &__select .sbHolder .sbSelector {
     .font-family(@font-bold);
@@ -68,6 +73,13 @@
     color: @color-1e;
     .uppercase();
     .no-decor();
+
+    @media @screen-xs {
+      display: block;
+      height: 50px;
+      font-size: 1.2rem;
+      overflow: hidden;
+    }
   }
   &__select .sbHolder .sbOptions {
     .ul-reset();
@@ -80,6 +92,12 @@
     .border-radius(14px, 14px, 14px, 14px);
     .bg-color(@white);
     box-shadow: 0px 0px 4px 4px rgba(210,210,210,0.7);
+
+    @media @screen-xs {
+      margin-top: -34px;
+      margin-left: -11px;
+      padding-left: 10px;
+    }
   }
   &__select .sbHolder .sbOptions a {
     .font-family(@font-bold);

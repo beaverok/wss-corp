@@ -423,6 +423,19 @@ a img {
 .page-header.is-stuck .page-header__logo {
   margin-top: 7px;
 }
+.page-header.is-stuck .page-header__logo--project {
+  margin-top: 15px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header.is-stuck .page-header__logo--project {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header.is-stuck .page-header__logo--project img {
+    max-width: 80%;
+  }
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .page-header.is-stuck .main-menu {
     clear: none;
@@ -464,6 +477,17 @@ a img {
 .page-header.is-stuck .page-header__feedback-link {
   margin-top: 0;
 }
+.page-header.is-stuck .page-header__return {
+  line-height: 60px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header.is-stuck .page-header__return {
+    line-height: 35px;
+  }
+}
+.page-header.is-stuck .page-header__projects {
+  top: 24px;
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .page-header {
     height: auto;
@@ -478,6 +502,7 @@ a img {
   width: 1240px;
   margin: 0 auto;
   clear: both;
+  position: relative;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .page-header__inner {
@@ -526,6 +551,25 @@ a img {
   .page-header__logo {
     margin-top: 10px;
   }
+}
+.page-header__logo--project {
+  width: 117px;
+  height: 28px;
+  margin: 32px 0 0 206px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header__logo--project {
+    margin: 14px 0 15px 150px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header__logo--project {
+    margin: 40px 0 0 3px;
+  }
+}
+.page-header__logo--project img {
+  max-width: 100%;
+  height: auto;
 }
 .page-header__contacts {
   width: 258px;
@@ -601,6 +645,157 @@ a img {
   .page-header__menu-btn {
     display: block;
     top: 9px;
+  }
+}
+.page-header__return {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 99px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header__return {
+    line-height: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header__return {
+    line-height: 40px;
+  }
+}
+.page-header__return:hover {
+  color: #515151;
+}
+.page-header__return::before {
+  display: inline-block;
+  width: 14px;
+  height: 21px;
+  background-image: url(../img/spritesheet2.png);
+  background-position: -240px -253px;
+  position: relative;
+  top: 6px;
+  margin-right: 22px;
+  content: '';
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header__return::before {
+    left: 10px;
+  }
+}
+.page-header__projects {
+  position: absolute;
+  top: 43px;
+  left: 48%;
+  text-transform: uppercase;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header__projects {
+    top: 22px;
+    left: 42%;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header__projects {
+    top: 13px;
+  }
+}
+.page-header__projects-title {
+  display: inline-block;
+  margin-right: 4px;
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 13px;
+  color: #a1a1a1;
+  vertical-align: top;
+}
+.page-header__projects-active {
+  display: inline-block;
+  position: relative;
+  padding-right: 38px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 13px;
+  color: #1e1e1e;
+  cursor: pointer;
+  vertical-align: top;
+}
+.page-header__projects-active::after {
+  display: inline-block;
+  width: 21px;
+  height: 14px;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  background-image: url(../img/spritesheet2.png);
+  background-position: -269px -208px;
+  content: '';
+}
+.page-header__projects-list {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  background-color: #eeeeee;
+  padding: 20px;
+  z-index: 1000;
+}
+.page-header__projects-item {
+  display: block;
+  margin-bottom: 10px;
+}
+.page-header__projects-item a {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 13px;
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.page-header__projects-item a:hover {
+  color: #5c5c5c;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header--project .page-header__contacts {
+    margin-top: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header--project .page-header__contacts {
+    width: 190px;
+    top: -32px;
+    left: 60px;
+    margin-bottom: -15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header--project .page-header__phone a {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header--project .page-header__feedback-link {
+    margin-top: 4px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-header--project .page-header__feedback-link {
+    margin-top: 0;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header--project.is-stuck .page-header__contacts {
+    display: block;
+    margin-top: 8px;
   }
 }
 .main-menu {
@@ -1082,6 +1277,11 @@ a img {
   text-transform: uppercase;
   vertical-align: middle;
 }
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .top-clients__title {
+    margin-right: 40px;
+  }
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .top-clients__title {
     margin-right: 20px;
@@ -1110,9 +1310,14 @@ a img {
   margin-right: 34px;
   line-height: 100px;
 }
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .top-clients__item {
+    margin-right: 25px;
+  }
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .top-clients__item {
-    margin-right: 15px;
+    margin-right: 12px;
   }
 }
 @media (min-width: 320px) and (max-width: 766px) {
@@ -1126,9 +1331,14 @@ a img {
   max-height: 44px;
   vertical-align: middle;
 }
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .top-clients__link img {
+    max-width: 120px;
+  }
+}
 @media (min-width: 751px) and (max-width: 1023px) {
   .top-clients__link img {
-    max-width: 110px;
+    max-width: 90px;
   }
 }
 @media (min-width: 320px) and (max-width: 766px) {
@@ -3126,6 +3336,7 @@ a img {
 @media (min-width: 320px) and (max-width: 766px) {
   .index-projects__select .sbHolder {
     width: 100%;
+    padding-left: 10px;
   }
 }
 .index-projects__select .sbHolder .sbToggle {
@@ -3139,6 +3350,11 @@ a img {
   top: 19px;
   right: 23px;
 }
+@media (min-width: 320px) and (max-width: 766px) {
+  .index-projects__select .sbHolder .sbToggle {
+    right: 10px;
+  }
+}
 .index-projects__select .sbHolder .sbSelector {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
@@ -3146,6 +3362,14 @@ a img {
   color: #1e1e1e;
   text-transform: uppercase;
   text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .index-projects__select .sbHolder .sbSelector {
+    display: block;
+    height: 50px;
+    font-size: 1.2rem;
+    overflow: hidden;
+  }
 }
 .index-projects__select .sbHolder .sbOptions {
   margin: 0;
@@ -3164,6 +3388,13 @@ a img {
   background-clip: padding-box;
   background-color: #fff;
   box-shadow: 0px 0px 4px 4px rgba(210, 210, 210, 0.7);
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .index-projects__select .sbHolder .sbOptions {
+    margin-top: -34px;
+    margin-left: -11px;
+    padding-left: 10px;
+  }
 }
 .index-projects__select .sbHolder .sbOptions a {
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
@@ -3329,6 +3560,14 @@ a img {
 }
 .team-block {
   margin-bottom: 62px;
+}
+.team-block--project {
+  margin-bottom: 124px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .team-block--project {
+    margin-bottom: 70px;
+  }
 }
 .team-block__inner {
   width: 1240px;
@@ -3779,5 +4018,763 @@ a img {
     right: 20px;
     bottom: 20px;
     background-size: cover;
+  }
+}
+.button-up--project a {
+  background-image: url("../img/icon_top-btn--grey.png");
+}
+.breadcrumbs {
+  width: 100%;
+  height: 39px;
+  background-image: url("../img/bg_breadcrumbs.png");
+  margin-bottom: 51px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .breadcrumbs {
+    margin-bottom: 35px;
+  }
+}
+.breadcrumbs__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .breadcrumbs__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .breadcrumbs__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .breadcrumbs__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.breadcrumbs__link {
+  font-family: Tahoma, serif;
+  font-size: 1.1rem;
+  line-height: 38px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.breadcrumbs__link:hover {
+  color: #666666;
+}
+.breadcrumbs__link::after {
+  display: inline-block;
+  width: 5px;
+  height: 7px;
+  background-image: url(../img/spritesheet2.png);
+  background-position: -288px -149px;
+  position: relative;
+  top: -1px;
+  margin: 0 13px;
+  vertical-align: middle;
+  content: '';
+}
+.breadcrumbs__current {
+  font-family: Tahoma, serif;
+  font-size: 1.1rem;
+  line-height: 38px;
+  color: #333;
+  text-decoration: none;
+}
+.page-title {
+  margin-bottom: 57px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-title {
+    margin-bottom: 35px;
+  }
+}
+.page-title__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .page-title__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-title__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-title__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.page-title__h1 {
+  display: inline-block;
+  position: relative;
+  padding-top: 24px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .page-title__h1 {
+    font-size: 3rem;
+    line-height: 20px;
+  }
+}
+.page-title__line {
+  width: 70%;
+  height: 2px;
+  background-color: #e42116;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -35%;
+}
+.project-header {
+  width: 100%;
+  height: 440px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 81px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-header {
+    height: auto;
+    margin-bottom: 40px;
+    padding: 40px 0;
+  }
+}
+.project-header__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .project-header__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-header__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-header__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.project-header__title {
+  width: 606px;
+  margin: 94px 121px 63px 0;
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  line-height: 46px;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-header__title {
+    margin-right: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-header__title {
+    width: 100%;
+    margin: 0 0 30px;
+    font-size: 2.5rem;
+    line-height: 30px;
+    float: none;
+  }
+}
+.project-header__title span {
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+}
+.project-header__sub-title {
+  width: 606px;
+  margin: 0 121px 0 0;
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+  font-size: 2.6rem;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  float: right;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-header__sub-title {
+    margin-right: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-header__sub-title {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 25px;
+    float: none;
+  }
+}
+.project-descr {
+  width: 100%;
+  margin-bottom: 113px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr {
+    margin-bottom: 45px;
+  }
+}
+.project-descr::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.project-descr__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  width: 1020px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .project-descr__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-descr__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.project-descr__text {
+  position: relative;
+  margin: 0 auto 52px;
+  padding-left: 168px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #626262;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr__text {
+    padding: 0;
+  }
+}
+.project-descr__text::before {
+  display: inline-block;
+  width: 58px;
+  height: 45px;
+  background-image: url(../img/spritesheet2.png);
+  background-position: -170px -208px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -23px 0 0 48px;
+  content: '';
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr__text::before {
+    display: none;
+  }
+}
+.project-descr__video {
+  display: block;
+  max-width: 700px;
+  position: relative;
+  float: left;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-descr__video {
+    max-width: 500px;
+    height: 320px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr__video {
+    float: none;
+  }
+}
+.project-descr__video img {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-descr__video img {
+    height: 100%;
+    float: none;
+  }
+}
+.project-descr__play-btn {
+  display: block;
+  width: 170px;
+  height: 170px;
+  background-image: url(../img/spritesheet2.png);
+  background-position: 0px -149px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -85px 0 0 -85px;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr__play-btn {
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background-size: 172%;
+    background-position: -171px 97px;
+  }
+}
+.project-descr__scan {
+  display: block;
+  width: 265px;
+  box-shadow: 0 0 24px 6px #ededed;
+  float: right;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-descr__scan {
+    width: 200px;
+    height: 320px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-descr__scan {
+    float: none;
+    margin: 20px auto 0;
+  }
+}
+.project-descr__scan img {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-descr__scan img {
+    height: 100%;
+  }
+}
+.project-tasks {
+  width: 100%;
+  min-height: 482px;
+  margin-bottom: 71px;
+  padding: 62px 0 58px;
+  background-image: url("../img/bg_tasks.jpg");
+  background-position: center 0;
+  background-repeat: repeat-y;
+  background-color: #f0f0f0;
+  clear: both;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-tasks {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks {
+    min-height: 434px;
+    background: #f0f0f0;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.project-tasks__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  width: 1020px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .project-tasks__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-tasks__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.project-tasks__title {
+  display: block;
+  margin-bottom: 29px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 30px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__title {
+    font-size: 2.5rem;
+  }
+}
+.project-tasks__list {
+  margin-bottom: 14px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-tasks__list {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__list {
+    margin-bottom: 10px;
+  }
+}
+.project-tasks__list--other {
+  display: none;
+  margin-bottom: -15px;
+  padding-bottom: 0;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__list--other {
+    margin-bottom: -15px;
+    padding-bottom: 0;
+  }
+}
+.project-tasks__list--other .project-tasks__item-right {
+  max-width: 100%;
+}
+.project-tasks__list--other .project-tasks__item-name {
+  display: block;
+  border: none;
+}
+.project-tasks__list--other .project-tasks__item-text {
+  display: block;
+}
+.project-tasks__item {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__item {
+    width: 100%;
+  }
+}
+.project-tasks__item-icon {
+  display: block;
+  width: 136px;
+  height: 123px;
+  background-image: url("../img/icon_tasks-item.png");
+  margin-left: 15px;
+  float: left;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-tasks__item-icon {
+    margin-left: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__item-icon {
+    display: none;
+  }
+}
+.project-tasks__item-right {
+  max-width: 330px;
+  float: left;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-tasks__item-right {
+    float: none;
+  }
+}
+.project-tasks__item-name {
+  display: inline;
+  position: relative;
+  top: 20px;
+  margin-bottom: 26px;
+  border-bottom: 1px dotted #1e1e1e;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 24px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-tasks__item-name {
+    top: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-tasks__item-name {
+    top: 0;
+    margin-bottom: 15px;
+  }
+}
+.project-tasks__item-name--active {
+  display: block;
+  border: none;
+  top: 0;
+}
+.project-tasks__item-text {
+  display: none;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #a4a4a4;
+}
+.project-tasks__more-link {
+  display: block;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.project-tasks__more-link span {
+  border-bottom: 1px dotted #1e1e1e;
+}
+.project-solutions {
+  width: 100%;
+}
+.project-solutions__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  width: 999px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .project-solutions__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-solutions__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-solutions__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.project-solutions__title {
+  margin-bottom: 60px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 30px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .project-solutions__title {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+}
+.solutions-tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 23px;
+  text-align: center;
+}
+.solutions-tabs__item {
+  display: inline-block;
+  margin: 0 34px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .solutions-tabs__item {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-tabs__item {
+    margin-bottom: 15px;
+  }
+}
+.solutions-tabs__link {
+  border-bottom: 1px dotted #1e1e1e;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
+  color: #1e1e1e;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-tabs__link {
+    font-size: 1.6rem;
+  }
+}
+.solutions-tabs__link--active {
+  border: none;
+}
+.solutions-tab {
+  display: none;
+}
+.solutions-tab--active {
+  display: block;
+}
+.solutions-tab__text {
+  margin-bottom: 60px;
+  padding: 0 68px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #a4a4a4;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-tab__text {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+.solutions-tab__more-link {
+  text-align: center;
+}
+.solutions-tab__more-link a {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  color: #1e1e1e;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+.solutions-tab__more-link a:hover {
+  color: #515151;
+}
+.solutions-slider {
+  width: 622px;
+  height: 625px;
+  position: relative;
+  margin: 56px auto 65px;
+  box-shadow: 0 0 24px 6px #ededed;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-slider {
+    width: 100%;
+    height: auto;
+  }
+}
+.solutions-slider__item {
+  display: inline-block;
+}
+.solutions-slider__pic-wrap {
+  width: 588px;
+  height: 622px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-slider__pic-wrap {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-slider__pic-wrap img {
+    width: 100%;
+    height: auto;
+  }
+}
+.solutions-slider .bx-controls {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -29px;
+}
+.solutions-slider .bx-controls a {
+  display: block;
+  width: 35px;
+  height: 58px;
+  position: absolute;
+}
+.solutions-slider .bx-controls .bx-prev {
+  background-image: url(../img/spritesheet2.png);
+  background-position: -205px -253px;
+  left: -100px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .solutions-slider .bx-controls .bx-prev {
+    left: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-slider .bx-controls .bx-prev {
+    left: 10px;
+  }
+}
+.solutions-slider .bx-controls .bx-next {
+  background-image: url(../img/spritesheet2.png);
+  background-position: -170px -253px;
+  right: -100px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .solutions-slider .bx-controls .bx-next {
+    right: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .solutions-slider .bx-controls .bx-next {
+    right: 10px;
   }
 }
