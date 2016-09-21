@@ -10,6 +10,7 @@ $(document).ready(function () {
     });
 
     $('.index-projects__select select').selectbox();
+    $(".index-projects__select .sbOptions").mCustomScrollbar();
 
     $('.page-header__menu-btn').click(function () {
         $('.main-menu').slideToggle();

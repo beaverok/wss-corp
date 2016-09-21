@@ -260,4 +260,20 @@
             margin-right: 0;
           }
         }
+        &__buttons .btn-link--present:hover {
+          background: linear-gradient(to right, @red 20%, @red 20%, @red 80%, transparent 70%);
+          border-color: @red;
+          color: @white;
+        }
+        &__buttons .btn-link--present:hover span {
+          .bg-image("../img/bg_open-btn--hover-red.png");
+        }
+        &__buttons .btn-link--demo:hover {
+          border-color: @red;
+          background: transparent;
+          color: @white;
+        }
+        &__buttons .btn-link--demo:hover span {
+          .bg-image("../img/bg_open-btn--hover-empty.png");
+        }
 }

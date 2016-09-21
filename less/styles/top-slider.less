@@ -1,6 +1,6 @@
 .top-slider {
   width: 100%;
-  height: 554px;
+  height: 541px;
   .relative();
   margin: 0 auto 52px;
   overflow: hidden;
@@ -56,7 +56,7 @@
     }
     &__slide {
       display: inline-block;
-      height: 554px !important;
+      height: 541px !important;
 
       @media @screen-xs {
         height: 675px !important;
@@ -102,12 +102,12 @@
         }
       }
       &__slides .prev:hover {
-        background-image: url(../img/spritesheet.png);
-        background-position: -35px 0px;
+        background-image: url(../img/spritesheet2.png);
+        background-position: -205px -253px;
       }
       &__slides .next:hover {
-        background-image: url(../img/spritesheet.png);
-        background-position: -70px 0px;
+        background-image: url(../img/spritesheet2.png);
+        background-position: -170px -253px;
       }
       &__slides .fs_loader {
         @media @screen-md {
@@ -140,7 +140,7 @@
     }
 
     &__pic {
-      width: 370px;
+      width: 355px;
       .absolute();
       top: -500px;
 
@@ -169,7 +169,7 @@
         top: -200px;
         .font-family(@font-light);
         .font-size(4rem, 53px);
-        color: @color;
+        color: @color-1e;
         text-transform: uppercase;
 
         @media @screen-lg {
@@ -189,7 +189,6 @@
       }
         &__title span {
           .font-family(@font-bold);
-          color: @white;
         }
 
       &__price {
@@ -198,7 +197,7 @@
         top: -200px;
         .font-family(@font-light);
         .font-size(4rem, 53px);
-        color: @white;
+        color: @red;
         text-transform: uppercase;
 
         @media @screen-lg {
@@ -218,7 +217,6 @@
       }
         &__price span {
           .font-family(@font-bold);
-          color: @white;
         }
 
       &__buttons {
@@ -235,18 +233,33 @@
         }
       }
       &__buttons .btn-link {
+        color: @color-1e;
         @media @screen-xs {
           margin: 0 0 10px;
         }
       }
+      &__buttons .btn-link--present:hover {
+        background: linear-gradient(to right, @red 20%, @red 20%, @red 80%, transparent 70%);
+        border-color: @red;
+        color: @white;
+      }
+      &__buttons .btn-link--present:hover span {
+        .bg-image("../img/bg_open-btn--hover-red.png");
+      }
+      &__buttons .btn-link--demo:hover {
+        border-color: @red;
+        background: transparent;
+      }
+      &__buttons .btn-link--demo:hover span {
+        .bg-image("../img/bg_open-btn--hover-empty.png");
+      }
 
     &__bottom {
-      .size(100%, 100px);
+      .size(100%, 79px);
       .absolute();
       bottom: 0;
       left: 0;
       z-index: 10000;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-bottom: 1px solid #9b9b9d;
+      background-color: rgba(0, 0, 0, 0.1);
     }
 }

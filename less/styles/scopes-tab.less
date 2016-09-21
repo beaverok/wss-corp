@@ -1,7 +1,8 @@
 .scopes-tab {
   display: none;
   .container();
-  margin-bottom: 87px;
+  .relative();
+  margin-bottom: 62px;
   float: left;
 
   @media @screen-xs {
@@ -13,7 +14,9 @@
   }
 
   &__list {
-    width: 545px;
+    width: 526px;
+    .relative();
+    z-index: 20;
     float: left;
 
     @media @screen-lg {
@@ -32,10 +35,10 @@
       min-height: 58px;
       .relative();
       margin-bottom: 25px;
-      padding: 0 67px 0 83px;
+      padding: 0 49px 0 100px;
       .transition();
       background-position: right top;
-      cursor: default;
+      cursor: pointer;
 
       @media @screen-xs {
         padding: 0 10px 0 0;
@@ -51,18 +54,18 @@
       .bg-image("../img/icon_list-bullet.png");
       background-position: center center;
       .absolute();
-      .pos();
+      .pos(0,17px);
       content: '';
 
       @media @screen-xs {
         display: none;
       }
     }
-    &__item:hover, &__item--active {
+    /*&__item:hover, &__item--active {
       .bg-image("../img/icon_capability--active.png");
-      background-position: right center;
+      background-position: right 80%;
       background-repeat: no-repeat;
-    }
+    }*/
       &__title {
         margin-bottom: 11px;
         .font-family(@font-reg);
@@ -71,6 +74,7 @@
         .uppercase();
       }
       &__descr {
+        max-width: 380px;
         .font-family(@font-reg);
         .font-size(1.4rem, 18px);
         color: @color-33;
@@ -78,14 +82,19 @@
       }
       &__item:hover &__descr, &__item--active &__descr {
         .opacity(1);
+        text-decoration: underline;
       }
 
     &__pic {
-      width: 630px;
-      height: 378px;
-      box-shadow: 0 0 65px 18px #ccc;
-      .relative();
-      float: right;
+      .size(1076px,676px);
+      //box-shadow: 0 0 65px 18px #ccc;
+      .absolute();
+      top: -135px;
+      right: -255px;
+      z-index: 10;
+      background-position: center center;
+      background-repeat: no-repeat;
+      .bg-image("../img/scopes-foto.jpg");
 
       @media @screen-lg {
         width: 580px;
@@ -102,16 +111,14 @@
       }
     }
       &__pic-inner {
-        .size(100%, 100%);
+        .size(774px,418px);
         .absolute();
-        .pos();
+        top: 96px;
+        right: 137px;
         overflow: hidden;
       }
-        &__pic--inner img {
-          max-width: 630px;
-
-          @media @screen-xs {
-            max-width: 300px;
-          }
+        &__pic-inner img {
+          .absolute();
+          .pos(200px,255px);
         }
 }

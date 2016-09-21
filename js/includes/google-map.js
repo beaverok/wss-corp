@@ -47,6 +47,7 @@ function g_map ()
                 },
                 position: latlng
             });
+            map.panBy(-100,50);
         } else {
             var marker = new google.maps.Marker({
                 map: map,
