@@ -10,7 +10,8 @@ $(document).ready(function () {
     });
 
     $('.fancy-pic').fancybox({
-        'autoHeight': true,
-        'closeClick': true
+        'autoHeight': true
     });
+
+    $('.fancy-link').fancybox();
 });

@@ -1,0 +1,20 @@
+.block-hidden
+    .form-feedback#form-feedback
+        .form-feedback__title Обратная связь
+        form
+            .form-feedback__left
+                .form-feedback__input-wrap
+                    input(type='text', placeholder='Имя*').form-feedback__input-text
+                .form-feedback__input-wrap
+                    input(type='text', placeholder='Телефон*').form-feedback__input-text
+                .form-feedback__input-wrap
+                    input(type='text', placeholder='E-mail*').form-feedback__input-text
+
+            .form-feedback__right
+                .form-feedback__textarea-wrap
+                    textarea(placeholder='Текст вопроса').form-feedback__textarea
+
+                    input(type='file').form-feedback__input-file
+
+            .form-feedback__submit-wrap
+                input(type='submit',value='Отправить').form-feedback__input-submit
