@@ -41,6 +41,11 @@
     .font-size(1.8rem, 31px);
     color: @color-1e;
     .uppercase();
+
+    @media @screen-xs {
+      margin-bottom: 22px;
+      line-height: 24px;
+    }
   }
 
   &__list {
@@ -66,6 +71,7 @@
 
       @media @screen-xs {
         padding-left: 30px;
+        line-height: 16px;
       }
     }
     &__item::before {
@@ -80,6 +86,7 @@
       content: '';
 
       @media @screen-xs {
+        top: 6px;
         left: -30px;
         margin-right: -22px;
       }

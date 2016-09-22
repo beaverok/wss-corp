@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    $('.index-product__link--video').fancybox({
-        'width'				: '90%',
-        'height'			: '100%',
-        'autoScale'     	: true,
-        'transitionIn'		: 'none',
-        'transitionOut'		: 'none',
-        'type'				: 'iframe',
-        'scrolling'		: 'no'
-    });
-
     $('.index-projects__select select').selectbox();
     $(".index-projects__select .sbOptions").mCustomScrollbar();
 
@@ -23,7 +13,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.scopes-tab__item').click(function () {
+    $('.scopes-tab__item').mouseenter(function () {
         var pic = $(this).attr("data-pic");
 
         $('.scopes-tab__item').removeClass('scopes-tab__item--active');
@@ -37,6 +27,14 @@ $(document).ready(function () {
     });
 
     if ($(window).width() < 767) {
+        $('.advantages-tabs__title').click(function () {
+            var selected = $(this).attr('href');
+            $.scrollTo(selected, 1000, { offset: -70 });
+        });
+        $('.scopes-tabs__link').click(function () {
+            var selected = $(this).attr('href');
+            $.scrollTo(selected, 1000, { offset: -70 });
+        });
         $('.price-tab__link').click(function () {
             var selected = $(this).attr('href');
             $.scrollTo(selected, 1000, { offset: -70 });

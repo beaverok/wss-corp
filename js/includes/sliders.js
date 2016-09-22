@@ -6,7 +6,7 @@ $(document).ready(function () {
             'transitionIn': 'fade',
             'transitionOut': 'fade',
             'timeout': 8000,
-            'speedIn': 2000,
+            'speedIn': 500,
             'delay': 300,
             'controls': true,
             'pauseOnHover': true
