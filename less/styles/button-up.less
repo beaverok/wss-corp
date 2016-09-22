@@ -1,29 +1,45 @@
 .button-up {
-  & a {
-    .size(73px, 73px);
-    .bg-image("../img/icon_top-btn.png");
-    position: fixed;
-    bottom: 95px;
-    right: 95px;
-    z-index: 1000;
+  .size(73px, 73px);
+  background-color: rgba(196,38,29,0.5);
+  position: fixed;
+  bottom: 95px;
+  right: 95px;
+  z-index: 1000;
+  .rounded(73px);
+  .transition();
+  cursor: pointer;
 
-    @media @screen-lg {
-      right: 20px;
-      bottom: 20px;
-    }
-    @media @screen-md {
-      right: 20px;
-      bottom: 20px;
-    }
-    @media @screen-xs {
-      .size(50px,50px);
-      right: 20px;
-      bottom: 20px;
-      background-size: cover;
-    }
+  &:hover {
+    background-color: rgba(196,38,29,1);
   }
 
-  &--project a {
-    .bg-image("../img/icon_top-btn--grey.png");
+  @media @screen-lg {
+    right: 20px;
+    bottom: 20px;
+  }
+  @media @screen-md {
+    right: 20px;
+    bottom: 20px;
+  }
+  @media @screen-xs {
+    .size(50px,50px);
+    right: 20px;
+    bottom: 20px;
+  }
+
+  &--project {
+    background-color: rgba(70,70,70,0.12);
+  }
+  &--project:hover {
+    background-color: rgba(70,70,70,1);
+  }
+
+  & a {
+    display: block;
+    .size(30px,21px);
+    .bg-image("../img/icon_top-btn-arrow.png");
+    .absolute();
+    .pos(50%,50%);
+    margin: -10px 0 0 -15px;
   }
 }

@@ -1,8 +1,9 @@
 .contacts-form
     form
         .contacts-form__item
-            +input-text('contacts-form__input', 'Имя*', required)
+            +input-text('contacts-form__input required', 'Имя*')
         .contacts-form__item
-            +input-text('contacts-form__input input--phone', 'Телефон*')
+            +input-text('contacts-form__input required input--phone', 'Телефон*')
 
         input.contacts-form__submit(type="submit" value="Отправить")
+        button.contacts-form__submit--empty Отправить

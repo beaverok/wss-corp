@@ -43,6 +43,14 @@
     .absolute();
     right: 5px;
   }
+  & .bx-prev:hover {
+    background-image: url(../img/spritesheet2.png);
+    background-position: -205px -253px;
+  }
+  & .bx-next:hover {
+    background-image: url(../img/spritesheet2.png);
+    background-position: -170px -253px;
+  }
 
     &__slides {
       //.ul-reset();
@@ -178,7 +186,7 @@
         @media @screen-md {
           .font-size(2.2rem, 30px);
           top: 125px;
-          right: 10px;
+          right: 25px;
         }
         @media @screen-xs {
           .font-size(2.2rem, 30px);
@@ -261,5 +269,9 @@
       left: 0;
       z-index: 10000;
       background-color: rgba(0, 0, 0, 0.1);
+
+      @media @screen-xs {
+        height: 90px;
+      }
     }
 }

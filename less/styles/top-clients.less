@@ -21,7 +21,7 @@
       margin-right: 40px;
     }
     @media @screen-md {
-      margin-right: 20px;
+      margin-right: 10px;
     }
     @media @screen-xs {
       display: block;
@@ -44,16 +44,19 @@
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
         line-height: 79px;
-        .transition(0.4);
+        .transition(0.4s);
         cursor: pointer;
 
         @media @screen-lg {
-          margin-right: 25px;
+          margin-right: 0;
+          padding: 0 10px;
         }
         @media @screen-md {
-          margin-right: 12px;
+          margin-right: 0;
+          padding: 0 5px;
         }
         @media @screen-xs {
+          max-width: 90px;
           height: auto;
           margin-right: 10px;
           line-height: 30px;

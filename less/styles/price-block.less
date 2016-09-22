@@ -3,6 +3,9 @@
   margin-bottom: 77px;
   padding: 66px 0 75px;
 
+  @media @screen-md {
+    padding-bottom: 15px;
+  }
   @media @screen-xs {
     margin-bottom: 40px;
     padding: 30px 0 0;
@@ -59,6 +62,7 @@
         .no-decor();
         .uppercase();
         vertical-align: top;
+        .transition();
       }
       &__tabs-link:hover, &__tabs-link--active {
         color: @red;

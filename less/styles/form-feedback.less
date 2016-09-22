@@ -2,6 +2,11 @@
   width: 632px;
   padding: 32px 45px;
 
+  @media @screen-xs {
+    width: 100%;
+    padding: 32px 10px;
+  }
+
   &__title {
     margin-bottom: 21px;
     .font-family(@font-reg);
@@ -13,17 +18,29 @@
   &__left {
     width: 262px;
     float: left;
+
+    @media @screen-xs {
+      width: 100%;
+      float: none;
+      margin: 0 auto 11px;
+    }
   }
     &__input-wrap {
       .size(262px,44px);
+      .relative();
       margin-bottom: 11px;
+      border: 1px solid #a8a8a8;
+
+      @media @screen-xs {
+        .size(230px,30px)
+      }
     }
     &__input-wrap:last-child {
       margin-bottom: 0;
     }
       &__input-text {
         .size(100%,100%);
-        border: 1px solid #a8a8a8;
+        border: none;
         padding: 0 14px;
         .font-family(@font-reg);
         .font-size(1.4rem, 44px);
@@ -31,11 +48,20 @@
       }
 
   &__right {
+    .relative();
     float: right;
+
+    @media @screen-xs {
+      float: none;
+    }
   }
     &__textarea-wrap {
       .size(262px,155px);
       .relative();
+
+      @media @screen-xs {
+        .size(230px,120px);
+      }
     }
       &__textarea {
         .size(100%,100%);
@@ -47,13 +73,13 @@
         resize: none;
       }
 
-      &__textarea-wrap .file-upload-wrapper {
+      &__right .file-upload-wrapper {
         width: 130px;
         .absolute();
         bottom: 10px;
         right: 15px;
       }
-      &__textarea-wrap .file-upload-button {
+      &__right .file-upload-button {
         border: none;
         background: none;
         .font-family(@font-reg);
@@ -62,7 +88,7 @@
         text-decoration: underline;
         cursor: pointer;
       }
-      &__textarea-wrap .file-upload-input {
+      &__right .file-upload-input {
         width: 100%;
         border: none;
         .font-family(@font-reg);
@@ -75,6 +101,10 @@
     margin-top: 36px;
     .align-center();
     .clear();
+
+    @media @screen-xs {
+      margin-top: 0;
+    }
   }
     &__input-submit {
       display: inline-block;
@@ -95,4 +125,20 @@
     &__input-submit:hover {
       background-color: lighten(@red, 5%);
     }
+}
+
+.input--ok {
+  border: 1px solid green;
+}
+.input--error {
+  border: 1px solid @red;
+}
+
+.text-error {
+  .absolute();
+  top: 0;
+  right: 10px;
+  .font-family(@font-reg);
+  .font-size(1.4rem, 44px);
+  color: @red;
 }

@@ -5,7 +5,9 @@
 
   &__item {
     .size(262px, 44px);
+    .relative();
     margin-bottom: 17px;
+    border: 1px solid @grey-a4;
 
     @media @screen-xs {
       width: 240px;
@@ -13,14 +15,14 @@
   }
     &__input {
       .size(100%, 100%);
-      border: 1px solid @grey-a4;
       padding: 0 10px;
+      border: none;
       .font-family(@font-reg);
       .font-size(1.3rem, 44px);
       color: @color-1e;
     }
 
-  &__submit {
+  &__submit, &__submit--empty {
     display: block;
     width: 132px;
     height: 35px;
@@ -36,7 +38,10 @@
     cursor: pointer;
     .transition();
   }
-  &__submit:hover {
+  &__submit {
+    display: none;
+  }
+  &__submit:hover, &__submit--empty:hover {
     background-color: lighten(@red, 5%);
   }
 }

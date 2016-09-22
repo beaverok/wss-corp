@@ -1,13 +1,20 @@
 .index-about {
   margin-bottom: 64px;
 
+  @media @screen-xs {
+    margin-bottom: 48px;
+  }
+
   &__top-inner {
     .container();
     margin-bottom: 75px;
     padding-bottom: 25px;
 
+    @media @screen-md {
+      margin-bottom: 10px;
+    }
     @media @screen-xs {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
 

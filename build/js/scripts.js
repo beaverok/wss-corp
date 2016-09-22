@@ -1756,9 +1756,9 @@
 				image    : '<img class="fancybox-image" src="{href}" alt="" />',
 				iframe   : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen' + (IE ? ' allowtransparency="true"' : '') + '></iframe>',
 				error    : '<p class="fancybox-error">The requested content cannot be loaded.<br/>Please try again later.</p>',
-				closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>',
-				next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
-				prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+				closeBtn : '<a title="Закрыть" class="fancybox-item fancybox-close" href="javascript:;"></a>',
+				next     : '<a title="Вперед" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
+				prev     : '<a title="Назад" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
 			},
 
 			// Properties for each animation type
@@ -6297,6 +6297,59 @@ $(document).ready(function () {
 
     $('.fancy-link').fancybox();
 });
+/*$('.form-feedback form').bind('submit', function(event) {
+
+    $('.input--email').css({'text-transform' : 'lowercase'});
+
+    $('.form-feedback form .required').each(function()
+    {
+        if(!$(this).val().length) {
+            event.preventDefault();
+            $(this).addClass('input--error');
+            $(this).parent().append("<span class='text-error'>Поле не заполнено</span>");
+        } else {
+            $(this).addClass('input--ok');
+            $(this).removeClass('input--error');
+            $('.text-error').remove();
+        }
+    });
+
+    if($('.input--email').val() != '') {
+        var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+
+        if(pattern.test($('.input--email').val())){
+            $('.input--email').addClass('input--ok');
+            $('.input--email').removeClass('input--error');
+            $('.text-error').remove();
+        } else {
+            event.preventDefault();
+            $('.input--email').addClass('input--error');
+            $('.input--email').parent().append("<span class='text-error'>Неверный формат e-mail</span>");
+        }
+    }
+
+});
+
+$('.contacts-form__submit--empty').bind('click', function(event) {
+
+    $('.contacts-form form .required').each(function()
+    {
+        if(!$(this).val().length) {
+            event.preventDefault();
+            $(this).addClass('input--error');
+            $(this).parent().append("<span class='text-error'>Поле не заполнено</span>");
+        } else {
+            $(this).addClass('input--ok');
+            $(this).removeClass('input--error');
+            $('.text-error').remove();
+        }
+    });
+
+    if ($('.contacts-form__input[name="name"]').val().length && $('.contacts-form__input[name="phone"]').val().length) {
+        $('.contacts-form__submit').css('display', 'block');
+        $('.contacts-form__submit--empty').css('display', 'none');
+    }
+});*/
 function g_map ()
 {
     var maps = $('.contacts__map');

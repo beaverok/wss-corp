@@ -20,11 +20,7 @@
     float: left;
 
     @media @screen-lg {
-      width: 400px;
-    }
-    @media @screen-md {
-      float: none;
-      margin: 0 auto 45px;
+      width: 500px;
     }
     @media @screen-xs {
       width: 100%;
@@ -79,6 +75,7 @@
         .font-size(1.4rem, 18px);
         color: @color-33;
         .opacity();
+        .transition();
       }
       &__item:hover &__descr, &__item--active &__descr {
         .opacity(1);
@@ -97,17 +94,19 @@
       .bg-image("../img/scopes-foto.jpg");
 
       @media @screen-lg {
-        width: 580px;
-        right: 10px;
+        right: -370px;
       }
       @media @screen-md {
-        float: none;
-        margin: 0 auto;
+        .size(244px,244px);
+        top: 20%;
+        right: 10px;
+        .rounded(244px);
+        background: none;
+        .bg-color(rgba(255,255,255,0.5));
+        box-shadow: 0 0 10px 3px #a4a4a4;
       }
       @media @screen-xs {
-        width: 100%;
-        margin: 0 auto;
-        box-shadow: none;
+        display: none;
       }
     }
       &__pic-inner {
@@ -116,9 +115,20 @@
         top: 96px;
         right: 137px;
         overflow: hidden;
+
+        @media @screen-md {
+          .size(130px,87px);
+          .pos(50%,50%);
+          margin: -44px 0 0 -65px;
+        }
       }
         &__pic-inner img {
           .absolute();
           .pos(200px,255px);
+
+          @media @screen-md {
+            .relative();
+            .pos();
+          }
         }
 }
