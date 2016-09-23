@@ -32,3 +32,5 @@ $('.fancy-pic').fancybox({
     'autoHeight': true,
     'closeClick': true
 });
+
+$('.fancy-link').fancybox();

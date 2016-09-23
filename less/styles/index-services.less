@@ -50,6 +50,17 @@
     .transition();
   }
   &__link:hover {
-    .color-lighten(@color-33);
+    font-weight: 600;
+  }
+  &__text {
+    width: 500px;
+    padding: 30px 20px;
+    .font-family(@font-reg);
+    .font-size(1.6rem,22px);
+    color: @color-33;
+
+    @media @screen-xs {
+      width: 100%;
+    }
   }
 }

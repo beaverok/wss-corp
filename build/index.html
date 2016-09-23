@@ -24,7 +24,7 @@
         </nav>
         <div class="page-header__menu-btn"></div>
         <div class="page-header__contacts">
-          <div class="page-header__phone"><a href="tel: +1 (310) 888 67 86">+ 1 (310)<span>888 67 86</span></a></div><a class="page-header__feedback-link" href="#">Обратная связь</a>
+          <div class="page-header__phone"><a href="tel: +1 (310) 888 67 86">+ 1 (310)<span>888 67 86</span></a></div><a class="page-header__feedback-link fancy-link" href="#form-feedback">Обратная связь</a>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
         <div class="top-slider__pager"></div>
         <div class="top-slider__right">
           <div class="top-slider__title">It consulting <span>& System</span> integration</div>
-          <div class="top-slider__text">Выполняем проекты по внедрению SharePoint. Разработали два комплесных продукта PSS Portal и WSSDocs</div><a class="top-slider__more-link" href="#">Services</a>
+          <div class="top-slider__text">Выполняем проекты по внедрению SharePoint. Разработали два комплесных продукта PSS Portal и WSSDocs</div><a class="top-slider__more-link" href="#">Services<span></span></a>
         </div>
       </div>
     </div>
@@ -287,5 +287,32 @@
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.js"></script>
+    <div class="block-hidden">
+      <div class="form-feedback" id="form-feedback">
+        <div class="form-feedback__title">Обратная связь</div>
+        <form>
+          <div class="form-feedback__left">
+            <div class="form-feedback__input-wrap">
+              <input class="form-feedback__input-text required" type="text" placeholder="Имя*">
+            </div>
+            <div class="form-feedback__input-wrap">
+              <input class="form-feedback__input-text input--phone required" type="text" placeholder="Телефон*">
+            </div>
+            <div class="form-feedback__input-wrap">
+              <input class="form-feedback__input-text input--email required" type="text" placeholder="E-mail*">
+            </div>
+          </div>
+          <div class="form-feedback__right">
+            <div class="form-feedback__textarea-wrap">
+              <textarea class="form-feedback__textarea" placeholder="Текст вопроса"></textarea>
+              <input class="form-feedback__input-file" type="file">
+            </div>
+          </div>
+          <div class="form-feedback__submit-wrap">
+            <input class="form-feedback__input-submit" type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

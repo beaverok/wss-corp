@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.index-projects__select select').selectbox();
+    $(".index-projects__select .sbOptions").mCustomScrollbar();
 
     // mobile menu open-close
     $('.page-header__menu-btn').click(function () {
