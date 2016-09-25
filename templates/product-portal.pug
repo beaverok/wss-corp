@@ -1,0 +1,18 @@
+doctype html
+html(lang='ru')
+    include views/includes/header
+    body
+        include views/includes/page-header
+        include views/includes/breadcrumbs
+        include views/includes/common-title
+        include views/function
+
+        .page-content
+            .page-content__inner
+                include views/includes/sidebar
+                .content-block
+                    include views/includes/product-page
+                    include views/includes/solution-page__call
+                    include views/includes/projects-block
+
+        include views/includes/footer

@@ -1,0 +1,169 @@
+.product-page {
+  &__file-link {
+    display: inline-block;
+    .relative();
+    margin-bottom: 39px;
+    padding-left: 35px;
+    .font-family(@font-reg);
+    .font-size(1.4rem, 38px);
+    font-weight: 600;
+    color: @color-33;
+    .transition();
+    vertical-align: top;
+    .no-decor();
+  }
+  &__file-link::before {
+    .size(21px,26px);
+    .absolute();
+    .pos(5px,0);
+    .bg-image("../img/spritesheet.png");
+    background-position: -273px -269px;
+    content: '';
+  }
+  &__file-link:hover {
+    .color-lighten(@color-33);
+  }
+
+  &__h3 {
+    margin-bottom: 24px;
+    .font-family(@font-reg);
+    .font-size(1.8rem, 16px);
+    color: @color-33;
+    .uppercase();
+  }
+
+  &__ul {
+    .ul-reset();
+    margin-bottom: 42px;
+  }
+    &__li {
+      display: block;
+      .relative();
+      margin-bottom: 9px;
+      padding-left: 25px;
+      .font-family(@font-reg);
+      .font-size(1.6rem, 36px);
+      color: #5c5c5c;
+    }
+    &__li p {
+      margin-bottom: 9px;
+    }
+    &__li::before {
+      display: inline-block;
+      .absolute();
+      top: 8px;
+      left: 0;
+      .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
+      background-position: -228px -240px;
+      content: '';
+
+      @media @screen-xs {
+        .absolute();
+        top: 2px;
+      }
+    }
+
+    &__advants {
+      margin-bottom: 56px;
+      padding-bottom: 50px;
+      border-bottom: 4px solid #e2e2e2;
+    }
+    &__advants::after {
+      .clear-after();
+    }
+      &__advants-ul {
+        display: inline-block;
+        .ul-reset();
+        width: 48%;
+        margin-top: 8px;
+      }
+      &__advants-ul:first-child {
+        margin-right: 34px;
+      }
+        &__advants-li {
+          display: block;
+          .relative();
+          margin-bottom: 9px;
+          padding-left: 41px;
+          .font-family(@font-reg);
+          .font-size(1.6rem, 27px);
+          color: #5c5c5c;
+        }
+        &__advants-li::before {
+          display: inline-block;
+          .size(22px,17px);
+          .absolute();
+          top: 4px;
+          left: 0;
+          background: none;
+          .bg-image("../img/spritesheet.png");
+          background-position: -248px -294px;
+          content: '';
+        }
+
+    &__scopes-h3 {
+      margin-bottom: 40px;
+      .font-family(@font-reg);
+      .font-size(3rem, 28px);
+      color: @color-1e;
+      .uppercase();
+    }
+
+    &__tabs-ul {
+      .ul-reset();
+      margin-bottom: 35px;
+    }
+      &__tabs-li {
+        display: inline-block;
+        margin-right: 39px;
+        vertical-align: top;
+      }
+      &__tabs-li:last-child {
+        margin-right: 0;
+      }
+        &__tabs-link {
+          display: inline-block;
+          border-bottom: 1px dotted @color-1e;
+          .font-family(@font-reg);
+          .font-size(1.5rem, 15px);
+          font-weight: 600;
+          color: @color-1e;
+          .uppercase();
+          .no-decor();
+          .transition();
+        }
+        &__tabs-link:hover, &__tabs-link--active{
+          border: none;
+          color: @red;
+        }
+
+    &__scopes-tab {
+      display: none;
+    }
+    &__scopes-tab--active {
+      display: block;
+    }
+      &__scopes-ul {
+        .ul-reset();
+      }
+      &__scopes-li {
+        display: block;
+        .relative();
+        margin-bottom: 9px;
+        padding-left: 41px;
+        .font-family(@font-reg);
+        .font-size(1.6rem, 27px);
+        color: #5c5c5c;
+      }
+      &__scopes-li::before {
+        display: inline-block;
+        .size(22px,17px);
+        .absolute();
+        top: 4px;
+        left: 0;
+        background: none;
+        .bg-image("../img/spritesheet.png");
+        background-position: -248px -294px;
+        content: '';
+      }
+}

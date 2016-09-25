@@ -1,0 +1,52 @@
+.content-block {
+  max-width: 925px;
+  margin-top: -7px;
+  float: right;
+
+  &__h3 {
+    margin-bottom: 17px;
+    .font-family(@font-reg);
+    .font-size(1.8rem, 16px);
+    color: @color-1e;
+    .uppercase();
+  }
+
+  & p {
+    margin-bottom: 9px;
+    .font-family(@font-reg);
+    .font-size(1.6rem, 27px);
+    color: #5c5c5c;
+  }
+
+  &__ul {
+    .ul-reset();
+    margin: 16px 0 17px;
+  }
+    &__li {
+      .relative();
+      margin-bottom: 9px;
+      padding-left: 22px;
+      .font-family(@font-reg);
+      .font-size(1.6rem, 27px);
+      color: #5c5c5c;
+    }
+    &__li::before {
+      .absolute();
+      top: 8px;
+      left: 0;
+      .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
+      background-position: -228px -240px;
+
+      @media @screen-xs {
+        .absolute();
+        top: 2px;
+      }
+    }
+}
+
+.text-bold {
+  font-family: @font-bold;
+}
+.text-red {
+  color: @red;
+}

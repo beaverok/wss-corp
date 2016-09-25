@@ -20,6 +20,16 @@
   }
   &.is-stuck &__logo {
     margin-top: 7px;
+
+    @media @screen-md {
+      margin-top: 13px;
+      margin-right: 25px;
+    }
+  }
+  &.is-stuck &__logo img {
+    @media @screen-md {
+      max-width: 120px;
+    }
   }
   &.is-stuck &__logo--project {
     margin-top: 15px;
@@ -52,8 +62,17 @@
     }
   }
   &.is-stuck .main-menu__link {
+    @media @screen-md {
+      padding: 0 8px;
+      font-size: 1.1rem;
+    }
     @media @screen-xs {
-      line-height: 16px;
+      line-height: 30px;
+    }
+  }
+  &.is-stuck &__menu-btn {
+    @media @screen-xs {
+      top: 10px;
     }
   }
   &.is-stuck &__contacts {
@@ -102,7 +121,7 @@
     &__logo {
       display: block;
       margin-top: 26px;
-      margin-right: 74px;
+      margin-right: 64px;
       float: left;
 
       @media @screen-lg {

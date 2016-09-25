@@ -146,16 +146,37 @@
   }
 
   &__price {
+    display: inline-block;
+    margin-right: 67px;
     .font-family(@font-bold);
     .font-size(2.5rem, 24px);
     color: @white;
 
+    @media @screen-lg {
+      margin-right: 20px;
+    }
+    @media @screen-md {
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
     @media @screen-xs {
+      margin-right: 35px;
       text-align: center;
     }
   }
   &__price span {
     color: @red;
+  }
+
+  &__more {
+    .font-family(@font-reg);
+    .font-size(1.4rem, 14px);
+    color: @white;
+    .no-decor();
+    .transition();
+  }
+  &__more:hover {
+    .color-darken(@white);
   }
 }
 .index-product:nth-of-type(2) {

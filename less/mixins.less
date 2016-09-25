@@ -123,6 +123,13 @@
   clear: both;
 }
 
+.clear-after() {
+  display: block;
+  width: 100%;
+  .clear();
+  content: '';
+}
+
 /* положение блока */
 .relative() {
   position: relative;

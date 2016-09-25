@@ -1,0 +1,55 @@
+.solutions {
+  width: 100%;
+  .bg-image("../img/bg_solutions-page.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  margin-top: 71px;
+
+  &__inner {
+    .container();
+    padding: 61px 0 49px;
+  }
+
+    &__block {
+      margin-bottom: 40px;
+    }
+      &__title {
+        margin-bottom: 45px;
+        .font-family(@font-bold);
+        .font-size(21px,20px);
+        color: @white;
+        .uppercase();
+        .align-center();
+      }
+
+      &__list--gradient {
+        background: linear-gradient(to right, rgba(65,60,81,0.5) 0%, rgba(56,57,77,0.5) 50%, rgba(37,48,62,0.5) 100%);
+      }
+        &__list-item {
+          display: inline-block;
+          .size(25%,138px);
+          border: 1px solid #636473;
+          margin: 0 -4px -1px 0;
+          padding: 40px 44px 0;
+          .align-center();
+          vertical-align: top;
+        }
+          &__list-line {
+            .size(48px,3px);
+            margin: 0 auto 15px;
+            .bg-color(@red);
+          }
+          &__list-name {
+            display: inline-block;
+            .font-family(@font-reg);
+            .font-size(15px,23px);
+            color: @white;
+            .uppercase();
+            .no-decor();
+            .transition();
+            vertical-align: top;
+          }
+          &__list-name:hover {
+            color: @red;
+          }
+}

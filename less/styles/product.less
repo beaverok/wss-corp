@@ -1,0 +1,155 @@
+.product {
+  width: 588px;
+  .relative();
+  margin-right: 64px;
+  border: 1px dotted #8b8c8d;
+  .rounded(8px);
+  float: left;
+
+  @media @screen-xs {
+    width: 100%;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__pic {
+    .size(189px, 273px);
+    float: left;
+
+    @media @screen-md {
+      width: 140px;
+    }
+    @media @screen-xs {
+      float: none;
+      margin: 0 auto 30px;
+    }
+  }
+  &__pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__right {
+    margin-left: 195px;
+
+    @media @screen-lg {
+      max-width: 270px;
+    }
+    @media @screen-md {
+      margin-left: 165px;
+    }
+    @media @screen-xs {
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+  }
+  &__name {
+    margin: 29px 0 15px;
+    .font-family(@font-bold);
+    .font-size(2.3rem, 20px);
+    color: @color-33;
+  }
+  &__text {
+    margin-bottom: 14px;
+    padding-right: 70px;
+    .font-family(@font-reg);
+    .font-size(1.6rem, 24px);
+    color: @color-33;
+  }
+
+  &__links {
+    margin-bottom: 21px;
+  }
+  &__link--video {
+    display: inline-block;
+    margin-right: 42px;
+    .font-family(@font-reg);
+    .font-size(1.4rem, 24px);
+    color: @color-33;
+    .transition();
+    vertical-align: middle;
+    .no-decor();
+
+    @media @screen-lg {
+      margin-bottom: 10px;
+    }
+    @media @screen-md {
+      margin-bottom: 10px;
+    }
+    @media @screen-xs {
+      margin-bottom: 10px;
+    }
+  }
+  &__link--video::before {
+    display: inline-block;
+    .size(16px,23px);
+    .bg-image("../img/spritesheet.png");
+    background-position: -273px -296px;
+    .relative();
+    top: 6px;
+    margin-right: 17px;
+    content: '';
+  }
+  &__link--video:hover {
+    .color-lighten(@color-33);
+  }
+
+  &__link--file {
+    display: inline-block;
+    .relative();
+    padding-left: 35px;
+    .font-family(@font-reg);
+    .font-size(1.4rem, 38px);
+    color: @color-33;
+    .transition();
+    vertical-align: top;
+    .no-decor();
+  }
+  &__link--file::before {
+    .size(21px,26px);
+    .absolute();
+    .pos(5px,0);
+    .bg-image("../img/spritesheet.png");
+    background-position: -273px -269px;
+    content: '';
+  }
+  &__link--file:hover {
+    .color-lighten(@color-33);
+  }
+
+  &__price {
+    display: inline-block;
+    margin-right: 67px;
+    .font-family(@font-bold);
+    .font-size(2.5rem, 24px);
+    color: @color-33;
+
+    @media @screen-lg {
+      margin-right: 20px;
+    }
+    @media @screen-md {
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+    @media @screen-xs {
+      margin-right: 35px;
+      text-align: center;
+    }
+  }
+  &__price span {
+    color: @red;
+  }
+
+  &__more {
+    .font-family(@font-reg);
+    .font-size(1.4rem, 14px);
+    color: @color-33;
+    .no-decor();
+    .transition();
+  }
+  &__more:hover {
+    .color-lighten(@color-33);
+  }
+}

@@ -1,0 +1,52 @@
+.sidebar-info {
+
+  &__title {
+    margin-left: 20px;
+    margin-bottom: 31px;
+    .font-family(@font-reg);
+    .font-size(1.8rem, 18px);
+    color: @color-1e;
+  }
+
+  &__item {
+    .relative();
+    margin-bottom: 27px;
+    .align-center();
+  }
+    &__item-btn {
+      .size(113px,112px);
+      .bg-image("../img/icon_play-btn--inner.png");
+      .absolute();
+      .pos(27px,50%);
+      margin-left: -56px;
+    }
+    &__item img {
+      max-height: 160px;
+      border: 1px solid #dedede;
+      margin-bottom: 16px;
+    }
+    &__item-name {
+      padding: 0 50px;
+      .font-family(@font-reg);
+      .font-size(1.4rem, 20px);
+      color: @color-1e;
+    }
+
+  &__get-present {
+    .size(100%,54px);
+    .bg-image("../img/bg_get-present.png");
+    margin-top: 43px;
+    .align-center();
+  }
+    &__get-present a {
+      .font-family(@font-reg);
+      .font-size(1.6rem, 54px);
+      color: @white;
+      .uppercase();
+      .no-decor();
+      .transition();
+    }
+    &__get-present a:hover {
+      color: darken(@white,10%);
+    }
+}

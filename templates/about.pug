@@ -1,0 +1,34 @@
+doctype html
+html(lang='ru')
+    include views/includes/header
+    body
+        include views/includes/page-header
+        include views/includes/breadcrumbs
+        include views/includes/common-title
+        include views/function
+
+        .page-content
+            .page-content__inner
+                include views/includes/sidebar
+                .content-block
+                    p
+                        | Компания WSS-Consulting специализируется на внедрении продуктов
+                        | Microsoft Office Servers: SharePoint Server 2007 / 2010, SharePoint
+                        | Services 3.0, SharePoint Foundation 2010, Search Server 2007 / 2010, FAST Search Server 2010.
+
+                    include views/includes/about-advantages
+
+                    h3.content-block__h3 история
+
+                    p Компания WSS-Consulting создана в середине 2006 года двумя основателями – экспертами в области разработки корпоративных информационных систем. Основой для компании стала веб-студия, создававшая интернет-сайты с 2003 года.
+                    p Ключевыми идеями при создании компании WSS-Consulting были:
+
+                    ul.content-block__ul
+                        li.content-block__li Специализация на платформе Microsoft SharePoint
+                        li.content-block__li Ориентация на создании качественных промышленных решений в области  корпоративных порталов и автоматизации документооборота
+
+                    p С первых месяцев работы компания заслужила репутацию наиболее технологически продвинутого игрока рынка внедрения SharePoint. Рекомендации клиентов послужили катализатором, позволившим компании динамично развиваться, увеличивая штат компании и финансовые показатели не менее чем на 100% каждый год.
+                    p К середине 2013 года в компании WSS-Consulting работает более 50 специалистов по SharePoint, SQL Server и Microsoft.Net. Мы успешно выполнили более 100 проектов внедрения SharePoint для средних и крупных заказчиков.
+                    p Компания продолжает развиваться, и мы ставим себе цель: до 2014 года стать игроком №1 российского рынка продуктов и услуг на платформе Microsoft SharePoint.
+
+        include views/includes/footer

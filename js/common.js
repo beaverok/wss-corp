@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.index-projects__select select').selectbox();
+    $('.projects-block__select select').selectbox();
     $(".index-projects__select .sbOptions").mCustomScrollbar();
 
     // mobile menu open-close
@@ -36,4 +37,9 @@ $(document).ready(function () {
         $(this).next().slideDown();
     })
 
+    // job page
+    $('.job-list__tab').click(function () {
+        $(this).toggleClass('job-list__tab--active');
+        $(this).next().slideToggle();
+    });
 });

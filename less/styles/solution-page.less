@@ -1,0 +1,187 @@
+.solution-page {
+  & p {
+    margin-bottom: 21px;
+    text-align: justify;
+  }
+
+  &__product {
+    .size(419px,175px);
+    .relative();
+    margin-left: 30px;
+    padding: 18px 28px 0 173px;
+    float: right;
+  }
+    &__product img {
+      .absolute();
+      .pos();
+    }
+    &__product-name {
+      .relative();
+      margin-bottom: 20px;
+      .font-family(@font-reg);
+      .font-size(1.8rem, 24px);
+      color: @white;
+      .uppercase();
+    }
+    &__product-link {
+      display: inline-block;
+      width: 158px;
+      .relative();
+      padding: 0 40px 0 10px;
+      background: linear-gradient(to right, @white 20%, @white 20%, @white 75%, transparent 70%);
+      border: 2px solid @white;
+      .rounded(8px);
+      .font-family(@font-bold);
+      .font-size(1.3rem, 41px);
+      color: @color-1e;
+      vertical-align: middle;
+      .no-decor();
+      .uppercase();
+      .align-center();
+      .transition();
+      box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.3);
+
+      @media @screen-md {
+        margin-right: 10px;
+        padding: 0 60px 0 15px;
+      }
+    }
+    &__product-link span {
+      display: block;
+      .size(40px, 41px);
+      .absolute();
+      top: 0;
+      right: -1px;
+      .bg();
+      background-position: center center;
+      .bg-image("../img/bg_open-btn--small.png");
+    }
+    /*&__product-link:hover {
+      background: none;
+      color: @white;
+    }
+    &__product-link:hover span {
+      .bg-image("../img/bg_open-btn--empty.png");
+    }*/
+
+  &__h2 {
+    margin-bottom: 36px;
+    .font-family(@font-light);
+    .font-size(3rem, 29px);
+    color: @color-1e;
+    .uppercase();
+  }
+    &__h2 span {
+      display: block;
+      font-family: @font-bold;
+    }
+  &__h3 {
+    margin-bottom: 21px;
+    .font-family(@font-reg);
+    .font-size(1.8rem, 29px);
+    color: @color-1e;
+    .uppercase();
+  }
+
+  &__ul {
+    .ul-reset();
+  }
+    &__li {
+      display: block;
+      .relative();
+      margin-bottom: 8px;
+      padding-left: 39px;
+      .font-family(@font-reg);
+      .font-size(1.6rem, 27px);
+      color: #5c5c5c;
+      text-align: justify;
+    }
+    &__li::before {
+      display: inline-block;
+      .size(22px,17px);
+      .absolute();
+      top: 4px;
+      left: 0;
+      background: none;
+      .bg-image("../img/spritesheet.png");
+      background-position: -248px -294px;
+      margin-bottom: 25px;
+      content: '';
+    }
+
+  &__call {
+    .size(100%,155px);
+    border: 1px solid #c8c8c8;
+    margin: 58px 0 65px;
+    padding: 39px 30px 0 43px;
+  }
+    &__call-icon {
+      display: inline-block;
+      .size(84px,84px);
+      margin-right: 29px;
+      vertical-align: top;
+    }
+    &__call-title {
+      display: inline-block;
+      max-width: 502px;
+      margin-right: 25px;
+      .font-family(@font-reg);
+      .font-size(2.3rem, 30px);
+      color: #020202;
+      .uppercase();
+      vertical-align: top;
+    }
+      &__call-title span {
+        display: inline-block;
+        .bg-image("../img/bg_get-present.png");
+        padding: 0 11px;
+        font-family: @font-bold;
+        line-height: 48px;
+        color: @white;
+      }
+
+    &__call-btn {
+      display: inline-block;
+      width: 205px;
+      height: 72px;
+      .relative();
+      top: 6px;
+      padding: 18px 55px 0 24px;
+      border: 2px solid @red;
+      .rounded(8px);
+      .font-family(@font-bold);
+      .font-size(1.3rem, 17px);
+      color: @color-1e;
+      vertical-align: middle;
+      .no-decor();
+      .uppercase();
+      .transition();
+
+      @media @screen-md {
+
+      }
+    }
+    &__call-btn span {
+      display: block;
+      .size(33px, 33px);
+      .absolute();
+      top: 18px;
+      right: 13px;
+      .bg();
+      background-position: center center;
+      .bg-image("../img/icon_circle--red.png");
+    }
+    &__call-btn:hover {
+      .bg-color(#ff1b0e);
+      border-color: #ff1b0e;
+      background: linear-gradient(to right, #ff1b0e 20%, #ff1b0e 20%, #ff1b0e 75%, transparent 70%);
+      color: @white;
+    }
+    &__call-btn:hover span {
+      width: 55px;
+      height: 70px;
+      top: 0;
+      right: 0;
+      .bg-image("../img/icon_circle--white.png");
+    }
+}

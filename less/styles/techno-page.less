@@ -1,0 +1,20 @@
+.techno-page {
+  &__top-inner {
+    .container();
+    margin-bottom: 57px;
+    padding: 0 65px 0 90px;
+  }
+  &__top-inner::after {
+    .clear-after();
+  }
+    &__top-icon {
+      margin-right: 79px;
+      float: left;
+    }
+    &__descr {
+      padding-top: 30px;
+      .font-family(@font-reg);
+      .font-size(1.6rem,24px);
+      color: @color-33;
+    }
+}

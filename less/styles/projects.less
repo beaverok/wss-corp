@@ -1,0 +1,26 @@
+.projects {
+    &::after {
+      .clear-after();
+    }
+
+    &__inner {
+      .container();
+      margin-bottom: 110px;
+      padding-top: 37px;
+    }
+    &__inner::after {
+      .clear-after();
+    }
+
+    &__icons {
+      .bg-image("../img/bg_index-about.gif");
+      background-repeat: repeat-x;
+      .clear();
+    }
+    &__icons-inner {
+      .container();
+      padding: 43px 0 39px;
+    }
+}
+
+@import "project";

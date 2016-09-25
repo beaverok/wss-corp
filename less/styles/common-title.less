@@ -1,0 +1,36 @@
+.common-title {
+  .size(100%,131px);
+  margin-bottom: 59px;
+  .bg-image("../img/bg_common-title.jpg");
+
+  @media @screen-xs {
+    margin-bottom: 35px;
+  }
+
+  &__inner {
+    .container();
+    .align-center();
+  }
+
+  &__h1 {
+    display: inline-block;
+    .relative();
+    .font-family(@font-bold);
+    .font-size(4rem,131px);
+    color: @color-33;
+    .uppercase();
+
+    @media @screen-xs {
+      .font-size(3rem,20px);
+    }
+  }
+    &__line {
+      width: 30%;
+      height: 2px;
+      .bg-color(@red);
+      .absolute();
+      .pos(0,50%);
+      top: 37px;
+      margin-left: -15%;
+    }
+}

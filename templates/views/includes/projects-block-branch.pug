@@ -1,0 +1,14 @@
+section.projects-block
+    .projects-block__inner
+
+        - var x = 6;
+        .projects-block__list
+            - for (var i=1; i<=x; i++) {
+            .projects-block__item
+                .projects-block__item-pic
+                    img(src="img/rus-neft.jpg", alt="")
+                .projects-block__item-name Внедрение WSS Portal
+                .projects-block__item-descr
+                    .projects-block__item-text Текст текст текст текст
+                    a.projects-block__item-link Подробнее
+            - }

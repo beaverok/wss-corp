@@ -627,7 +627,7 @@ yx-axis
 		filter: "alpha(opacity=40)"; -ms-filter: "alpha(opacity=40)";*/
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #d51e20;
+  background-color: #e42116;
   filter: "alpha(opacity=75)";
   -ms-filter: "alpha(opacity=75)";
   width: 7px;
@@ -635,13 +635,13 @@ yx-axis
   left: 0;
 }
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-  background-color: #d51e20;
+  background-color: #e42116;
   filter: "alpha(opacity=85)";
   -ms-filter: "alpha(opacity=85)";
 }
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-  background-color: #d51e20;
+  background-color: #e42116;
   filter: "alpha(opacity=90)";
   -ms-filter: "alpha(opacity=90)";
 }
@@ -1830,6 +1830,17 @@ a img {
 .page-header.is-stuck .page-header__logo {
   margin-top: 7px;
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header.is-stuck .page-header__logo {
+    margin-top: 13px;
+    margin-right: 25px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header.is-stuck .page-header__logo img {
+    max-width: 120px;
+  }
+}
 .page-header.is-stuck .page-header__logo--project {
   margin-top: 15px;
 }
@@ -1863,9 +1874,20 @@ a img {
     top: 60px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-header.is-stuck .main-menu__link {
+    padding: 0 8px;
+    font-size: 1.1rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header.is-stuck .main-menu__link {
-    line-height: 16px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-header.is-stuck .page-header__menu-btn {
+    top: 10px;
   }
 }
 .page-header.is-stuck .page-header__contacts {
@@ -1941,7 +1963,7 @@ a img {
 .page-header__logo {
   display: block;
   margin-top: 26px;
-  margin-right: 74px;
+  margin-right: 64px;
   float: left;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -2280,7 +2302,8 @@ a img {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-menu__link {
-    line-height: 16px;
+    font-size: 1.6rem;
+    line-height: 30px;
     color: #fff;
   }
 }
@@ -2289,7 +2312,7 @@ a img {
   background-position: 0 0;
   background-repeat: repeat-x;
   background-image: url('../img/bg_menu-item--active.gif');
-  color: #d51e20;
+  color: #e42116;
   transition: all 0.2s ease-out;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -2324,11 +2347,18 @@ a img {
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__inner {
     width: 100%;
+    height: auto;
+    margin-bottom: 30px;
   }
 }
 .top-slider__left {
   position: relative;
   z-index: 90;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-slider__left {
+    height: 410px;
+  }
 }
 .top-slider__pager {
   width: 733px;
@@ -2350,6 +2380,8 @@ a img {
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__pager {
     width: 100%;
+    top: 260px;
+    bottom: auto;
   }
 }
 .top-slider__pager .bx-pager-item {
@@ -2392,6 +2424,17 @@ a img {
   top: 0;
   left: 0;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-slider__slide-bg {
+    height: 410px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-slider__pic {
+    width: auto;
+    height: 410px;
+  }
+}
 .top-slider__play-btn {
   display: block;
   background-image: url("../img/spritesheet.png");
@@ -2410,6 +2453,7 @@ a img {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__play-btn {
+    top: 60px;
     left: 50%;
     margin-left: -85px;
   }
@@ -2420,7 +2464,7 @@ a img {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 58px;
-  padding: 33px 0 0 106px;
+  padding: 42px 0 0 106px;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
   .top-slider__descr {
@@ -2438,14 +2482,16 @@ a img {
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__descr {
     width: 100%;
+    height: 105px;
     padding: 10px;
+    bottom: 0;
     text-align: center;
   }
 }
 .top-slider__descr p {
   display: inline-block;
   max-width: 308px;
-  margin-top: 9px;
+  margin-top: 4px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 26px;
@@ -2455,12 +2501,12 @@ a img {
 @media (min-width: 1007px) and (max-width: 1239px) {
   .top-slider__descr p {
     max-width: 250px;
-    margin-top: 0;
+    margin-top: -8px;
   }
 }
 @media (min-width: 751px) and (max-width: 1023px) {
   .top-slider__descr p {
-    max-width: 80%;
+    max-width: 55%;
     margin-top: 12px;
     line-height: 22px;
   }
@@ -2486,6 +2532,7 @@ a img {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__logo {
+    max-width: 120px;
     margin-right: 0;
   }
 }
@@ -2514,7 +2561,11 @@ a img {
 @media (min-width: 320px) and (max-width: 767px) {
   .top-slider__right {
     width: 100%;
+    height: auto;
     position: relative;
+    padding: 20px 10px 30px;
+    background: #e42116;
+    text-align: center;
   }
 }
 .top-slider__title {
@@ -2538,6 +2589,13 @@ a img {
     line-height: 53px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-slider__title {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    line-height: 30px;
+  }
+}
 .top-slider__title span {
   display: block;
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
@@ -2555,7 +2613,7 @@ a img {
   display: inline-block;
   min-width: 200px;
   position: relative;
-  padding: 0 71px 0 27px;
+  padding: 0 64px 0 27px;
   background: linear-gradient(to right, #fff 20%, #fff 20%, #fff 75%, transparent 70%);
   border: 2px solid #fff;
   border-radius: 8px;
@@ -2566,6 +2624,7 @@ a img {
   vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   transition: all 0.2s ease-out;
   box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.3);
 }
@@ -2596,14 +2655,8 @@ a img {
 }
 .breadcrumbs {
   width: 100%;
-  height: 39px;
-  background-image: url("../img/bg_breadcrumbs.png");
-  margin-bottom: 51px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .breadcrumbs {
-    margin-bottom: 35px;
-  }
+  height: 38px;
+  background-color: #f6f6f6;
 }
 .breadcrumbs__inner {
   width: 1240px;
@@ -2670,64 +2723,275 @@ a img {
   color: #333;
   text-decoration: none;
 }
-.page-title {
-  margin-bottom: 57px;
+.common-title {
+  width: 100%;
+  height: 131px;
+  margin-bottom: 59px;
+  background-image: url("../img/bg_common-title.jpg");
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .page-title {
+  .common-title {
     margin-bottom: 35px;
   }
 }
-.page-title__inner {
+.common-title__inner {
   width: 1240px;
   margin: 0 auto;
   clear: both;
   text-align: center;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
-  .page-title__inner {
+  .common-title__inner {
     width: 1007px;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
 @media (min-width: 751px) and (max-width: 1023px) {
-  .page-title__inner {
+  .common-title__inner {
     width: 751px;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .page-title__inner {
+  .common-title__inner {
     width: 320px;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
-.page-title__h1 {
+.common-title__h1 {
   display: inline-block;
   position: relative;
-  padding-top: 24px;
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 4rem;
-  line-height: 40px;
+  line-height: 131px;
+  color: #333;
   text-transform: uppercase;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .page-title__h1 {
+  .common-title__h1 {
     font-size: 3rem;
     line-height: 20px;
   }
 }
-.page-title__line {
-  width: 70%;
+.common-title__line {
+  width: 30%;
   height: 2px;
-  background-color: #d51e20;
+  background-color: #e42116;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -35%;
+  top: 37px;
+  margin-left: -15%;
+}
+.page-content {
+  width: 100%;
+  margin-bottom: 84px;
+}
+.page-content:after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.page-content__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .page-content__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .page-content__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-content__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.sidebar {
+  width: 265px;
+  float: left;
+}
+.sidebar-menu {
+  border: 1px dotted #8b8c8d;
+  border-radius: 7px;
+  margin-bottom: 35px;
+  padding: 25px 22px 15px;
+}
+.sidebar-menu__title {
+  margin-bottom: 24px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
+  color: #1e1e1e;
+}
+.sidebar-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-menu__item {
+  display: block;
+  margin-bottom: 18px;
+}
+.sidebar-menu__item::before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  margin-right: 15px;
+  content: '';
+  background-position: -228px -240px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .sidebar-menu__item::before {
+    position: absolute;
+    top: 2px;
+  }
+}
+.sidebar-menu__link {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 14px;
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.sidebar-menu__link:hover,
+.sidebar-menu__link--active {
+  color: #e42116;
+}
+.sidebar-info__title {
+  margin-left: 20px;
+  margin-bottom: 31px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
+  color: #1e1e1e;
+}
+.sidebar-info__item {
+  position: relative;
+  margin-bottom: 27px;
+  text-align: center;
+}
+.sidebar-info__item-btn {
+  width: 113px;
+  height: 112px;
+  background-image: url("../img/icon_play-btn--inner.png");
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  margin-left: -56px;
+}
+.sidebar-info__item img {
+  max-height: 160px;
+  border: 1px solid #dedede;
+  margin-bottom: 16px;
+}
+.sidebar-info__item-name {
+  padding: 0 50px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  color: #1e1e1e;
+}
+.sidebar-info__get-present {
+  width: 100%;
+  height: 54px;
+  background-image: url("../img/bg_get-present.png");
+  margin-top: 43px;
+  text-align: center;
+}
+.sidebar-info__get-present a {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 54px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.sidebar-info__get-present a:hover {
+  color: #e6e6e6;
+}
+.content-block {
+  max-width: 925px;
+  margin-top: -7px;
+  float: right;
+}
+.content-block__h3 {
+  margin-bottom: 17px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 16px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.content-block p {
+  margin-bottom: 9px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #5c5c5c;
+}
+.content-block__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 16px 0 17px;
+}
+.content-block__li {
+  position: relative;
+  margin-bottom: 9px;
+  padding-left: 22px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #5c5c5c;
+}
+.content-block__li::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  margin-right: 15px;
+  content: '';
+  background-position: -228px -240px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .content-block__li::before {
+    position: absolute;
+    top: 2px;
+  }
+}
+.text-bold {
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+}
+.text-red {
+  color: #e42116;
 }
 .index-about__top-inner {
   width: 1240px;
@@ -2756,6 +3020,11 @@ a img {
     padding-right: 5px;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-about__top-inner {
+    padding-bottom: 20px;
+  }
+}
 .index-about__cert {
   display: block;
   float: left;
@@ -2763,7 +3032,8 @@ a img {
 @media (min-width: 320px) and (max-width: 767px) {
   .index-about__cert {
     float: none;
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto 30px;
   }
 }
 .index-about__bot {
@@ -3135,18 +3405,43 @@ a img {
   color: #d9d9d9;
 }
 .index-product__price {
+  display: inline-block;
+  margin-right: 67px;
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
   line-height: 24px;
   color: #fff;
 }
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .index-product__price {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .index-product__price {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .index-product__price {
+    margin-right: 35px;
     text-align: center;
   }
 }
 .index-product__price span {
-  color: #d51e20;
+  color: #e42116;
+}
+.index-product__more {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 14px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.index-product__more:hover {
+  color: #d9d9d9;
 }
 .index-product:nth-of-type(2) {
   padding-left: 35px;
@@ -3190,6 +3485,11 @@ a img {
   color: #1e1e1e;
   text-transform: uppercase;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-services__title {
+    text-align: center;
+  }
+}
 .index-services__descr {
   margin-bottom: 35px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
@@ -3211,14 +3511,20 @@ a img {
   margin-bottom: 6px;
   vertical-align: top;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 751px) and (max-width: 1023px) {
   .index-services__item {
     width: 100%;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-services__item {
+    width: 100%;
+    position: relative;
+  }
+}
 .index-services__item::before {
   position: relative;
-  top: 3px;
+  top: 2px;
   display: inline-block;
   width: 8px;
   height: 12px;
@@ -3229,8 +3535,14 @@ a img {
   content: '';
   background-position: -228px -240px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-services__item::before {
+    position: absolute;
+    top: 3px;
+  }
+}
 .index-services__link {
-  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 20px;
   color: #333;
@@ -3238,8 +3550,14 @@ a img {
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-services__link {
+    position: relative;
+    left: 20px;
+  }
+}
 .index-services__link:hover {
-  font-weight: 600;
+  color: #e42116;
 }
 .index-services__text {
   width: 500px;
@@ -3253,6 +3571,19 @@ a img {
   .index-services__text {
     width: 100%;
   }
+}
+.index-services__link--all {
+  display: inline-block;
+  margin-top: 21px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.index-services__link--all:hover {
+  color: #e42116;
 }
 .index-projects {
   margin-bottom: 88px;
@@ -3289,7 +3620,7 @@ a img {
   }
 }
 .index-projects__title {
-  margin-bottom: 50px;
+  margin-bottom: 44px;
   font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
   line-height: 17px;
@@ -3297,10 +3628,16 @@ a img {
   text-align: center;
   text-transform: uppercase;
 }
+.index-projects__title__title span {
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .index-projects__title {
     line-height: 28px;
   }
+}
+.index-projects__title span {
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
 }
 .index-projects select {
   display: block;
@@ -3311,21 +3648,28 @@ a img {
   padding-left: 20px;
   border: 2px solid #d2d2d2;
   border-radius: 14px;
-  box-shadow: 0px 0px 4px 4px rgba(210, 210, 210, 0.7);
+}
+.index-projects__select {
+  width: 492px;
+  height: 65px;
+  margin: 0 auto 43px;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .index-projects__select {
+    width: 300px;
+  }
 }
 .index-projects__select .sbHolder {
   width: 482px;
   height: 55px;
   position: relative;
-  margin: 0 auto 48px;
+  margin: 4px auto 48px;
   padding-left: 20px;
-  border: 2px solid #d2d2d2;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-  border-top-left-radius: 14px;
-  background-clip: padding-box;
-  box-shadow: 0px 0px 4px 4px rgba(210, 210, 210, 0.7);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0 rgba(210, 210, 210, 0.7);
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .index-projects__select .sbHolder {
@@ -3372,22 +3716,18 @@ a img {
   padding: 0;
   list-style: none;
   position: relative;
-  margin-top: -40px;
+  top: 13px !important;
   margin-left: -20px;
-  padding: 10px 20px;
+  padding: 14px 18px 12px;
   z-index: 1000;
-  border: 2px solid #d2d2d2;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-  border-top-left-radius: 14px;
-  background-clip: padding-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0px 0px 4px 4px rgba(210, 210, 210, 0.7);
+  box-shadow: 0px 0px 4px 0 rgba(210, 210, 210, 0.7);
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .index-projects__select .sbHolder .sbOptions {
-    margin-top: -34px;
+    margin-top: 0;
     margin-left: -11px;
     padding-left: 10px;
   }
@@ -3553,6 +3893,65 @@ a img {
   .index-project:nth-of-type(4n) {
     margin: 0 auto 15px;
   }
+}
+.project-title {
+  margin: 51px 0 57px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .project-title {
+    margin: 30px 0 35px;
+  }
+}
+.project-title__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .project-title__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .project-title__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .project-title__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.project-title__h1 {
+  display: inline-block;
+  position: relative;
+  padding-top: 24px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .project-title__h1 {
+    font-size: 3rem;
+    line-height: 20px;
+  }
+}
+.project-title__line {
+  width: 70%;
+  height: 2px;
+  background-color: #e42116;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -35%;
 }
 .project-header {
   width: 100%;
@@ -4243,6 +4642,37 @@ a img {
   clear: both;
   content: '';
 }
+.team-list__block {
+  margin-bottom: 29px;
+}
+.team-list__block:last-child {
+  margin-bottom: -37px;
+}
+.team-list__title {
+  margin-bottom: 44px;
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 28px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+}
+.team-list.team-page .team-item {
+  width: 192px;
+  height: 193px;
+  margin-bottom: 37px;
+  margin-right: 49px;
+}
+.team-list.team-page .team-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.team-list.team-page .team-item img {
+  width: 192px;
+  border-radius: 192px;
+}
+.team-list.team-page p {
+  margin-bottom: 46px;
+}
 .team-item {
   display: inline-block;
   width: 203px;
@@ -4390,6 +4820,7 @@ a img {
 @media (min-width: 320px) and (max-width: 767px) {
   .page-footer__phone {
     width: 100%;
+    margin-right: 0;
     margin-bottom: 15px;
   }
 }
@@ -4543,7 +4974,7 @@ a img {
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 12px;
-  color: #d51e20;
+  color: #e42116;
 }
 .footer-news__link {
   display: block;
@@ -4787,7 +5218,7 @@ a img {
   display: inline-block;
   width: 132px;
   height: 35px;
-  background-color: #d51e20;
+  background-color: #e42116;
   margin: 36px auto 0;
   border: none;
   border-radius: 4px;
@@ -4801,13 +5232,13 @@ a img {
   transition: all 0.2s ease-out;
 }
 .form-feedback__input-submit:hover {
-  background-color: #e12b2d;
+  background-color: #ea3329;
 }
 .input--ok {
   border: 1px solid green;
 }
 .input--error {
-  border: 1px solid #d51e20;
+  border: 1px solid #e42116;
 }
 .text-error {
   position: absolute;
@@ -4816,5 +5247,1777 @@ a img {
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 44px;
-  color: #d51e20;
+  color: #e42116;
+}
+.about-advantages {
+  margin: 41px 0 42px;
+  padding-bottom: 41px;
+  border-bottom: 4px solid #e2e2e2;
+}
+.about-advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 500px;
+  margin-top: 8px;
+  float: left;
+}
+.about-advantages__list-item {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 41px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #5c5c5c;
+}
+.about-advantages__list-item::before {
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: none;
+  background-image: url("../img/spritesheet.png");
+  background-position: -248px -294px;
+  margin-bottom: 25px;
+  content: '';
+}
+.about-advantages__pic {
+  max-width: 360px;
+  margin-top: -30px;
+  float: right;
+}
+.about-advantages__pic img {
+  width: 100%;
+  height: auto;
+}
+.about-advantages::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.job-list__subtitle {
+  margin: 36px 0 28px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 29px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.job-list__item {
+  margin-bottom: 1px;
+}
+.job-list__item:last-child {
+  margin-bottom: 34px;
+}
+.job-list__tab {
+  width: 100%;
+  height: 53px;
+  background-color: #e42116;
+  background-image: url("../img/bg_pattern.png");
+  padding-left: 24px;
+  cursor: pointer;
+}
+.job-list__tab--active .job-list__name::before {
+  width: 10px;
+  height: 6px;
+  top: 25px;
+  background-position: -258px -278px;
+}
+.job-list__name {
+  position: relative;
+  padding-left: 27px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 53px;
+  color: #fff;
+}
+.job-list__name::before {
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  background-image: url("../img/spritesheet.png");
+  background-position: -247px -279px;
+  content: '';
+}
+.job-list__item-inner {
+  display: none;
+  background-color: #f0f0f0;
+  padding: 38px 35px;
+}
+.job-list__h3 {
+  margin-bottom: 29px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 16px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.job-list__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 0 14px;
+}
+.job-list__li {
+  position: relative;
+  margin-bottom: 9px;
+  padding-left: 27px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #333;
+}
+.job-list__li:last-child {
+  margin-bottom: 33px;
+}
+.job-list__li::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  margin-right: 15px;
+  content: '';
+  background-position: -228px -240px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .job-list__li::before {
+    position: absolute;
+    top: 2px;
+  }
+}
+.job-list__form-btn {
+  width: 925px;
+  margin-left: -35px;
+  border-top: 7px solid #e3e3e3;
+  text-align: center;
+}
+.job-list__form-btn a {
+  display: inline-block;
+  width: 207px;
+  position: relative;
+  margin: 36px auto 0;
+  padding: 0 44px 0 0;
+  border: 2px solid #e42116;
+  border-radius: 8px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 53px;
+  color: #1e1e1e;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+.job-list__form-btn span {
+  display: block;
+  width: 55px;
+  height: 53px;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/bg_open-job--empty.png");
+}
+.job-list__form-btn a:hover {
+  background: linear-gradient(to right, #e42116 20%, #e42116 20%, #e42116 75%, transparent 70%);
+  color: #fff;
+}
+.job-list__form-btn a:hover span {
+  background-image: url("../img/bg_open-btn--hover-red.png");
+}
+.news-list {
+  margin-top: 7px;
+}
+.news-list__item {
+  display: inline-block;
+  width: 297px;
+  height: 131px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 24px 22px 23px;
+  border: 1px dotted #8b8c8d;
+  border-radius: 8px;
+  vertical-align: top;
+}
+.news-list__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.news-list__item-date {
+  margin-bottom: 4px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 12px;
+  color: #c0251d;
+}
+.news-list__item-name {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #5c5c5c;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.news-list__item-name:hover {
+  color: #292929;
+}
+.solutions {
+  width: 100%;
+  background-image: url("../img/bg_solutions-page.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  margin-top: 71px;
+}
+.solutions__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  padding: 61px 0 49px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .solutions__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .solutions__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .solutions__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.solutions__block {
+  margin-bottom: 40px;
+}
+.solutions__title {
+  margin-bottom: 45px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.solutions__list--gradient {
+  background: linear-gradient(to right, rgba(65, 60, 81, 0.5) 0%, rgba(56, 57, 77, 0.5) 50%, rgba(37, 48, 62, 0.5) 100%);
+}
+.solutions__list-item {
+  display: inline-block;
+  width: 25%;
+  height: 138px;
+  border: 1px solid #636473;
+  margin: 0 -4px -1px 0;
+  padding: 40px 44px 0;
+  text-align: center;
+  vertical-align: top;
+}
+.solutions__list-line {
+  width: 48px;
+  height: 3px;
+  margin: 0 auto 15px;
+  background-color: #e42116;
+}
+.solutions__list-name {
+  display: inline-block;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  vertical-align: top;
+}
+.solutions__list-name:hover {
+  color: #e42116;
+}
+.solution-page {
+  /*&__product-link:hover {
+      background: none;
+      color: @white;
+    }
+    &__product-link:hover span {
+      .bg-image("../img/bg_open-btn--empty.png");
+    }*/
+}
+.solution-page p {
+  margin-bottom: 21px;
+  text-align: justify;
+}
+.solution-page__product {
+  width: 419px;
+  height: 175px;
+  position: relative;
+  margin-left: 30px;
+  padding: 18px 28px 0 173px;
+  float: right;
+}
+.solution-page__product img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.solution-page__product-name {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.solution-page__product-link {
+  display: inline-block;
+  width: 158px;
+  position: relative;
+  padding: 0 40px 0 10px;
+  background: linear-gradient(to right, #fff 20%, #fff 20%, #fff 75%, transparent 70%);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 41px;
+  color: #1e1e1e;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .solution-page__product-link {
+    margin-right: 10px;
+    padding: 0 60px 0 15px;
+  }
+}
+.solution-page__product-link span {
+  display: block;
+  width: 40px;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/bg_open-btn--small.png");
+}
+.solution-page__h2 {
+  margin-bottom: 36px;
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 29px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.solution-page__h2 span {
+  display: block;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+}
+.solution-page__h3 {
+  margin-bottom: 21px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 29px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.solution-page__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.solution-page__li {
+  display: block;
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 39px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #5c5c5c;
+  text-align: justify;
+}
+.solution-page__li::before {
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: none;
+  background-image: url("../img/spritesheet.png");
+  background-position: -248px -294px;
+  margin-bottom: 25px;
+  content: '';
+}
+.solution-page__call {
+  width: 100%;
+  height: 155px;
+  border: 1px solid #c8c8c8;
+  margin: 58px 0 65px;
+  padding: 39px 30px 0 43px;
+}
+.solution-page__call-icon {
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  margin-right: 29px;
+  vertical-align: top;
+}
+.solution-page__call-title {
+  display: inline-block;
+  max-width: 502px;
+  margin-right: 25px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  line-height: 30px;
+  color: #020202;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.solution-page__call-title span {
+  display: inline-block;
+  background-image: url("../img/bg_get-present.png");
+  padding: 0 11px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  line-height: 48px;
+  color: #fff;
+}
+.solution-page__call-btn {
+  display: inline-block;
+  width: 205px;
+  height: 72px;
+  position: relative;
+  top: 6px;
+  padding: 18px 55px 0 24px;
+  border: 2px solid #e42116;
+  border-radius: 8px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 17px;
+  color: #1e1e1e;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+.solution-page__call-btn span {
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 18px;
+  right: 13px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/icon_circle--red.png");
+}
+.solution-page__call-btn:hover {
+  background-color: #ff1b0e;
+  border-color: #ff1b0e;
+  background: linear-gradient(to right, #ff1b0e 20%, #ff1b0e 20%, #ff1b0e 75%, transparent 70%);
+  color: #fff;
+}
+.solution-page__call-btn:hover span {
+  width: 55px;
+  height: 70px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/icon_circle--white.png");
+}
+.solution-projects__item {
+  display: inline-block;
+  width: 297px;
+  height: 175px;
+  border: 1px dotted #8b8c8d;
+  position: relative;
+  margin: 0 14px 18px 0;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-top-left-radius: 14px;
+  background-clip: padding-box;
+  cursor: pointer;
+  vertical-align: top;
+}
+.solution-projects__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.solution-projects__pic {
+  display: inline-block;
+  width: 230px;
+  height: 121px;
+  position: absolute;
+  top: 20px;
+  left: 33px;
+  text-align: center;
+  line-height: 121px;
+  vertical-align: middle;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .solution-projects__pic {
+    left: 0;
+  }
+}
+.solution-projects__pic img {
+  vertical-align: middle;
+}
+.solution-projects__title {
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 12px;
+  color: #333;
+}
+.solution-projects__descr {
+  width: 95.5%;
+  height: 92%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  margin: 7px;
+  padding: 35px 20px;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  box-shadow: inset 0 0 25px 25px rgba(247, 247, 247, 0.45);
+  text-align: center;
+}
+.solution-projects__descr:hover {
+  opacity: 1;
+}
+.solution-projects__text {
+  margin-bottom: 10px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 20px;
+  color: #333;
+}
+.solution-projects__link {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 20px;
+  color: #333;
+  text-decoration: underline;
+}
+.solution-projects__link:hover {
+  color: #666666;
+}
+.products {
+  background-image: url("../img/bg_products-page.png");
+  background-position: -5% -5%;
+  background-repeat: repeat-x;
+}
+.products::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.products__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 110px;
+  padding-top: 20px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .products__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .products__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .products__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.products__inner::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.products__descr {
+  max-width: 880px;
+  margin: 0 auto 80px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #333;
+  text-align: center;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .products__descr {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .products__descr {
+    margin-bottom: 35px;
+  }
+}
+.products__icons {
+  background-image: url("../img/bg_index-about.gif");
+  background-repeat: repeat-x;
+  clear: both;
+}
+.products__icons-inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  padding: 43px 0 39px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .products__icons-inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .products__icons-inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .products__icons-inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.product {
+  width: 588px;
+  position: relative;
+  margin-right: 64px;
+  border: 1px dotted #8b8c8d;
+  border-radius: 8px;
+  float: left;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product {
+    width: 100%;
+  }
+}
+.product:last-child {
+  margin-right: 0;
+}
+.product__pic {
+  width: 189px;
+  height: 273px;
+  float: left;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .product__pic {
+    width: 140px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product__pic {
+    float: none;
+    margin: 0 auto 30px;
+  }
+}
+.product__pic img {
+  width: 100%;
+  height: auto;
+}
+.product__right {
+  margin-left: 195px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .product__right {
+    max-width: 270px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .product__right {
+    margin-left: 165px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product__right {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+}
+.product__name {
+  margin: 29px 0 15px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  line-height: 20px;
+  color: #333;
+}
+.product__text {
+  margin-bottom: 14px;
+  padding-right: 70px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #333;
+}
+.product__links {
+  margin-bottom: 21px;
+}
+.product__link--video {
+  display: inline-block;
+  margin-right: 42px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 24px;
+  color: #333;
+  transition: all 0.2s ease-out;
+  vertical-align: middle;
+  text-decoration: none;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .product__link--video {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .product__link--video {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product__link--video {
+    margin-bottom: 10px;
+  }
+}
+.product__link--video::before {
+  display: inline-block;
+  width: 16px;
+  height: 23px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -273px -296px;
+  position: relative;
+  top: 6px;
+  margin-right: 17px;
+  content: '';
+}
+.product__link--video:hover {
+  color: #666666;
+}
+.product__link--file {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 38px;
+  color: #333;
+  transition: all 0.2s ease-out;
+  vertical-align: top;
+  text-decoration: none;
+}
+.product__link--file::before {
+  width: 21px;
+  height: 26px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-image: url("../img/spritesheet.png");
+  background-position: -273px -269px;
+  content: '';
+}
+.product__link--file:hover {
+  color: #666666;
+}
+.product__price {
+  display: inline-block;
+  margin-right: 67px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 24px;
+  color: #333;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .product__price {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .product__price {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product__price {
+    margin-right: 35px;
+    text-align: center;
+  }
+}
+.product__price span {
+  color: #e42116;
+}
+.product__more {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.product__more:hover {
+  color: #666666;
+}
+.product-page__file-link {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 39px;
+  padding-left: 35px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 38px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.2s ease-out;
+  vertical-align: top;
+  text-decoration: none;
+}
+.product-page__file-link::before {
+  width: 21px;
+  height: 26px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-image: url("../img/spritesheet.png");
+  background-position: -273px -269px;
+  content: '';
+}
+.product-page__file-link:hover {
+  color: #666666;
+}
+.product-page__h3 {
+  margin-bottom: 24px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 16px;
+  color: #333;
+  text-transform: uppercase;
+}
+.product-page__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 42px;
+}
+.product-page__li {
+  display: block;
+  position: relative;
+  margin-bottom: 9px;
+  padding-left: 25px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 36px;
+  color: #5c5c5c;
+}
+.product-page__li p {
+  margin-bottom: 9px;
+}
+.product-page__li::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  margin-right: 15px;
+  background-position: -228px -240px;
+  content: '';
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product-page__li::before {
+    position: absolute;
+    top: 2px;
+  }
+}
+.product-page__advants {
+  margin-bottom: 56px;
+  padding-bottom: 50px;
+  border-bottom: 4px solid #e2e2e2;
+}
+.product-page__advants::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.product-page__advants-ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 48%;
+  margin-top: 8px;
+}
+.product-page__advants-ul:first-child {
+  margin-right: 34px;
+}
+.product-page__advants-li {
+  display: block;
+  position: relative;
+  margin-bottom: 9px;
+  padding-left: 41px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #5c5c5c;
+}
+.product-page__advants-li::before {
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: none;
+  background-image: url("../img/spritesheet.png");
+  background-position: -248px -294px;
+  content: '';
+}
+.product-page__scopes-h3 {
+  margin-bottom: 40px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 28px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.product-page__tabs-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+}
+.product-page__tabs-li {
+  display: inline-block;
+  margin-right: 39px;
+  vertical-align: top;
+}
+.product-page__tabs-li:last-child {
+  margin-right: 0;
+}
+.product-page__tabs-link {
+  display: inline-block;
+  border-bottom: 1px dotted #1e1e1e;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+  font-weight: 600;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.product-page__tabs-link:hover,
+.product-page__tabs-link--active {
+  border: none;
+  color: #e42116;
+}
+.product-page__scopes-tab {
+  display: none;
+}
+.product-page__scopes-tab--active {
+  display: block;
+}
+.product-page__scopes-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.product-page__scopes-li {
+  display: block;
+  position: relative;
+  margin-bottom: 9px;
+  padding-left: 41px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 27px;
+  color: #5c5c5c;
+}
+.product-page__scopes-li::before {
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: none;
+  background-image: url("../img/spritesheet.png");
+  background-position: -248px -294px;
+  content: '';
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block {
+    margin-bottom: 50px;
+  }
+}
+.projects-block__inner {
+  width: 100%;
+}
+.projects-block__title {
+  margin-bottom: 44px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 17px;
+  color: #1e1e1e;
+  text-align: center;
+  text-transform: uppercase;
+}
+.projects-block__title__title span {
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__title {
+    line-height: 28px;
+  }
+}
+.projects-block__title span {
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+}
+.projects-block select {
+  display: block;
+  width: 482px;
+  height: 55px;
+  position: relative;
+  margin: 0 auto 48px;
+  padding-left: 20px;
+  border: 2px solid #d2d2d2;
+  border-radius: 14px;
+}
+.projects-block__select {
+  width: 492px;
+  height: 65px;
+  margin: 0 auto 43px;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__select {
+    width: 300px;
+  }
+}
+.projects-block__select .sbHolder {
+  width: 482px;
+  height: 55px;
+  position: relative;
+  margin: 4px auto 48px;
+  padding-left: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0 rgba(210, 210, 210, 0.7);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__select .sbHolder {
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+.projects-block__select .sbHolder .sbToggle {
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  background-position: -269px -208px;
+  width: 21px;
+  height: 14px;
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 23px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__select .sbHolder .sbToggle {
+    right: 10px;
+  }
+}
+.projects-block__select .sbHolder .sbSelector {
+  display: block;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 53px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__select .sbHolder .sbSelector {
+    display: block;
+    height: 50px;
+    font-size: 1.2rem;
+    overflow: hidden;
+  }
+}
+.projects-block__select .sbHolder .sbOptions {
+  height: 235px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 13px !important;
+  margin-left: -20px;
+  padding: 14px 18px 12px;
+  z-index: 1000;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0 rgba(210, 210, 210, 0.7);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__select .sbHolder .sbOptions {
+    margin-top: 0;
+    margin-left: -11px;
+    padding-left: 10px;
+  }
+}
+.projects-block__select .sbHolder .sbOptions a {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 26px;
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  opacity: 0.65;
+}
+.projects-block__select .sbHolder .sbOptions a:hover {
+  opacity: 1;
+}
+.projects-block__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.projects-block__item {
+  display: inline-block;
+  width: 297px;
+  height: 175px;
+  border: 1px dotted #8b8c8d;
+  position: relative;
+  margin: 0 14px 18px 0;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-top-left-radius: 14px;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .projects-block__item {
+    width: 23%;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .projects-block__item {
+    margin: 0 6px 18px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects-block__item {
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
+.projects-block__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.projects-block__item-pic {
+  display: inline-block;
+  width: 230px;
+  height: 121px;
+  position: absolute;
+  top: 20px;
+  left: 33px;
+  text-align: center;
+  line-height: 121px;
+  vertical-align: middle;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .projects-block__item-pic {
+    left: 0;
+  }
+}
+.projects-block__item-pic img {
+  vertical-align: middle;
+}
+.projects-block__item-name {
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 12px;
+  color: #333;
+}
+.projects-block__item-descr {
+  width: 95.5%;
+  height: 92%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  margin: 7px;
+  padding: 35px 20px;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  box-shadow: inset 0 0 25px 25px rgba(247, 247, 247, 0.45);
+  text-align: center;
+}
+.projects-block__item-descr:hover {
+  opacity: 1;
+}
+.projects-block__item-text {
+  margin-bottom: 10px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 20px;
+  color: #333;
+}
+.projects-block__item-link {
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 20px;
+  color: #333;
+  text-decoration: underline;
+}
+.projects-block__item-link:hover {
+  color: #666666;
+}
+.projects::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.projects__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 110px;
+  padding-top: 37px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .projects__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .projects__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.projects__inner::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.projects__icons {
+  background-image: url("../img/bg_index-about.gif");
+  background-repeat: repeat-x;
+  clear: both;
+}
+.projects__icons-inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  padding: 43px 0 39px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .projects__icons-inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .projects__icons-inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .projects__icons-inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.project {
+  max-width: 477px;
+  position: relative;
+  margin: 0 74px 0 64px;
+  text-align: center;
+  float: left;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .project {
+    width: 100%;
+  }
+}
+.project:last-child {
+  margin: 0 64px 0 74px;
+}
+.project__link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.project__link:hover {
+  opacity: 0.7;
+}
+.project__pic {
+  width: 477px;
+  height: 256px;
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+}
+@media (min-width: 320px) and (max-width: 767px) {
+}
+.project__name {
+  margin-bottom: 21px;
+  padding: 0 100px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 30px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.branch-page__h2 {
+  margin: 42px 0 45px;
+  font-family: "renault_lifelight", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 36px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.branch-page__h2 span {
+  display: block;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+}
+.pop-solutions {
+  width: 100%;
+}
+.pop-solutions__list-item {
+  display: inline-block;
+  width: 297px;
+  height: 120px;
+  border: 1px dotted #8b8c8d;
+  border-radius: 8px;
+  margin: 0 13px 14px 0;
+  padding: 28px 30px 0;
+  text-align: center;
+  vertical-align: top;
+}
+.pop-solutions__list-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.pop-solutions__list-line {
+  width: 48px;
+  height: 3px;
+  margin: 0 auto 15px;
+  background-color: #e42116;
+}
+.pop-solutions__list-name {
+  display: inline-block;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  vertical-align: top;
+}
+.pop-solutions__list-name:hover {
+  color: #e42116;
+}
+.contacts-page__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 53px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .contacts-page__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts-page__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contacts-page__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.contacts-page__inner:after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.contacts-page__left {
+  width: 600px;
+  margin-right: 40px;
+  padding-left: 86px;
+  float: left;
+}
+.contacts-page__item {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 37px;
+  padding-left: 77px;
+  padding-top: 6px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #333;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .contacts-page__item {
+    margin-right: 10px;
+    padding-left: 65px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts-page__item {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contacts-page__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.contacts-page__item span {
+  display: block;
+}
+.contacts-page__phone::before {
+  display: inline-block;
+  background-image: url("../img/spritesheet.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position: -229px -149px;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.contacts-page__email::before,
+.contacts-page__address::before {
+  display: inline-block;
+  background-image: url("../img/spritesheet.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position: -170px -149px;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.contacts-page__email a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+.contacts-page__mail a:hover {
+  color: #666666;
+}
+.contacts-page__right {
+  width: 580px;
+  float: right;
+}
+.contacts-page__feedback {
+  max-width: 541px;
+  padding: 0;
+}
+.contacts-page__feedback .form-feedback__submit-wrap {
+  text-align: left;
+}
+.contacts-page__map {
+  width: 100%;
+  height: 477px;
+  margin-top: 112px;
+}
+.techno-page__top-inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 57px;
+  padding: 0 65px 0 90px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .techno-page__top-inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .techno-page__top-inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .techno-page__top-inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.techno-page__top-inner::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.techno-page__top-icon {
+  margin-right: 79px;
+  float: left;
+}
+.techno-page__descr {
+  padding-top: 30px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #333;
+}
+.scheme {
+  width: 100%;
+  height: 752px;
+  background-image: url("../img/bg_techno.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-bottom: 48px;
+}
+.scheme__inner {
+  width: 823px;
+  margin: 50px auto 0;
+}
+.standarts::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.standarts__inner {
+  width: 1240px;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 81px;
+}
+@media (min-width: 1007px) and (max-width: 1239px) {
+  .standarts__inner {
+    width: 1007px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 751px) and (max-width: 1023px) {
+  .standarts__inner {
+    width: 751px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .standarts__inner {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.standarts__inner::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.standarts__title {
+  margin-bottom: 51px;
+  font-family: "renault_lifebold", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 28px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+}
+.standarts__column {
+  width: 32%;
+  margin-right: 1%;
+  float: left;
+}
+.standarts__column:last-child {
+  margin-right: 0;
+}
+.standarts__block {
+  width: 100%;
+  border: 1px dotted #000;
+  border-radius: 7px;
+  margin-bottom: 17px;
+  padding: 25px 0 18px 104px;
+}
+.standarts__block-name {
+  margin-bottom: 34px;
+  margin-left: 21px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 18px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.standarts__block-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.standarts__block-list li {
+  display: block;
+  position: relative;
+  margin-bottom: 21px;
+  padding-left: 27px;
+}
+.standarts__block-item {
+  display: inline-block;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 16px;
+  color: #333;
+  cursor: default;
+}
+.standarts__block-item::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  margin-right: 15px;
+  content: '';
+  background-position: -228px -240px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .standarts__block-item::before {
+    position: absolute;
+    top: 2px;
+  }
+}
+.standarts__block-note {
+  display: none;
+  width: 195px;
+  min-height: 61px;
+  position: absolute;
+  top: 22px;
+  left: -15%;
+  background-color: rgba(69, 81, 91, 0.9);
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 23px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  z-index: 100;
+}
+.standarts__block-note::before {
+  display: block;
+  width: 14px;
+  height: 7px;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin-left: -7px;
+  background-position: -274px -239px;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  content: '';
+}
+.standarts__block-item:hover .standarts__block-note {
+  display: block;
+  opacity: 1;
 }

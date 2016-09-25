@@ -16,11 +16,17 @@
     }
     @media @screen-xs {
       width: 100%;
+      height: auto;
+      margin-bottom: 30px;
     }
   }
     &__left {
       .relative();
       z-index: 90;
+
+      @media @screen-xs {
+        height: 410px;
+      }
     }
     &__pager {
       width: 733px;
@@ -37,6 +43,8 @@
       }
       @media @screen-xs {
         width: 100%;
+        top: 260px;
+        bottom: auto;
       }
     }
     &__pager .bx-pager-item {
@@ -77,6 +85,16 @@
         .bg-image("../img/bg_slider-pattern.png");
         .absolute();
         .pos();
+
+        @media @screen-xs {
+          height: 410px;
+        }
+      }
+      &__pic {
+        @media @screen-xs {
+          width: auto;
+          height: 410px;
+        }
       }
       &__play-btn {
         display: block;
@@ -92,6 +110,7 @@
           left: 25%;
         }
         @media @screen-xs {
+          top: 60px;
           left: 50%;
           margin-left: -85px;
         }
@@ -102,7 +121,7 @@
         .bg-color(rgba(0, 0, 0, 0.5));
         .absolute();
         bottom: 58px;
-        padding: 33px 0 0 106px;
+        padding: 42px 0 0 106px;
 
         @media @screen-lg {
           width: 50%;
@@ -115,14 +134,16 @@
         }
         @media @screen-xs {
           width: 100%;
+          height: 105px;
           padding: 10px;
+          bottom: 0;
           text-align: center;
         }
       }
       &__descr p {
         display: inline-block;
         max-width: 308px;
-        margin-top: 9px;
+        margin-top: 4px;
         .font-family(@font-reg);
         .font-size(1.6rem, 26px);
         color: @white;
@@ -130,10 +151,10 @@
 
         @media @screen-lg {
           max-width: 250px;
-          margin-top: 0;
+          margin-top: -8px;
         }
         @media @screen-md {
-          max-width: 80%;
+          max-width: 55%;
           margin-top: 12px;
           line-height: 22px;
         }
@@ -153,6 +174,7 @@
           margin-right: 10px;
         }
         @media @screen-xs {
+          max-width: 120px;
           margin-right: 0;
         }
       }
@@ -177,7 +199,11 @@
       }
       @media @screen-xs {
         width: 100%;
+        height: auto;
         .relative();
+        padding: 20px 10px 30px;
+        background: @red;
+        .align-center();
       }
     }
       &__title {
@@ -193,6 +219,10 @@
         @media @screen-md {
           margin-left: 102px;
           .font-size(2.5rem, 53px);
+        }
+        @media @screen-xs {
+          margin-bottom: 20px;
+          .font-size(3rem,30px);
         }
       }
       &__title span {
@@ -211,7 +241,7 @@
         display: inline-block;
         min-width: 200px;
         .relative();
-        padding: 0 71px 0 27px;
+        padding: 0 64px 0 27px;
         background: linear-gradient(to right, @white 20%, @white 20%, @white 75%, transparent 70%);
         border: 2px solid @white;
         .rounded(8px);
@@ -221,6 +251,7 @@
         vertical-align: middle;
         .no-decor();
         .uppercase();
+        .align-center();
         .transition();
         box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.3);
 

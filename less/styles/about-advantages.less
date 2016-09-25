@@ -1,0 +1,47 @@
+.about-advantages {
+  margin: 41px 0 42px;
+  padding-bottom: 41px;
+  border-bottom: 4px solid #e2e2e2;
+
+  &__list {
+    .ul-reset();
+    max-width: 500px;
+    margin-top: 8px;
+    float: left;
+  }
+    &__list-item {
+      display: block;
+      .relative();
+      margin-bottom: 10px;
+      padding-left: 41px;
+      .font-family(@font-reg);
+      .font-size(1.6rem, 27px);
+      color: #5c5c5c;
+    }
+    &__list-item::before {
+      display: inline-block;
+      .size(22px,17px);
+      .absolute();
+      top: 4px;
+      left: 0;
+      background: none;
+      .bg-image("../img/spritesheet.png");
+      background-position: -248px -294px;
+      margin-bottom: 25px;
+      content: '';
+    }
+
+  &__pic {
+    max-width: 360px;
+    margin-top: -30px;
+    float: right;
+  }
+    &__pic img {
+      width: 100%;
+      height: auto;
+    }
+
+  &::after {
+    .clear-after();
+  }
+}
