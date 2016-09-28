@@ -1,0 +1,51 @@
+.branches {
+  &__inner {
+    .container();
+    margin-bottom: 50px;
+  }
+
+    &__descr {
+      margin-bottom: 66px;
+      padding: 0 65px;
+      .font-family(@font-reg);
+      .font-size(1.6rem,21px);
+      color: @color-33;
+      .align-center();
+    }
+
+    &__item {
+      display: inline-block;
+      width: 297px;
+      margin-bottom: 26px;
+      margin-right: 171px;
+      vertical-align: top;
+    }
+    &__item:nth-of-type(3n) {
+      margin-right: 0;
+    }
+      &__item-link {
+        display: block;
+        .font-family(@font-reg);
+        .font-size(1.3rem,21px);
+        color: @color-33;
+        .align-center();
+        .uppercase();
+        .no-decor();
+        .transition();
+      }
+      &__item-link:hover {
+        opacity: 0.8;
+      }
+        &__item-pic {
+          .size(297px,175px);
+          border: 1px dotted #8b8c8d;
+          .rounded(8px);
+          margin-bottom: 12px;
+          padding: 5px;
+        }
+        &__item-name {
+          height: 38px;
+          padding: 0 60px;
+          overflow: hidden;
+        }
+}
