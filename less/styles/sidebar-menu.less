@@ -16,22 +16,20 @@
     }
       &__item {
         display: block;
-        margin-bottom: 18px;
+        .relative();
+        margin-bottom: 12px;
+        padding-left: 23px;
       }
       &__item::before {
-        .relative();
-        top: 1px;
+        .absolute();
+        top: 5px;
+        left: 0;
         .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
         background-position: -228px -240px;
-
-        @media @screen-xs {
-          .absolute();
-          top: 2px;
-        }
       }
         &__link {
           .font-family(@font-reg);
-          .font-size(1.4rem,14px);
+          .font-size(1.4rem,20px);
           color: @color-1e;
           .no-decor();
           .transition();
