@@ -2933,7 +2933,7 @@ a img {
   color: #e6e6e6;
 }
 .content-block {
-  max-width: 925px;
+  width: 925px;
   margin-top: -7px;
   float: right;
 }
@@ -5554,6 +5554,7 @@ a img {
 }
 .solutions__list-name:hover {
   color: #e42116;
+  text-decoration: none;
 }
 .solution-page {
   /*&__product-link:hover {
