@@ -6871,7 +6871,184 @@ a img {
 }
 .scheme__inner {
   width: 823px;
-  margin: 50px auto 0;
+  position: relative;
+  top: 51px;
+  margin: 0 auto;
+}
+.scheme__inner::after {
+  display: block;
+  width: 100%;
+  clear: both;
+  content: '';
+}
+.scheme__top {
+  width: 440px;
+  margin: 0 auto 18px;
+}
+.scheme__top-inner {
+  position: relative;
+  margin: 0 0 0 30px;
+}
+.scheme__top-text {
+  position: absolute;
+  top: 125px;
+  left: 134px;
+}
+.scheme__top span {
+  display: block;
+  margin-bottom: 2px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 13px;
+  color: #fff;
+}
+.scheme__left {
+  width: 229px;
+  margin-right: 5px;
+  float: left;
+}
+.scheme__center {
+  width: 353px;
+  float: left;
+}
+.scheme__right {
+  width: 229px;
+  float: right;
+}
+.scheme__block {
+  height: 441px;
+  position: relative;
+  margin-bottom: 26px;
+  padding-top: 49px;
+  border: 1px dotted #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.scheme__center .scheme__block {
+  padding-top: 34px;
+}
+.scheme__item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 11px;
+}
+.scheme__left .scheme__item img,
+.scheme__right .scheme__item img {
+  margin-left: 19px;
+}
+.scheme__center .scheme__item span {
+  display: inline-block;
+  margin-right: 28px;
+}
+.scheme__center .scheme__item img {
+  display: block;
+  margin: 0 auto;
+}
+.scheme__center .scheme__item:nth-of-type(1),
+.scheme__center .scheme__item:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+.scheme__center .scheme__item:nth-of-type(2) span {
+  margin-right: 42px;
+}
+.scheme__center .scheme__item:nth-of-type(3) span {
+  margin-right: 0;
+}
+.scheme__item span {
+  display: block;
+  margin-top: 10px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 13px;
+  color: #fff;
+  opacity: 0.5;
+}
+.scheme__link {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 55px;
+  cursor: pointer;
+}
+.scheme__link:hover .scheme__note {
+  display: block;
+  opacity: 1;
+}
+.scheme__link--center1 {
+  top: 20px;
+  left: 74px;
+}
+.scheme__link--center2 {
+  top: 20px;
+  left: 180px;
+}
+.scheme__link--center3 {
+  top: 20px;
+  right: 22px;
+}
+.scheme__link--center4 {
+  top: 0;
+  left: 119px;
+}
+.scheme__link--center5 {
+  top: 0;
+  right: 66px;
+}
+.scheme__note {
+  display: none;
+  width: 195px;
+  min-height: 61px;
+  position: absolute;
+  top: 55px;
+  left: -75px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 23px;
+  color: #383838;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  z-index: 100;
+}
+.scheme__note::before {
+  display: block;
+  width: 14px;
+  height: 7px;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin-left: -7px;
+  background-position: -253px -239px;
+  background-repeat: no-repeat;
+  background-image: url("../img/spritesheet.png");
+  content: '';
+}
+.scheme__name {
+  margin-top: 26px;
+  font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+}
+.scheme__dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  margin-left: -18px;
+}
+.scheme__dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 3px;
+  border-radius: 4px;
 }
 .standarts::after {
   display: block;
