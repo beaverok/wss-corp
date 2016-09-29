@@ -61,10 +61,27 @@
         &__center &__block {
           padding-top: 34px;
         }
+        &__center &__item {
+          width: auto;
+          margin: 0 20px 11px;
+          padding: 10px 0;
+        }
           &__item {
             width: 100%;
             .relative();
             margin-bottom: 11px;
+          }
+          &__item-center1:hover &__item-note1{
+            display: block;
+          }
+          &__item-center2:hover &__item-note2{
+            display: block;
+          }
+          &__item-center3:hover &__item-note3{
+            display: block;
+          }
+          &__item-center1:hover, &__item-center2:hover, &__item-center3:hover {
+            background-color: rgba(255,255,255,0.2);
           }
           &__left &__item img, &__right &__item img {
             margin-left: 19px;

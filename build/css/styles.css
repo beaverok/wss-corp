@@ -7000,10 +7000,29 @@ a img {
 .scheme__center .scheme__block {
   padding-top: 34px;
 }
+.scheme__center .scheme__item {
+  width: auto;
+  margin: 0 20px 11px;
+  padding: 10px 0;
+}
 .scheme__item {
   width: 100%;
   position: relative;
   margin-bottom: 11px;
+}
+.scheme__item-center1:hover .scheme__item-note1 {
+  display: block;
+}
+.scheme__item-center2:hover .scheme__item-note2 {
+  display: block;
+}
+.scheme__item-center3:hover .scheme__item-note3 {
+  display: block;
+}
+.scheme__item-center1:hover,
+.scheme__item-center2:hover,
+.scheme__item-center3:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .scheme__left .scheme__item img,
 .scheme__right .scheme__item img {
