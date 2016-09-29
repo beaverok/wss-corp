@@ -6200,6 +6200,7 @@ a img {
   list-style: none;
   width: 48%;
   margin-top: 8px;
+  vertical-align: top;
 }
 .product-page__advants-ul:first-child {
   margin-right: 34px;
