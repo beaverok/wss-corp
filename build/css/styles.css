@@ -2846,11 +2846,14 @@ a img {
 }
 .sidebar-menu__item {
   display: block;
-  margin-bottom: 18px;
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 23px;
 }
 .sidebar-menu__item::before {
-  position: relative;
-  top: 1px;
+  position: absolute;
+  top: 5px;
+  left: 0;
   display: inline-block;
   width: 8px;
   height: 12px;
@@ -2861,16 +2864,10 @@ a img {
   content: '';
   background-position: -228px -240px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .sidebar-menu__item::before {
-    position: absolute;
-    top: 2px;
-  }
-}
 .sidebar-menu__link {
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  line-height: 14px;
+  line-height: 20px;
   color: #1e1e1e;
   text-decoration: none;
   transition: all 0.2s ease-out;
@@ -2921,6 +2918,7 @@ a img {
   text-align: center;
 }
 .sidebar-info__get-present a {
+  display: block;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 54px;
@@ -5693,8 +5691,8 @@ a img {
 }
 .solution-page__call-title {
   display: inline-block;
-  max-width: 502px;
-  margin-right: 25px;
+  max-width: 498px;
+  margin-right: 20px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 2.3rem;
   line-height: 30px;

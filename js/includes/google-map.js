@@ -36,7 +36,6 @@ function g_map ()
         map.mapTypes.set('Grayscale', mapType);
         map.setMapTypeId('Grayscale');*/
 
-        if ($(window).width() > 766) {
             var marker = new google.maps.Marker({
                 map: map,
                 icon: {
@@ -47,20 +46,7 @@ function g_map ()
                 },
                 position: latlng
             });
-            map.panBy(-100,50);
-        } else {
-            var marker = new google.maps.Marker({
-                map: map,
-                icon: {
-                    size: new google.maps.Size(208, 102),
-                    origin: new google.maps.Point(0, 0),
-                    anchor: new google.maps.Point(100, 0),
-                    url: point
-                },
-                position: latlng
-            });
-            map.panBy(0,-200);
-        }
+            map.panBy(250,50);
 
         google.maps.event.addDomListener(window, "resize", function() {
             var center = map.getCenter();
