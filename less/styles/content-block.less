@@ -3,12 +3,28 @@
   margin-top: -7px;
   float: right;
 
+  @media @screen-lg {
+    width: 702px;
+  }
+  @media @screen-md {
+    width: 450px;
+  }
+  @media @screen-xs {
+    width: 300px;
+    margin: 0 auto;
+    float: none;
+  }
+
   &__h3 {
     margin-bottom: 17px;
     .font-family(@font-reg);
     .font-size(1.8rem, 16px);
     color: @color-1e;
     .uppercase();
+
+    @media @screen-xs {
+      line-height: 22px;
+    }
   }
 
   & p {
@@ -16,6 +32,10 @@
     .font-family(@font-reg);
     .font-size(1.6rem, 27px);
     color: #5c5c5c;
+
+    @media @screen-xs {
+      line-height: 22px;
+    }
   }
 
   &__ul {
@@ -39,7 +59,7 @@
 
       @media @screen-xs {
         .absolute();
-        top: 2px;
+        top: 7px;
       }
     }
 }

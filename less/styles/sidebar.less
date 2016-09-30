@@ -1,6 +1,11 @@
 .sidebar {
   width: 265px;
   float: left;
+
+  @media @screen-xs {
+    float: none;
+    margin: 0 auto 30px;
+  }
 }
 
 @import "sidebar-menu";

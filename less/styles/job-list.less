@@ -5,6 +5,11 @@
     .font-size(1.8rem, 29px);
     color: @color-1e;
     .uppercase();
+
+    @media @screen-xs {
+      margin: 24px 0;
+      line-height: 22px;
+    }
   }
 
   &__item {
@@ -48,6 +53,10 @@
       display: none;
       .bg-color(#f0f0f0);
       padding: 38px 35px;
+
+      @media @screen-xs {
+        padding: 20px;
+      }
     }
       &__h3 {
         margin-bottom: 29px;
@@ -55,6 +64,10 @@
         .font-size(1.8rem, 16px);
         color: @color-1e;
         .uppercase();
+
+        @media @screen-xs {
+          margin-bottom: 18px;
+        }
       }
       &__ul {
         .ul-reset();
@@ -67,6 +80,11 @@
         .font-family(@font-reg);
         .font-size(1.6rem, 27px);
         color: @color-33;
+
+        @media @screen-xs {
+          padding-left: 22px;
+          line-height: 22px;
+        }
       }
       &__li:last-child {
         margin-bottom: 33px;
@@ -80,7 +98,7 @@
 
         @media @screen-xs {
           .absolute();
-          top: 2px;
+          top: 6px;
         }
       }
 
@@ -89,6 +107,17 @@
       margin-left: -35px;
       border-top: 7px solid #e3e3e3;
       .align-center();
+
+      @media @screen-lg {
+        width: 702px;
+      }
+      @media @screen-md {
+        width: 450px;
+      }
+      @media @screen-xs {
+        width: 300px;
+        margin-left: -20px;
+      }
     }
     &__form-btn a {
       display: inline-block;

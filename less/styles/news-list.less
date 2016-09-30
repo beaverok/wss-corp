@@ -10,9 +10,27 @@
     border: 1px dotted #8b8c8d;
     .rounded(8px);
     vertical-align: top;
+
+    @media @screen-lg {
+      width: 47%;
+      margin-right: 12px;
+    }
+    @media @screen-md {
+      width: 47%;
+      margin-right: 10px;
+      padding: 18px 16px 17px;
+      overflow: hidden;
+    }
   }
   &__item:nth-of-type(3n) {
     margin-right: 0;
+
+    @media @screen-lg {
+      margin-right: 12px;
+    }
+    @media @screen-md {
+      margin-right: 10px;
+    }
   }
 
     &__item-date {
@@ -27,6 +45,10 @@
       color: #5c5c5c;
       .no-decor();
       .transition();
+
+      @media @screen-md {
+        line-height: 18px;
+      }
     }
     &__item-name:hover {
       color: darken(#5c5c5c,20%);

@@ -4,6 +4,8 @@
   .bg-image("../img/bg_common-title.jpg");
 
   @media @screen-xs {
+    height: auto;
+    min-height: 131px;
     margin-bottom: 35px;
   }
 
@@ -21,7 +23,8 @@
     .uppercase();
 
     @media @screen-xs {
-      .font-size(3rem,20px);
+      margin-top: 30px;
+      .font-size(3rem,30px);
     }
   }
     &__line {
@@ -32,5 +35,9 @@
       .pos(0,50%);
       top: 37px;
       margin-left: -15%;
+
+      @media @screen-xs {
+        top: -5px;
+      }
     }
 }

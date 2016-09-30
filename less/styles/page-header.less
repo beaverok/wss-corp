@@ -150,6 +150,9 @@
       .align-center;
       float: right;
 
+      @media @screen-lg {
+        width: 248px;
+      }
       @media @screen-md {
         .absolute();
         top: 0;
@@ -168,6 +171,10 @@
         .font-size(2.9rem, 24px);
         color: #afafaf;
         .no-decor();
+
+        @media @screen-lg {
+          font-size: 2.7rem;
+        }
       }
       &__phone span {
         display: inline-block;

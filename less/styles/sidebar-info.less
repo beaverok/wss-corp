@@ -6,6 +6,10 @@
     .font-family(@font-reg);
     .font-size(1.8rem, 18px);
     color: @color-1e;
+
+    @media @screen-xs {
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
@@ -24,6 +28,10 @@
       max-height: 160px;
       border: 1px solid #dedede;
       margin-bottom: 16px;
+
+      @media @screen-xs {
+        margin-bottom: 10px;
+      }
     }
     &__item-name {
       padding: 0 50px;
@@ -37,6 +45,10 @@
     .bg-image("../img/bg_get-present.png");
     margin-top: 43px;
     .align-center();
+
+    @media @screen-xs {
+      margin-top: 25px;
+    }
   }
     &__get-present a {
       display: block;

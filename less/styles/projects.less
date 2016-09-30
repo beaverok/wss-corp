@@ -7,6 +7,14 @@
       .container();
       margin-bottom: 110px;
       padding-top: 37px;
+
+      @media @screen-md {
+        margin-bottom: 50px;
+      }
+      @media @screen-xs {
+        margin-bottom: 40px;
+        padding-top: 0;
+      }
     }
     &__inner::after {
       .clear-after();

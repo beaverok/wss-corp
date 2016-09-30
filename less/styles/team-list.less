@@ -1,6 +1,16 @@
 .team-list {
   margin-bottom: 39px;
 
+  @media @screen-lg {
+    margin-bottom: 20px;
+  }
+  @media @screen-md {
+    margin-bottom: 20px;
+  }
+  @media @screen-xs {
+    margin-bottom: 20px;
+  }
+
   &::after {
     display: block;
     width: 100%;
@@ -10,6 +20,10 @@
 
   &__block {
     margin-bottom: 29px;
+
+    @media @screen-xs {
+      .align-center();
+    }
   }
   &__block:last-child {
     margin-bottom: -37px;
@@ -27,9 +41,29 @@
     .size(192px,193px);
     margin-bottom: 37px;
     margin-right: 49px;
+
+    @media @screen-lg {
+      margin: 0 20px 20px;
+    }
+    @media @screen-md {
+      margin: 0 10px 20px;
+    }
+    @media @screen-xs {
+      margin: 0 auto 10px;
+    }
   }
   &.team-page .team-item:nth-of-type(4n) {
     margin-right: 0;
+
+    @media @screen-lg {
+      margin: 0 20px 20px;
+    }
+    @media @screen-md {
+      margin: 0 10px 20px;
+    }
+    @media @screen-xs {
+      margin: 0 auto 10px;
+    }
   }
   &.team-page .team-item img {
     width: 192px;

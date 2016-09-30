@@ -4,11 +4,20 @@
   margin-bottom: 35px;
   padding: 25px 22px 15px;
 
+  @media @screen-xs {
+    margin-bottom: 25px;
+    padding: 20px 17px 10px;
+  }
+
     &__title {
       margin-bottom: 24px;
       .font-family(@font-reg);
       .font-size(1.8rem,18px);
       color: @color-1e;
+
+      @media @screen-xs {
+        margin-bottom: 18px;
+      }
     }
 
     &__list {
@@ -19,6 +28,10 @@
         .relative();
         margin-bottom: 12px;
         padding-left: 23px;
+
+        @media @screen-xs {
+          margin-bottom: 7px;
+        }
       }
       &__item::before {
         .absolute();

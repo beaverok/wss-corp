@@ -8,6 +8,10 @@
     max-width: 500px;
     margin-top: 8px;
     float: left;
+
+    @media @screen-lg {
+      max-width: 400px;
+    }
   }
     &__list-item {
       display: block;
@@ -17,6 +21,11 @@
       .font-family(@font-reg);
       .font-size(1.6rem, 27px);
       color: #5c5c5c;
+
+      @media @screen-xs {
+        padding-left: 32px;
+        line-height: 20px;
+      }
     }
     &__list-item::before {
       display: inline-block;
@@ -35,6 +44,20 @@
     max-width: 360px;
     margin-top: -30px;
     float: right;
+
+    @media @screen-lg {
+      max-width: 250px;
+    }
+    @media @screen-md {
+      max-width: 250px;
+      float: none;
+      margin: 0 auto;
+    }
+    @media @screen-xs {
+      max-width: 250px;
+      float: none;
+      margin: 0 auto;
+    }
   }
     &__pic img {
       width: 100%;

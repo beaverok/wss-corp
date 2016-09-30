@@ -5,12 +5,31 @@
   .align-center();
   float: left;
 
+  @media @screen-lg {
+    max-width: 47%;
+    margin: 0 14px;
+  }
+  @media @screen-md {
+    max-width: 47%;
+    margin: 0 12px;
+  }
   @media @screen-xs {
     width: 100%;
+    margin: 0 0 15px;
   }
 
   &:last-child {
     margin: 0 64px 0 74px;
+
+    @media @screen-lg {
+      margin: 0 10px;
+    }
+    @media @screen-md {
+      margin: 0 10px;
+    }
+    @media @screen-xs {
+      margin: 0;
+    }
   }
 
   &__link {
@@ -24,12 +43,18 @@
     &__pic {
       .size(477px, 256px);
 
+      @media @screen-lg {
+        width: 100%;
+        height: auto;
+      }
       @media @screen-md {
-      //  width: 140px;
+        width: 100%;
+        height: auto;
       }
       @media @screen-xs {
-      //  float: none;
-      //  margin: 0 auto 30px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
       }
     }
 
@@ -40,5 +65,12 @@
       .font-size(2rem, 30px);
       color: @color-1e;
       .uppercase();
+
+      @media @screen-md {
+        padding: 0 30px;
+      }
+      @media @screen-xs {
+        padding: 0 20px;
+      }
     }
 }

@@ -135,10 +135,12 @@
       cursor: pointer;
 
       @media @screen-lg {
-        width: 23%;
+        width: 32%;
+        margin-right: 10px;
       }
       @media @screen-md {
-        margin: 0 6px 18px;
+        width: 48%;
+        margin: 0 7px 18px 0;
       }
       @media @screen-xs {
         display: block;
@@ -147,6 +149,10 @@
     }
     &__item:nth-of-type(3n) {
       margin-right: 0;
+
+      @media @screen-md {
+        margin: 0 7px 18px 0;
+      }
     }
 
       &__item-pic {
@@ -161,6 +167,9 @@
 
         @media @screen-lg {
           left: 0;
+        }
+        @media @screen-md {
+          width: 160px;
         }
       }
       &__item-pic img {

@@ -1,4 +1,12 @@
 .solution-projects {
+
+  @media @screen-md {
+    .align-center();
+  }
+  @media @screen-xs {
+    .align-center();
+  }
+
   &__item {
     display: inline-block;
     .size(297px, 175px);
@@ -8,9 +16,26 @@
     .border-radius(14px, 14px, 14px, 14px);
     cursor: pointer;
     vertical-align: top;
+
+    @media @screen-md {
+      margin: 0 0 10px;
+    }
+    @media @screen-xs {
+      margin: 0 0 10px;
+    }
   }
   &__item:nth-of-type(3n) {
     margin-right: 0;
+
+    @media @screen-lg {
+      margin-right: 14px;
+    }
+    @media @screen-md {
+      margin: 0 0 10px;
+    }
+    @media @screen-xs {
+      margin: 0 0 10px;
+    }
   }
 
     &__pic {

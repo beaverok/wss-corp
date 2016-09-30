@@ -10,10 +10,20 @@
     margin-left: 30px;
     padding: 18px 28px 0 173px;
     float: right;
+
+    @media @screen-xs {
+      width: 300px;
+      padding: 14px 28px 0 130px;
+    }
   }
     &__product img {
       .absolute();
       .pos();
+
+      @media @screen-xs {
+        width: 300px;
+        height: 165px;
+      }
     }
     &__product-name {
       .relative();
@@ -22,6 +32,10 @@
       .font-size(1.8rem, 24px);
       color: @white;
       .uppercase();
+
+      @media @screen-xs {
+        .font-size(1.4rem, 16px);
+      }
     }
     &__product-link {
       display: inline-block;
@@ -70,6 +84,10 @@
     .font-size(3rem, 29px);
     color: @color-1e;
     .uppercase();
+
+    @media @screen-xs {
+      .font-size(2.4rem,27px);
+    }
   }
     &__h2 span {
       display: block;
@@ -81,6 +99,10 @@
     .font-size(1.8rem, 29px);
     color: @color-1e;
     .uppercase();
+
+    @media @screen-xs {
+      line-height: 22px;
+    }
   }
 
   &__ul {
@@ -95,6 +117,11 @@
       .font-size(1.6rem, 27px);
       color: #5c5c5c;
       text-align: justify;
+
+      @media @screen-xs {
+        line-height: 20px;
+        text-align: left;
+      }
     }
     &__li::before {
       display: inline-block;
@@ -114,12 +141,34 @@
     border: 1px solid #c8c8c8;
     margin: 58px 0 65px;
     padding: 39px 30px 0 43px;
+
+    @media @screen-lg {
+      height: auto;
+      padding-bottom: 39px;
+    }
+    @media @screen-md {
+      height: auto;
+      padding: 25px;
+
+    }
+    @media @screen-xs {
+      height: auto;
+      margin: 30px 0;
+      padding: 20px;
+    }
   }
     &__call-icon {
       display: inline-block;
       .size(84px,84px);
       margin-right: 29px;
       vertical-align: top;
+
+      @media @screen-md {
+        display: none;
+      }
+      @media @screen-xs {
+        display: none;
+      }
     }
     &__call-title {
       display: inline-block;
@@ -130,6 +179,18 @@
       color: #020202;
       .uppercase();
       vertical-align: top;
+
+      @media @screen-lg {
+        margin-right: 0;
+      }
+      @media @screen-md {
+        margin-right: 0;
+        font-size: 1.8rem;
+      }
+      @media @screen-xs {
+        margin-right: 0;
+        .font-size(1.6rem,24px);
+      }
     }
       &__call-title span {
         display: inline-block;
@@ -138,6 +199,10 @@
         font-family: @font-bold;
         line-height: 48px;
         color: @white;
+
+        @media @screen-xs {
+          line-height: 24px;
+        }
       }
 
     &__call-btn {
@@ -157,8 +222,17 @@
       .uppercase();
       .transition();
 
+      @media @screen-lg {
+        display: block;
+        margin: 10px auto 0;
+      }
       @media @screen-md {
-
+        display: block;
+        margin: 10px auto 0;
+      }
+      @media @screen-xs {
+        display: block;
+        margin: 10px auto 0;
       }
     }
     &__call-btn span {

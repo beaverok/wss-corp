@@ -6,6 +6,7 @@
     margin-bottom: 58px;
 
     @media @screen-xs {
+      width: 100%;
       height: auto;
       background: rgba(0, 0, 0, 0.8);
       background-image: none;
@@ -13,8 +14,12 @@
     }
 
     &__inner {
-        .container();
-        padding-top: 45px;
+      .container();
+      padding-top: 45px;
+
+      @media @screen-xs {
+        margin: 0 auto;
+      }
     }
     &__title {
         margin-bottom: 44px;

@@ -35,6 +35,10 @@
     margin-bottom: 6px;
     vertical-align: top;
 
+    @media @screen-lg {
+      .relative();
+      padding-left: 23px;
+    }
     @media @screen-md {
       width: 100%;
     }
@@ -49,6 +53,11 @@
     .link-bg(8px, 12px, "../img/spritesheet.png", 15px);
     background-position: -228px -240px;
 
+    @media @screen-lg {
+      .absolute();
+      top: 3px;
+      left: 0;
+    }
     @media @screen-xs {
       .absolute();
       top: 3px;
