@@ -179,14 +179,14 @@
 }
 /* Overlay helper */
 .fancybox-lock {
-  overflow: hidden !important;
-  width: auto;
+  /* overflow: hidden !important;
+    width: auto;*/
 }
 .fancybox-lock body {
-  overflow: hidden !important;
+  /* overflow: hidden !important;*/
 }
 .fancybox-lock-test {
-  overflow-y: hidden !important;
+  /*  overflow-y: hidden !important;*/
 }
 .fancybox-overlay {
   position: absolute;
@@ -203,8 +203,8 @@
   right: 0;
 }
 .fancybox-lock .fancybox-overlay {
-  overflow: auto;
-  overflow-y: scroll;
+  /*overflow: auto;
+	overflow-y: scroll; */
 }
 /* Title helper */
 .fancybox-title {
@@ -273,6 +273,9 @@
 		background-size: 24px 24px;
 	}
 } */
+.fancybox-margin {
+  margin: 0 !important;
+}
 /*
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
@@ -2764,10 +2767,6 @@ a img {
     line-height: 30px;
   }
 }
-.top-clients__item:hover {
-  border-left: 1px dotted #fff;
-  border-right: 1px dotted #fff;
-}
 .top-clients__link img {
   max-height: 44px;
   vertical-align: middle;
@@ -3346,6 +3345,7 @@ a img {
 }
 .scopes-tab {
   display: none;
+  min-height: 418px;
   width: 1240px;
   margin: 0 auto;
   clear: both;
@@ -3381,6 +3381,7 @@ a img {
 }
 @media (min-width: 320px) and (max-width: 766px) {
   .scopes-tab {
+    min-height: auto;
     margin-bottom: 40px;
   }
 }
@@ -3927,8 +3928,11 @@ a img {
   }
 }
 .personal-tab__item {
+  width: 100%;
   display: inline-block;
+  position: relative;
   margin-bottom: 14px;
+  padding-left: 44px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 14px;
@@ -3946,16 +3950,14 @@ a img {
   background-position: -21px -58px;
   width: 22px;
   height: 17px;
-  margin-right: 22px;
-  position: relative;
-  top: 3px;
+  position: absolute;
+  top: -2px;
+  left: 0;
   content: '';
 }
 @media (min-width: 320px) and (max-width: 766px) {
   .personal-tab__item::before {
-    top: 6px;
-    left: -30px;
-    margin-right: -22px;
+    top: 2px;
   }
 }
 .price-block {

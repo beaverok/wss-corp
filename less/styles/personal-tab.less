@@ -63,8 +63,11 @@
     }
   }
     &__item {
+      width: 100%;
       display: inline-block;
+      .relative();
       margin-bottom: 14px;
+      padding-left: 44px;
       .font-family(@font-reg);
       .font-size(1.4rem, 14px);
       color: @color-1e;
@@ -80,15 +83,13 @@
       background-position: -21px -58px;
       width: 22px;
       height: 17px;
-      margin-right: 22px;
-      .relative();
-      top: 3px;
+      .absolute();
+      top: -2px;
+      left: 0;
       content: '';
 
       @media @screen-xs {
-        top: 6px;
-        left: -30px;
-        margin-right: -22px;
+        top: 2px;
       }
     }
 }
