@@ -11,6 +11,10 @@
     .transition();
     vertical-align: top;
     .no-decor();
+
+    @media @screen-xs {
+      margin-bottom: 20px;
+    }
   }
   &__file-link::before {
     .size(21px,26px);
@@ -30,11 +34,22 @@
     .font-size(1.8rem, 16px);
     color: @color-33;
     .uppercase();
+
+    @media @screen-md {
+      line-height: 24px;
+    }
+    @media @screen-xs {
+      .font-size(1.6rem,22px);
+    }
   }
 
   &__ul {
     .ul-reset();
     margin-bottom: 42px;
+
+    @media @screen-xs {
+      margin-bottom: 28px;
+    }
   }
     &__li {
       display: block;
@@ -67,6 +82,15 @@
       margin-bottom: 56px;
       padding-bottom: 50px;
       border-bottom: 4px solid #e2e2e2;
+
+      @media @screen-md {
+        margin-bottom: 35px;
+        padding-bottom: 30px;
+      }
+      @media @screen-xs {
+        margin-bottom: 35px;
+        padding-bottom: 30px;
+      }
     }
     &__advants::after {
       .clear-after();
@@ -77,9 +101,23 @@
         width: 48%;
         margin-top: 8px;
         vertical-align: top;
+
+        @media @screen-md {
+          width: 100%;
+        }
+        @media @screen-xs {
+          width: 100%;
+        }
       }
       &__advants-ul:first-child {
         margin-right: 34px;
+
+        @media @screen-lg {
+          margin-right: 20px;
+        }
+        @media @screen-xs {
+          margin-right: 0;
+        }
       }
         &__advants-li {
           display: block;
@@ -89,6 +127,10 @@
           .font-family(@font-reg);
           .font-size(1.6rem, 27px);
           color: #5c5c5c;
+
+          @media @screen-xs {
+            line-height: 22px;
+          }
         }
         &__advants-li::before {
           display: inline-block;
@@ -108,6 +150,12 @@
       .font-size(3rem, 28px);
       color: @color-1e;
       .uppercase();
+
+      @media @screen-xs {
+        margin-bottom: 20px;
+        .font-size(2.5rem,25px);
+        .align-center();
+      }
     }
 
     &__tabs-ul {
@@ -118,9 +166,27 @@
         display: inline-block;
         margin-right: 39px;
         vertical-align: top;
+
+        @media @screen-lg {
+          margin-right: 30px;
+          margin-bottom: 10px;
+        }
+        @media @screen-md {
+          display: block;
+          margin-bottom: 10px;
+        }
+        @media @screen-xs {
+          display: block;
+          margin: 0 auto 10px;
+          .align-center();
+        }
       }
       &__tabs-li:last-child {
         margin-right: 0;
+
+        @media @screen-xs {
+          margin: 0 auto 10px;
+        }
       }
         &__tabs-link {
           display: inline-block;
@@ -155,6 +221,10 @@
         .font-family(@font-reg);
         .font-size(1.6rem, 27px);
         color: #5c5c5c;
+
+        @media @screen-xs {
+          line-height: 22px;
+        }
       }
       &__scopes-li::before {
         display: inline-block;

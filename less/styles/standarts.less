@@ -7,6 +7,13 @@
   &__inner {
     .container();
     margin-bottom: 81px;
+
+    @media @screen-md {
+      margin-bottom: 30px;
+    }
+    @media @screen-xs {
+      margin-bottom: 30px;
+    }
   }
   &__inner::after {
     .clear-after();
@@ -19,12 +26,24 @@
     color: @color-1e;
     .uppercase();
     .align-center();
+
+    @media @screen-xs {
+      margin-bottom: 30px;
+      .font-size(2.5rem,24px);
+    }
   }
 
   &__column {
     width: 32%;
     margin-right: 1%;
     float: left;
+
+    @media @screen-md {
+      margin-right: 2%;
+    }
+    @media @screen-xs {
+      width: 100%;
+    }
   }
   &__column:last-child {
     margin-right: 0;
@@ -35,6 +54,13 @@
       .rounded(7px);
       margin-bottom: 17px;
       padding: 25px 0 18px 104px;
+
+      @media @screen-md {
+        padding-left: 22px;
+      }
+      @media @screen-xs {
+        padding-left: 42px;
+      }
     }
       &__block-name {
         margin-bottom: 34px;
@@ -43,6 +69,10 @@
         .font-size(1.8rem,18px);
         color: @color-1e;
         .uppercase();
+
+        @media @screen-xs {
+          margin-bottom: 20px;
+        }
       }
       &__block-list {
         .ul-reset();
@@ -52,6 +82,10 @@
         .relative();
         margin-bottom: 21px;
         padding-left: 27px;
+
+        @media @screen-xs {
+          margin-bottom: 8px;
+        }
       }
         &__block-item {
           display: inline-block;

@@ -3,6 +3,10 @@
     .container();
     margin-bottom: 57px;
     padding: 0 65px 0 90px;
+
+    @media @screen-xs {
+      margin-bottom: 30px;
+    }
   }
   &__top-inner::after {
     .clear-after();
@@ -10,11 +14,31 @@
     &__top-icon {
       margin-right: 79px;
       float: left;
+
+      @media @screen-md {
+        margin-right: 35px;
+      }
+      @media @screen-xs {
+        .relative();
+        top: 5px;
+        margin-right: 10px;
+      }
     }
+      &__top-icon img {
+        width: 50px;
+        height: auto;
+      }
     &__descr {
       padding-top: 30px;
       .font-family(@font-reg);
       .font-size(1.6rem,24px);
       color: @color-33;
+
+      @media @screen-md {
+        padding-top: 5px;
+      }
+      @media @screen-xs {
+        padding-top: 0;
+      }
     }
 }

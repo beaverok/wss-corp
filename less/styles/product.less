@@ -6,12 +6,30 @@
   .rounded(8px);
   float: left;
 
+  @media @screen-lg {
+    width: 47%;
+    margin: 0 15px;
+    padding-bottom: 20px;
+  }
+  @media @screen-md {
+    margin: 0 auto 20px;
+    padding-bottom: 20px;
+    float: none;
+  }
   @media @screen-xs {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   &:last-child {
     margin-right: 0;
+
+    @media @screen-md {
+      margin-right: auto;
+      .relative();
+      left: 50%;
+      margin-left: -294px;
+    }
   }
 
   &__pic {
@@ -23,7 +41,8 @@
     }
     @media @screen-xs {
       float: none;
-      margin: 0 auto 30px;
+      height: 200px;
+      margin: -35px auto 30px;
     }
   }
   &__pic img {
@@ -57,10 +76,21 @@
     .font-family(@font-reg);
     .font-size(1.6rem, 24px);
     color: @color-33;
+
+    @media @screen-lg {
+      padding-right: 20px;
+    }
+    @media @screen-xs {
+      padding-right: 20px;
+    }
   }
 
   &__links {
     margin-bottom: 21px;
+
+    @media @screen-lg {
+      margin-bottom: 12px;
+    }
   }
   &__link--video {
     display: inline-block;
