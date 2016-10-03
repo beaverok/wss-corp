@@ -5318,6 +5318,11 @@ a img {
   line-height: 44px;
   color: #1e1e1e;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .form-feedback__input-text {
+    line-height: 28px;
+  }
+}
 .form-feedback__right {
   position: relative;
   float: right;
