@@ -2036,8 +2036,8 @@ a img {
 }
 .page-header__menu-btn {
   display: none;
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   content: '';
   position: absolute;
   top: 26px;
@@ -2047,7 +2047,7 @@ a img {
 @media (min-width: 320px) and (max-width: 766px) {
   .page-header__menu-btn {
     display: block;
-    top: 9px;
+    top: 13px;
   }
 }
 .page-header__return {
@@ -3194,7 +3194,6 @@ a img {
   }
 }
 .advantages-tab__title {
-  height: 44px;
   margin-bottom: 15px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
@@ -3389,7 +3388,7 @@ a img {
   display: block;
 }
 .scopes-tab__list {
-  width: 526px;
+  width: 580px;
   position: relative;
   z-index: 20;
   float: left;
@@ -3447,7 +3446,6 @@ a img {
   text-transform: uppercase;
 }
 .scopes-tab__descr {
-  max-width: 380px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 18px;
@@ -4133,7 +4131,8 @@ a img {
   }
 }
 .price-inner__descr {
-  margin-top: 53px;
+  max-width: 600px;
+  margin-top: 25px;
   float: left;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -4167,10 +4166,12 @@ a img {
   }
 }
 .price-inner__list-item {
-  margin-bottom: 14px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
   font-family: "renault_liferegular", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  line-height: 14px;
+  line-height: 18px;
   color: #1e1e1e;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -4187,8 +4188,9 @@ a img {
   display: inline-block;
   width: 22px;
   height: 17px;
-  position: relative;
+  position: absolute;
   top: 3px;
+  left: 0;
   margin-right: 18px;
   background-image: url(../img/spritesheet.png);
   background-position: -21px -58px;
@@ -4409,7 +4411,7 @@ a img {
   display: inline-block;
   width: 183px;
   position: relative;
-  margin-left: 18px;
+  margin-left: 22px;
   vertical-align: top;
 }
 @media (min-width: 1007px) and (max-width: 1239px) {
@@ -4422,6 +4424,9 @@ a img {
   .price-tab__icons-item {
     margin: 0 auto;
   }
+}
+.price-tab__icons-item:first-child {
+  margin-left: 0;
 }
 .price-tab__link {
   display: block;
@@ -4741,9 +4746,9 @@ a img {
   font-size: 1.6rem;
   line-height: 24px;
   color: #333;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
 }
 .index-services__list {
   margin: 0;
@@ -5517,7 +5522,7 @@ a img {
 .fs_loader {
   width: 100%;
   height: 400px;
-  background: url(../img/fs.spinner.gif) center center no-repeat transparent;
+  background-color: #fff;
 }
 /** CONTROLS **/
 .fraction-slider .prev,

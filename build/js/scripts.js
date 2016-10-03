@@ -6250,14 +6250,14 @@ $(document).ready(function () {
         }
     });
 
-    $('.scopes-tab__item').mouseenter(function () {
+    /*$('.scopes-tab__item').mouseenter(function () {
         var pic = $(this).attr("data-pic");
 
         $('.scopes-tab__item').removeClass('scopes-tab__item--active');
         $(this).addClass('scopes-tab__item--active');
 
         $('.scopes-tab__pic img').attr("src", pic);
-    })
+    })*/
 
     $('.button-up a').click(function () {
         $('.main-menu__link').removeClass('main-menu__link--active');
@@ -6275,7 +6275,11 @@ $(document).ready(function () {
         $('.price-tab__link').click(function () {
             var selected = $(this).attr('href');
             $.scrollTo(selected, 1000, { offset: -70 });
-        })
+        });
+        $('.solutions-tabs__link').click(function () {
+            var selected = $(this).attr('href');
+            $.scrollTo(selected, 1000, { offset: -70 });
+        });
     }
 });
 $(document).ready(function () {
@@ -6386,7 +6390,7 @@ function g_map ()
         map.mapTypes.set('Grayscale', mapType);
         map.setMapTypeId('Grayscale');*/
 
-        if ($(window).width() > 766) {
+        if ($(window).width() > 1010) {
             var marker = new google.maps.Marker({
                 map: map,
                 icon: {
@@ -6397,7 +6401,20 @@ function g_map ()
                 },
                 position: latlng
             });
-            map.panBy(-100,50);
+            map.panBy(-110,50);
+        }
+        else if ($(window).width() > 766 && $(window).width() < 1010) {
+            var marker = new google.maps.Marker({
+                map: map,
+                icon: {
+                    size: new google.maps.Size(208, 102),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(-150, 0),
+                    url: point
+                },
+                position: latlng
+            });
+            map.panBy(50,50);
         } else {
             var marker = new google.maps.Marker({
                 map: map,
@@ -6491,12 +6508,12 @@ $(document).ready(function () {
     if ($(window).width() > 1000) {
         $('.top-slider__slides').fractionSlider({
             'slideTransition': 'fade',
-            'slideTransitionSpeed': 100,
+            'slideTransitionSpeed': 0,
             'transitionIn': 'fade',
             'transitionOut': 'fade',
             'timeout': 8000,
             'speedIn': 500,
-            'delay': 300,
+            'delay': 0,
             'controls': true,
             'pauseOnHover': true
         });

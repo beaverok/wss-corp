@@ -60,7 +60,8 @@
     }
 
     &__descr {
-      margin-top: 53px;
+      max-width: 600px;
+      margin-top: 25px;
       float: left;
 
       @media @screen-lg {
@@ -86,9 +87,11 @@
         }
       }
         &__list-item {
-          margin-bottom: 14px;
+          .relative();
+          margin-bottom: 10px;
+          padding-left: 40px;
           .font-family(@font-reg);
-          .font-size(1.4rem, 14px);
+          .font-size(1.4rem, 18px);
           color: @color-1e;
 
           @media @screen-lg {
@@ -101,8 +104,9 @@
         &__list-item::before {
           display: inline-block;
           .size(22px, 17px);
-          .relative();
+          .absolute();
           top: 3px;
+          left: 0;
           margin-right: 18px;
           background-image: url(../img/spritesheet.png);
           background-position: -21px -58px;

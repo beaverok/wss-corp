@@ -13,14 +13,14 @@ $(document).ready(function () {
         }
     });
 
-    $('.scopes-tab__item').mouseenter(function () {
+    /*$('.scopes-tab__item').mouseenter(function () {
         var pic = $(this).attr("data-pic");
 
         $('.scopes-tab__item').removeClass('scopes-tab__item--active');
         $(this).addClass('scopes-tab__item--active');
 
         $('.scopes-tab__pic img').attr("src", pic);
-    })
+    })*/
 
     $('.button-up a').click(function () {
         $('.main-menu__link').removeClass('main-menu__link--active');
@@ -38,6 +38,10 @@ $(document).ready(function () {
         $('.price-tab__link').click(function () {
             var selected = $(this).attr('href');
             $.scrollTo(selected, 1000, { offset: -70 });
-        })
+        });
+        $('.solutions-tabs__link').click(function () {
+            var selected = $(this).attr('href');
+            $.scrollTo(selected, 1000, { offset: -70 });
+        });
     }
 });

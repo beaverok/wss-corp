@@ -2,12 +2,12 @@ $(document).ready(function () {
     if ($(window).width() > 1000) {
         $('.top-slider__slides').fractionSlider({
             'slideTransition': 'fade',
-            'slideTransitionSpeed': 100,
+            'slideTransitionSpeed': 0,
             'transitionIn': 'fade',
             'transitionOut': 'fade',
             'timeout': 8000,
             'speedIn': 500,
-            'delay': 300,
+            'delay': 0,
             'controls': true,
             'pauseOnHover': true
         });
