@@ -44,4 +44,14 @@ $(document).ready(function () {
         nextText: '',
         prevText: ''
     });
+
+    if ($(window).width() < 768) {
+        $('.top-clients__list').bxSlider({
+            pager: false,
+            nextText: '',
+            prevText: '',
+            slideWidth: 300,
+            infiniteLoop: false
+        });
+    }
 });
