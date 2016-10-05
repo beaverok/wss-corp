@@ -44,6 +44,10 @@
     }
     & .bx-wrapper {
       margin-top: 14px;
+      .relative();
+    }
+    & .bx-controls {
+      top: -14px;
     }
     & .bx-prev, & .bx-next {
       @media @screen-xs {
@@ -53,7 +57,12 @@
     & .bx-next {
       @media @screen-xs {
         background-position: -87px 0;
-        right: 15px;
+        right: 0;
+      }
+    }
+    & .bx-next:hover {
+      @media @screen-xs {
+        background-position: -187px -253px;
       }
     }
       &__item {

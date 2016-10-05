@@ -2745,6 +2745,10 @@ a img {
 }
 .top-clients .bx-wrapper {
   margin-top: 14px;
+  position: relative;
+}
+.top-clients .bx-controls {
+  top: -14px;
 }
 @media (min-width: 320px) and (max-width: 766px) {
   .top-clients .bx-prev,
@@ -2755,7 +2759,12 @@ a img {
 @media (min-width: 320px) and (max-width: 766px) {
   .top-clients .bx-next {
     background-position: -87px 0;
-    right: 15px;
+    right: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .top-clients .bx-next:hover {
+    background-position: -187px -253px;
   }
 }
 .top-clients__item {
@@ -5347,6 +5356,12 @@ a img {
     padding-right: 5px;
   }
 }
+@media (min-width: 751px) and (max-width: 1023px) {
+  .contacts__inner {
+    width: 420px;
+    float: left;
+  }
+}
 .contacts__wrap {
   width: 723px;
   position: relative;
@@ -5359,7 +5374,7 @@ a img {
 @media (min-width: 751px) and (max-width: 1023px) {
   .contacts__wrap {
     float: none;
-    width: 50%;
+    width: 100%;
     top: 10px;
     margin: 0;
     padding: 35px 68px 35px 46px;
