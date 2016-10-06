@@ -1,10 +1,16 @@
 .index-products {
     height: 536px;
-    .bg-image("../img/bg_products-index.jpg");
+    .bg-image("../img/bg_products-index--big.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
     margin-bottom: 58px;
 
+    @media @screen-lg {
+      .bg-image("../img/bg_products-index.jpg");
+    }
+    @media @screen-md {
+      .bg-image("../img/bg_products-index.jpg");
+    }
     @media @screen-xs {
       width: 100%;
       height: auto;
