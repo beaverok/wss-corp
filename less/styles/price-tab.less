@@ -39,7 +39,18 @@
       .transition();
     }
     &__link:hover, &__link--active {
+      font-size: 1.4rem;
       color: @red;
+
+      @media @screen-lg {
+        font-size: 1.3rem;
+      }
+      @media @screen-md {
+        font-size: 1.3rem;
+      }
+      @media @screen-xs {
+        font-size: 1.3rem;
+      }
     }
     &__link:hover &__icon-inner, &__link--active &__icon-inner {
       .bg-color(@red);

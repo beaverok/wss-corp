@@ -58,6 +58,7 @@
         color: @color-33;
         .no-decor();
         text-transform: uppercase;
+        .transition();
 
         @media @screen-lg {
           padding: 0 6px;
@@ -74,9 +75,16 @@
         .bg(0 0, repeat-x);
         .bg-image('../img/bg_menu-item--active.gif');
         color: @red;
-        .transition();
+        font-size: 1.3rem;
 
+        @media @screen-lg {
+          font-size: 1.2rem;
+        }
+        @media @screen-md {
+          font-size: 1.2rem;
+        }
         @media @screen-xs {
+          font-size: 1.6rem;
           background: none;
         }
       }

@@ -114,6 +114,7 @@
           .font-size(1.8rem, 24px);
           color: @color-1e;
           .uppercase();
+          .transition();
           overflow: hidden;
 
           @media @screen-md {
@@ -129,6 +130,7 @@
           .font-size(1.6rem, 24px);
           color: @color-33;
           .opacity();
+          .transition();
 
           @media @screen-md {
             .font-size(1.6rem,18px);
@@ -139,10 +141,32 @@
         }
 
         &__item:hover &__title {
+          font-size: 1.9rem;
           color: @white;
+
+          @media @screen-lg {
+            font-size: 1.8rem;
+          }
+          @media @screen-md {
+            font-size: 1.6rem;
+          }
+          @media @screen-xs {
+            font-size: 1.6rem;
+          }
         }
         &__item:hover &__text {
+          font-size: 1.7rem;
           color: #e6b3b2;
           .opacity(1);
+
+          @media @screen-lg {
+            font-size: 1.6rem;
+          }
+          @media @screen-md {
+            font-size: 1.6rem;
+          }
+          @media @screen-xs {
+            font-size: 1.4rem;
+          }
         }
 }

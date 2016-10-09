@@ -16,7 +16,7 @@
       .pos();
       float: left;
       margin-right: 105px;
-      padding: 69px 0 0 40px;
+      padding: 0 0 0 40px;
       border-top-left-radius: 8px;
       .font-family(@font-reg);
       .font-size(3rem, 37px);
@@ -25,20 +25,30 @@
 
       @media @screen-lg {
         width: 450px;
-        padding-top: 40px;
       }
       @media @screen-md {
         float: none;
-        padding-top: 40px;
       }
       @media @screen-xs {
         width: 100%;
         height: auto;
         margin: 0 0 40px;
-        padding: 20px;
+        padding: 0 20px 20px;
         .font-size(2rem, 26px);
       }
     }
+      &__title p {
+        display: table-cell;
+        .size(469px, 234px);
+        vertical-align: middle;
+
+        @media @screen-lg {
+          width: 450px;
+        }
+        @media @screen-xs {
+          height: 160px;
+        }
+      }
     &__title::after {
       display: inline-block;
       .size(84px, 234px);
@@ -62,24 +72,28 @@
 
     &__descr {
       max-width: 600px;
-      margin-top: 25px;
       float: left;
 
       @media @screen-lg {
         max-width: 40%;
-        margin-top: 32px;
       }
       @media @screen-md {
         float: none;
-        margin: 32px 0 25px 10px;
+        margin: 0 0 0 10px;
         .clear();
       }
       @media @screen-xs {
         float: none;
-        margin: 32px 0 25px 10px;
+        margin: 0 0 0 10px;
         .clear();
       }
     }
+      &__descr-inner {
+        display: table-cell;
+        .size(600px,234px);
+        vertical-align: middle;
+      }
+
       &__list {
         .ul-reset();
 
@@ -114,7 +128,7 @@
           content: '';
 
           @media @screen-lg {
-            left: -37px;
+            left: 0;
             margin-right: -22px;
           }
           @media @screen-xs {
@@ -144,7 +158,18 @@
       }
       &__download:hover {
         //.color-lighten(@color-1e);
+        font-size: 1.5rem;
         font-weight: 600;
+
+        @media @screen-lg {
+          font-size: 1.4rem;
+        }
+        @media @screen-md {
+          font-size: 1.4rem;
+        }
+        @media @screen-xs {
+          font-size: 1.4rem;
+        }
       }
 
     &__total {

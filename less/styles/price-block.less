@@ -65,7 +65,18 @@
         .transition();
       }
       &__tabs-link:hover, &__tabs-link--active {
+        font-size: 1.6rem;
         color: @red;
         border: none;
+
+        @media @screen-lg {
+          font-size: 1.5rem;
+        }
+        @media @screen-md {
+          font-size: 1.5rem;
+        }
+        @media @screen-xs {
+          font-size: 1.5rem;
+        }
       }
 }

@@ -37,5 +37,19 @@
       .uppercase();
       .no-decor();
       border-bottom: 1px dotted @color;
+      .transition();
+    }
+    &__link:hover {
+      font-size: 1.6rem;
+
+      @media @screen-lg {
+        font-size: 1.5rem;
+      }
+      @media @screen-md {
+        font-size: 1.5rem;
+      }
+      @media @screen-xs {
+        font-size: 1.5rem;
+      }
     }
 }

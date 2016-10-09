@@ -21,6 +21,36 @@
       .font-size(1.3rem, 44px);
       color: @color-1e;
     }
+    & .file-upload-wrapper {
+      width: 262px;
+
+      @media @screen-md {
+        margin-top: -8px;
+      }
+      @media @screen-xs {
+        width: 240px;
+      }
+    }
+    & .file-upload-button {
+      padding: 3px 0;
+      border: none;
+      background: none;
+      .font-family(@font-reg);
+      .font-size(1.4rem, 14px);
+      color: @color-1e;
+      text-decoration: underline;
+      cursor: pointer;
+      float: right;
+    }
+    & .file-upload-input {
+      width: 50%;
+      border: none;
+      background: transparent;
+      .font-family(@font-reg);
+      .font-size(1.4rem, 14px);
+      color: @color-1e;
+      text-align: right;
+    }
 
   &__submit, &__submit--empty {
     display: block;
