@@ -2,6 +2,10 @@
     .size(100%,38px);
     .bg-color(#f6f6f6);
 
+    @media @screen-xs {
+      display: none;
+    }
+
     &__inner {
         .container();
     }
@@ -13,8 +17,13 @@
           display: inline-block;
           vertical-align: top;
         }
+        &__item:nth-of-type(3) {
+          @media @screen-xs {
+            display: none;
+          }
+        }
           &__link {
-            font-family: Tahoma, serif;
+            font-family: @font-reg;
             .font-size(1.1rem,38px);
             color: @color-33;
             .no-decor();

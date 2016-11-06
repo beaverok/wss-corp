@@ -66,10 +66,17 @@
   }
   &__name {
     margin: 29px 0 15px;
-    .font-family(@font-bold);
-    .font-size(2.3rem, 20px);
-    color: @color-33;
   }
+    &__name a {
+      .font-family(@font-bold);
+      .font-size(2.3rem, 20px);
+      color: @color-33;
+      .no-decor();
+      .transition();
+    }
+    &__name a:hover {
+      color: @red;
+    }
   &__text {
     margin-bottom: 14px;
     padding-right: 70px;
@@ -78,6 +85,7 @@
     color: @color-33;
 
     @media @screen-lg {
+      height: 96px;
       padding-right: 20px;
     }
     @media @screen-xs {
@@ -90,6 +98,9 @@
 
     @media @screen-lg {
       margin-bottom: 12px;
+    }
+    @media @screen-xs {
+      display: none;
     }
   }
   &__link--video {

@@ -1,5 +1,8 @@
 .solution-projects {
 
+  @media @screen-lg {
+    .align-center();
+  }
   @media @screen-md {
     .align-center();
   }
@@ -92,8 +95,10 @@
       .font-size(1.3rem, 20px);
       color: @color-33;
       .text-decoration();
+      .transition();
     }
     &__link:hover {
-      .color-lighten(@color-33);
+      //.color-lighten(@color-33);
+      font-size: 1.4rem;
     }
 }

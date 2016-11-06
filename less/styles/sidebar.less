@@ -6,6 +6,18 @@
     float: none;
     margin: 0 auto 30px;
   }
+
+  &--mobile {
+    display: none;
+
+    @media @screen-xs {
+      display: block;
+    }
+  }
+  &--mobile .sidebar-info {
+    display: block;
+    margin-top: 30px;
+  }
 }
 
 @import "sidebar-menu";

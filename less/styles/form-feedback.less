@@ -2,9 +2,13 @@
   width: 632px;
   padding: 32px 45px;
 
-  @media @screen-xs {
+  @media (min-width: 480px) and (max-width: 766px) {
     width: 100%;
-    padding: 32px 10px;
+    padding: 10px 0;
+  }
+  @media (min-width: 320px) and (max-width: 479px) {
+    width: 100%;
+    padding: 10px;
   }
 
   &__title {
@@ -13,13 +17,26 @@
     .font-size(1.5rem,15px);
     color: @color-33;
     .uppercase();
+
+    @media (min-width: 480px) and (max-width: 766px) {
+      margin-bottom: 14px;
+      font-size: 1.4rem;
+    }
   }
 
   &__left {
     width: 262px;
     float: left;
 
-    @media @screen-xs {
+    /*@media @screen-xs {
+      width: 100%;
+      float: none;
+      margin: 0 auto 11px;
+    }*/
+    @media (min-width: 480px) and (max-width: 766px) {
+      width: 200px;
+    }
+    @media (min-width: 320px) and (max-width: 479px) {
       width: 100%;
       float: none;
       margin: 0 auto 11px;
@@ -31,8 +48,17 @@
       margin-bottom: 11px;
       border: 1px solid #a8a8a8;
 
-      @media @screen-xs {
+      /*@media @screen-xs {
         .size(230px,30px)
+      }*/
+      @media (min-width: 480px) and (max-width: 766px) {
+        width: 190px;
+        height: 30px;
+        margin: 0 auto 10px;
+      }
+      @media (min-width: 320px) and (max-width: 479px) {
+        .size(230px,30px);
+        margin: 0 auto 10px;
       }
     }
     &__input-wrap:last-child {
@@ -47,7 +73,8 @@
         color: @color-1e;
 
         @media @screen-xs {
-          line-height: 28px;
+          display: inline-block;
+          line-height: normal;
         }
       }
 
@@ -55,26 +82,41 @@
     .relative();
     float: right;
 
-    @media @screen-xs {
+    @media (min-width: 320px) and (max-width: 479px) {
       float: none;
     }
   }
     &__textarea-wrap {
       .size(262px,155px);
       .relative();
+      border: 1px solid #a8a8a8;
 
-      @media @screen-xs {
+      /*@media @screen-xs {
+        .size(230px,120px);
+      }*/
+      @media (min-width: 480px) and (max-width: 766px) {
+        width: 198px;
+        height: 112px;
+      }
+      @media (min-width: 320px) and (max-width: 479px) {
         .size(230px,120px);
       }
     }
       &__textarea {
-        .size(100%,100%);
-        border: 1px solid #a8a8a8;
-        padding: 14px 14px 35px;
+        .size(100%,108px);
+        padding: 14px 14px 10px;
+        border: none;
         .font-family(@font-reg);
         .font-size(1.4rem, 16px);
         color: @color-1e;
         resize: none;
+
+        @media (min-width: 480px) and (max-width: 766px) {
+          height: 68px;
+        }
+        @media (min-width: 320px) and (max-width: 479px) {
+          height: 72px;
+        }
       }
 
       &__right .file-upload-wrapper {
@@ -98,6 +140,7 @@
         .font-family(@font-reg);
         .font-size(1.4rem, 14px);
         color: @color-1e;
+        text-align: left;
       }
 
   &__submit-wrap {
@@ -125,6 +168,10 @@
       .uppercase();
       cursor: pointer;
       .transition();
+
+      @media @screen-xs {
+        margin-top: 18px;
+      }
     }
     &__input-submit:hover {
       background-color: lighten(@red, 5%);
@@ -145,4 +192,26 @@
   .font-family(@font-reg);
   .font-size(1.4rem, 44px);
   color: @red;
+
+  @media @screen-xs {
+    line-height: 28px;
+  }
+}
+
+.form-short {
+  width: 300px;
+  padding: 32px 20px;
+
+  @media @screen-xs {
+    width: 100%;
+    padding: 20px 10px 0;
+  }
+}
+.form-short .form-feedback__left {
+  float: none;
+  margin: 0 auto;
+}
+
+.safari form input[type="text"] {
+  line-height: normal;
 }

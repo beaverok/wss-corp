@@ -24,25 +24,28 @@
       .bg-color(@red);
       .bg-image("../img/bg_pattern.png");
       padding-left: 24px;
+      line-height: 53px;
       cursor: pointer;
     }
     &__tab--active &__name::before {
       .size(10px,6px);
-      top: 25px;
+      top: 9px;
       background-position: -258px -278px;
     }
       &__name {
+        display: inline-block;
         .relative();
         padding-left: 27px;
         .font-family(@font-reg);
-        .font-size(1.8rem, 53px);
+        .font-size(1.8rem, normal);
         color: @white;
+        vertical-align: middle;
       }
       &__name::before {
         display: inline-block;
         .size(6px,10px);
         .absolute();
-        top: 23px;
+        top: 6px;
         left: 0;
         .bg-image("../img/spritesheet.png");
         background-position: -247px -279px;
@@ -157,4 +160,11 @@
     &__form-btn a:hover span {
       .bg-image("../img/bg_open-btn--hover-red.png");
     }
+}
+
+.safari .job-list__form-btn a:hover {
+  color: @color-1e;
+}
+.safari .job-list__form-btn:hover span {
+  .bg-image("../img/bg_open-job--empty.png");
 }

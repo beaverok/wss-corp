@@ -42,4 +42,9 @@ $(document).ready(function () {
         $(this).toggleClass('job-list__tab--active');
         $(this).next().slideToggle();
     });
+
+    var is_safari = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 &&  navigator.userAgent.indexOf('Android') == -1;
+    if (is_safari) {
+        $('body').addClass('safari');
+    }
 });

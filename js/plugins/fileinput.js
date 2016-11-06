@@ -57,7 +57,7 @@
 
 		        $input.val( filename ) // Set the value
 		          .attr('title', filename) // Show filename in title tootlip
-		          .focus(); // Regain focus
+		          //.focus(); // Regain focus
 
 		      });
 

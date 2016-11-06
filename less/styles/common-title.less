@@ -11,6 +11,7 @@
 
   &__inner {
     .container();
+    line-height: 131px;
     .align-center();
   }
 
@@ -18,13 +19,13 @@
     display: inline-block;
     .relative();
     .font-family(@font-bold);
-    .font-size(4rem,131px);
+    .font-size(4rem,normal);
     color: @color-33;
     .uppercase();
+    vertical-align: middle;
 
     @media @screen-xs {
-      margin-top: 30px;
-      .font-size(3rem,30px);
+      .font-size(2rem,24px);
     }
   }
     &__line {
@@ -32,8 +33,7 @@
       height: 2px;
       .bg-color(@red);
       .absolute();
-      .pos(0,50%);
-      top: 37px;
+      .pos(100%,50%);
       margin-left: -15%;
 
       @media @screen-xs {

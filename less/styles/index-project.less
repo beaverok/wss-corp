@@ -67,19 +67,38 @@
   }
   &__text {
     margin-bottom: 10px;
-    .font-family(@font-reg);
-    .font-size(1.3rem, 20px);
-    color: @color-33;
   }
-  &__link {
-    .font-family(@font-reg);
-    .font-size(1.3rem, 20px);
-    color: @color-33;
-    .text-decoration();
-  }
-  &__link:hover {
-    .color-lighten(@color-33);
-  }
+    &__text a {
+      .font-family(@font-reg);
+      .font-size(1.3rem, 20px);
+      color: @color-33;
+      .no-decor();
+      .transition();
+    }
+    &__text a:hover {
+      //color: @red;
+    }
+    &__link {
+      .font-family(@font-reg);
+      .font-size(1.3rem, 20px);
+      color: @color-33;
+      .text-decoration();
+      .transition();
+    }
+    &__link:hover {
+      .color-lighten(@color-33);
+      font-size: 1.4rem;
+
+      @media @screen-lg {
+        font-size: 1.3rem;
+      }
+      @media @screen-md {
+        font-size: 1.3rem;
+      }
+      @media @screen-xs {
+        font-size: 1.3rem;
+      }
+    }
 }
 .index-project:nth-of-type(4n) {
   margin-right: 0;

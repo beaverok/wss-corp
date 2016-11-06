@@ -9,7 +9,7 @@ function g_map ()
         var point = current_map.attr('data-marker');
 
         var myOptions = {
-            zoom: 15,
+            zoom: 17,
             center: latlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             mapTypeControl: false,
@@ -32,21 +32,17 @@ function g_map ()
 
         var map = new google.maps.Map(current_map[0], myOptions);
 
-        /*var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });
-        map.mapTypes.set('Grayscale', mapType);
-        map.setMapTypeId('Grayscale');*/
-
-            var marker = new google.maps.Marker({
-                map: map,
-                icon: {
-                    size: new google.maps.Size(208, 102),
-                    origin: new google.maps.Point(0, 0),
-                    anchor: new google.maps.Point(-150, 0),
-                    url: point
-                },
-                position: latlng
-            });
-            map.panBy(250,50);
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: {
+                size: new google.maps.Size(208, 102),
+                origin: new google.maps.Point(0, 0),
+                //anchor: new google.maps.Point(100, 50),
+                url: point
+            },
+            position: latlng
+        });
+        map.panBy(0,0);
 
         google.maps.event.addDomListener(window, "resize", function() {
             var center = map.getCenter();

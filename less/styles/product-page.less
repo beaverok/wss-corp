@@ -14,6 +14,8 @@
 
     @media @screen-xs {
       margin-bottom: 20px;
+      padding-left: 28px;
+      font-size: 1.3rem;
     }
   }
   &__file-link::before {
@@ -160,11 +162,12 @@
 
     &__tabs-ul {
       .ul-reset();
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
       &__tabs-li {
         display: inline-block;
         margin-right: 39px;
+        margin-bottom: 10px;
         vertical-align: top;
 
         @media @screen-lg {
@@ -217,7 +220,7 @@
         display: block;
         .relative();
         margin-bottom: 9px;
-        padding-left: 41px;
+        padding-left: 20px;
         .font-family(@font-reg);
         .font-size(1.6rem, 27px);
         color: #5c5c5c;
@@ -228,13 +231,13 @@
       }
       &__scopes-li::before {
         display: inline-block;
-        .size(22px,17px);
+        .size(8px,12px);
         .absolute();
-        top: 4px;
+        top: 9px;
         left: 0;
         background: none;
         .bg-image("../img/spritesheet.png");
-        background-position: -248px -294px;
+        background-position: -228px -240px;
         content: '';
       }
 }

@@ -29,7 +29,6 @@
 
   &__contacts {
     width: 50%;
-    padding-top: 52px;
     float: left;
 
     @media @screen-md {
@@ -41,6 +40,12 @@
       padding: 0;
       float: none;
     }
+  }
+  &__contacts-title {
+    margin-bottom: 32px;
+    .font-family(@font-bold);
+    .font-size(2.1rem, 18px);
+    color: @color-1e;
   }
   &__phone {
     display: inline-block;

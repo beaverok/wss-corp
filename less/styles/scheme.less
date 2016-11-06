@@ -29,6 +29,39 @@
       .clear-after();
     }
 
+      &__note-common {
+        display: none;
+        .size(200px,752px);
+        background-color: rgba(255,255,255,0.2);
+        .absolute();
+        top: -51px;
+        right: -222px;
+        padding: 38px 17px;
+      }
+        &__note-title {
+          min-height: 29px;
+          .bg-image("../img/icon_tip.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          margin-bottom: 14px;
+          padding-left: 40px;
+          .font-family(@font-reg);
+          .font-size(1rem,12px);
+          color: #d2d2d2;
+          .uppercase();
+        }
+        &__note-title span {
+          display: block;
+          margin-bottom: 5px;
+          .font-size(1.3rem,13px);
+          color: @white;
+        }
+        &__note-text {
+          .font-family(@font-reg);
+          .font-size(1.2rem,24px);
+          color: @white;
+        }
+
       &__top {
         width: 440px;
         margin: 0 auto 18px;
@@ -99,13 +132,17 @@
         }
         &__center &__item {
           width: auto;
-          margin: 0 20px 11px;
+          //margin: 0 20px 11px;
           padding: 10px 0;
+        }
+        &__center &__item:hover {
+          background-color: rgba(255,255,255,0.2);
         }
           &__item {
             width: 100%;
             .relative();
-            margin-bottom: 11px;
+            margin: -10px 0 11px;
+            padding: 10px 0;
           }
           &__center &__item:first-child:hover &__row-note {
             display: block;
@@ -128,7 +165,7 @@
             left: auto;
             right: -200px;
           }
-          &__center &__item:hover {
+          &__left &__block:hover, &__right &__block:hover {
             background-color: rgba(255,255,255,0.2);
           }
           &__left &__item img, &__right &__item img {
@@ -165,7 +202,7 @@
             &__link {
               .size(44px,44px);
               .absolute();
-              top: 0;
+              top: 10px;
               right: 55px;
               cursor: pointer;
             }
@@ -173,22 +210,28 @@
               display: block;
               opacity: 1;
             }
+            &__center &__item:first-child &__link:nth-of-type(1) {
+              .pos(30px,74px);
+            }
             &__center &__item:first-child &__link:nth-of-type(2) {
-              .pos(30px,54px);
+              .pos(30px,180px);
             }
             &__center &__item:first-child &__link:nth-of-type(3) {
-              .pos(30px,160px);
+              .pos(30px,286px);
             }
             &__center &__item:first-child &__link:nth-of-type(4) {
               top: 30px;
-              right: 1px;
+              right: 21px;
+            }
+            &__center &__item:nth-of-type(2) &__link:nth-of-type(1) {
+              .pos(10px,119px);
             }
             &__center &__item:nth-of-type(2) &__link:nth-of-type(2) {
-              .pos(10px,99px);
+              .pos(10px,241px);
             }
             &__center &__item:nth-of-type(2) &__link:nth-of-type(3) {
               top: 10px;
-              right: 46px;
+              right: 66px;
             }
               &__note, &__row-note {
                 display: none;
