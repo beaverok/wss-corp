@@ -2,10 +2,18 @@
   display: none;
   .ul-reset();
   margin: 0 auto 36px;
+  border: 1px dashed #848586;
+  .rounded(12px);
   .align-center();
 
   &--active {
     display: block;
+  }
+  &::after {
+    display: block;
+    width: 100%;
+    content: '';
+    clear: both;
   }
 
   &__icons-item {
@@ -39,7 +47,6 @@
       .transition();
     }
     &__link:hover, &__link--active {
-      font-size: 1.4rem;
       color: @red;
 
       @media @screen-lg {
@@ -132,10 +139,12 @@
             opacity: 0;
           }
           &__icon-pic, &__icon-pic--active {
-            max-width: 32px;
-            max-height: 32px;
-            .absolute();
+            max-width: 72px;
+            max-height: 72px;
+            padding: 0 10px;
+            vertical-align: middle;
+            /*.absolute();
             .pos(50%, 50%);
-            margin: -16px 0 0 -16px;
+            margin: -26px 0 0 -26px;*/
           }
 }

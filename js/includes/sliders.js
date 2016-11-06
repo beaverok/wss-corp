@@ -33,6 +33,7 @@ $(document).ready(function () {
         pagerCustom: '.personal-tabs',
         nextText: '',
         prevText: '',
+        infiniteLoop: false,
         onSliderLoad: function () {
             $('.personal-tab').css('display', 'block');
         }

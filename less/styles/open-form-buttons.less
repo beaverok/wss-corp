@@ -15,6 +15,10 @@
   .uppercase();
   .transition();
 
+  @media @screen-lg {
+    margin-right: 10px;
+    padding: 0 60px 0 15px;
+  }
   @media @screen-md {
     margin-right: 10px;
     padding: 0 60px 0 15px;
@@ -41,12 +45,17 @@
 
   &--present {
     //.bg-color(@white);
+    height: 53px;
+    border: none;
     background: linear-gradient(to right, @white 20%, @white 20%, @white 81%, transparent 81%);
     background-position: 0 0;
     color: @color;
   }
     &--present span {
       .bg-image("../img/bg_open-btn.png");
+      right: 0;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
     }
   &--present:hover {
     background-position: 0 -102%;
@@ -55,5 +64,24 @@
   }
   &--present:hover span {
     .bg-image("../img/bg_open-btn--empty.png");
+    border-color: @red;
   }
 }
+
+.safari .btn-link--present {
+  //.bg-color(@white);
+  height: 53px;
+  border: 2px solid @white;
+  background: none;
+}
+.safari .btn-link--present:hover {
+  background: none;
+  border: 2px solid @red;
+  color: @color;
+}
+  .safari .btn-link--present span{
+    .bg-image("../img/bg_open-btn--empty.png");
+  }
+  .safari .btn-link--present:hover span {
+    .bg-image("../img/bg_open-btn--hover-empty.png");
+  }

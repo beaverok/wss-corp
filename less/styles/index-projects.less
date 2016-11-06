@@ -93,7 +93,7 @@
     }
   }
   &__select .sbHolder .sbOptions {
-    height: 235px;
+    height: 295px;
     .ul-reset();
     position: relative;
     top: 13px !important;
@@ -113,15 +113,13 @@
   }
   &__select .sbHolder .sbOptions a {
     .font-family(@font-reg);
-    .font-size(1.3rem, 26px);
-    color: @color-1e;
+    .font-size(1.6rem, 26px);
+    color: @color;
     .no-decor();
     .transition();
-    opacity: 0.65;
   }
   &__select .sbHolder .sbOptions a:hover {
-    //.color-lighten(@color-1e);
-    opacity: 1;
+    color: @red;
   }
 
     &__list {

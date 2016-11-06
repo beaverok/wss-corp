@@ -224,7 +224,11 @@
         }
       }
         &__price span {
+          display: inline-block;
           .font-family(@font-bold);
+        }
+        &__price label {
+          display: inline-block;
         }
 
       &__buttons {
@@ -247,7 +251,7 @@
         }
       }
       &__buttons .btn-link--present:hover {
-        background: linear-gradient(to right, @red 20%, @red 20%, @red 80%, transparent 70%);
+        background: linear-gradient(to right, @red 21%, @red 21%, @red 81%, transparent 70%);
         border-color: @red;
         color: @white;
       }
@@ -274,4 +278,8 @@
         height: 90px;
       }
     }
+}
+
+.safari .top-slider__price {
+  width: 250px;
 }

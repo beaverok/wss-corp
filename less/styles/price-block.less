@@ -11,9 +11,22 @@
     padding: 30px 0 0;
   }
 
+  &::after {
+    display: block;
+    width: 100%;
+    content: '';
+    clear: both;
+  }
+
   &__inner {
     .container();
     .relative();
+  }
+  &__inner::after {
+    display: block;
+    width: 100%;
+    content: '';
+    clear: both;
   }
 
   &__title {

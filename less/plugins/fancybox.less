@@ -107,6 +107,12 @@
 	z-index: 18040;
 	background: url(../img/fancybox_close.png) 0 0 no-repeat;
 	transition: transform 0.4s ease;
+
+	@media @screen-xs {
+		.size(24px,24px);
+		background-size: cover;
+		top: 7px;
+	}
 }
 .fancybox-close:hover{
 	-ms-transform: rotate(360deg);
